@@ -19,11 +19,10 @@
             <a href="#ge_georgia">georgia</a> 
             <a href="#gallery">gallery</a> 
             <a href="#package">package</a>
-            <a href="#book">book</a>
             <a href="#services">services</a>
-            <a href="#review">review</a>
             <a href="#voice">voice</a>
-            <a href="#contact">contact</a>
+            <a href="#review">review</a>
+            <a href="#footer">Footer</a>
         </nav>
         <div class="icons">
         <i class="fas fa-search" id="search-btn"></i>
@@ -95,7 +94,7 @@
         </div>
 
         <div class="video-container">
-            <video src="foto/კაცხის სვეტი 4K _ Georgia, Katskhi Pillar 4K _ Столп Кацхи 4K.mp4.mp4" loop autoplay muted></video>
+            <video src="foto/Georgia_Katskhi_Pillar.mp4.mp4" loop autoplay muted></video>
               <div class="video-overlay"></div>
             
         </div>
@@ -253,7 +252,7 @@
 
          
 
-
+  <!--package section start-->
          <section class="package" id="package">
 
     <h1 class="heading">
@@ -289,7 +288,7 @@
                   <iframe src="https://www.google.com/maps/d/embed?mid=1rbH4JD51dEwYm5WSSyFf1L0mpJ5y-2I&ehbc=2E312F" width="640" height="480"></iframe>
                 </div>
                  <div class="buttons-container">
-                <a href="#book" class="btn btn-1 book-now-button-class" onclick="bookNow()">book now</a>
+                
                 <button class="btn btn-2 show-info-button-class">read more</button>
                 </div>
             </div>
@@ -317,7 +316,7 @@
                 </div>
                 
                     <div class="buttons-container">
-                <a href="#book" class="btn btn-1 book-now-button-class" onclick="bookNow1()">book now</a>
+              
                 <button class="btn btn-2 show-info-button-class">read more</button>
             </div>
             </div>
@@ -344,7 +343,7 @@
                  <iframe src="https://www.google.com/maps/d/embed?mid=1LPmKE-FgIUCY5bTOVLcyvbQyVO9sMXs&ehbc=2E312F" width="640" height="480"></iframe>
                 </div>
                       <div class="buttons-container">
-                <a href="#book" class="btn btn-1 book-now-button-class" onclick="bookNow2()">book now</a>
+            
                 <button class="btn btn-2 show-info-button-class">read more</button>
             </div>
             </div>
@@ -371,7 +370,7 @@
                     <iframe src="https://www.google.com/maps/d/embed?mid=1zURBpkjCtdmuX5CItk3NxY0lyBKqoR8&ehbc=2E312F" width="640" height="480"></iframe>
                 </div>
                     <div class="buttons-container">
-                <a href="#book" class="btn btn-1 book-now-button-class" onclick="bookNow3()">book now</a>
+            
                 <button class="btn btn-2 show-info-button-class">read more</button>
                     </div>
             </div>
@@ -398,7 +397,7 @@
                    <iframe src="https://www.google.com/maps/d/embed?mid=1yoqCqglb2ZUSYxEzXMV0cX84quxezSE&ehbc=2E312F" width="640" height="480"></iframe>
                 </div>
                    <div class="buttons-container">
-                <a href="#book" class="btn btn-1 book-now-button-class" onclick="bookNow4()">book now</a>
+              
                 <button class="btn btn-2 show-info-button-class">read more</button>
             </div>
             </div>
@@ -425,57 +424,13 @@
                  <iframe src="https://www.google.com/maps/d/embed?mid=17I69Dc5mPZsNpJWAp3xH7Q-fw8lU0rc&ehbc=2E312F" width="640" height="480"></iframe>
                 </div>
                      <div class="buttons-container">
-                <a href="#book" class="btn btn-1 book-now-button-class" onclick="bookNow5()">book now</a>
+             
                 <button class="btn btn-2 show-info-button-class">read more</button>
             </div>
             </div>
         </div>
     </div>
 </section>
-
-
-
-     <!--book section start-->
-       <section class="book" id="book">
-        <h1 class="heading">
-            <span>b</span>
-            <span>o</span>
-            <span>o</span>
-            <span>k</span>
-            <span class="space">-</span>
-            <span>n</span>
-            <span>o</span>
-            <span>w</span>
-        </h1>
-
-        <div class="row">
-            <div class="image">
-                <img src="foto/book.png" alt="">
-            </div>
-
-            <form action="" method="">
-                <div class="inputBox">
-                    <h3>where to</h3>
-                    <div id="booking"></div>
-                </div>
-                <div class="inputBox">
-                    <h3>how many</h3>
-                    <input type="number" placeholder="number of guests">
-                </div>
-                <div class="inputBox">
-                    <h3>arrivals</h3>
-                    <input type="date">
-                </div>
-                <div class="inputBox">
-                    <h3>leaving</h3>
-                    <input type="date">
-                </div>
-                <input type="submit" class="btn" value="book now">
-            </form>
-        </div>
-
-       </section>
-     <!--book section end-->
 
       
 
@@ -521,7 +476,7 @@
              <!--service section end-->
 
 
-               <!--wine section start-->
+               <!--voic section start-->
 
                <section class="main" id="voice">
 
@@ -550,14 +505,14 @@
 
 
  <section class="review" id="review">
-  <h1>დატოვე კომენტარი და ფოტო</h1>
+  <h1>Leave a comment and photo</h1>
 
   <div class="form-container">
     <form id="commentForm">
-      <input type="text" id="username" placeholder="შენი სახელი" required>
-      <textarea id="commentInput" placeholder="შენი მოსაზრება" required></textarea>
+      <input type="text" id="username" placeholder="Your name" required>
+      <textarea id="commentInput" placeholder="Your opinion" required></textarea>
       <input type="file" id="imageInput" accept="image/*" required>
-      <button type="submit">დამატება</button>
+      <button type="submit">Add</button>
     </form>
   </div>
 
@@ -578,37 +533,37 @@
 
 
 
-<section class="footer">
+<section class="footer" id="footer">
     <div class="box-container">
 
         <div class="box">
-            <h3>ჩვენს შესახებ</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi beatae, odio reprehenderit nesciunt, laborum repellendus, ut dignissimos sed aperiam quia recusandae autem fugit sit maiores molestiae maxime porro facere.</p>
+            <h3>About us</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi beatae, odio reprehenderit nesciunt, laborum repellendus, ut dignissimos sed aperiam quia recusandae autem fugit sit maiores molestiae maxime porro facere.</p>
         </div>
 
         <div class="box">
-            <h3>ლოკაცია</h3>
-            <p><i class="fas fa-map-marker-alt"></i> ქუთაისი, საქართველო</p> <iframe src="https://www.google.com/maps/d/embed?mid=1SeKjdVgNAIedzEFEiG8EvTMqeeOlf_E&ehbc=2E312F" width="640" height="480"></iframe>
+            <h3>Location</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kutaisi, Georgia</p> <iframe src="https://www.google.com/maps/d/embed?mid=1SeKjdVgNAIedzEFEiG8EvTMqeeOlf_E&ehbc=2E312F" width="640" height="480"></iframe>
                     width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    title="მდებარეობა რუკაზე - ქუთაისი"></iframe> </div>
+                    title="Location on the map - Kutaisi"></iframe> </div>
 
         <div class="box">
-            <h3>სწრაფი ლინკები</h3>
-            <a href="#home"><i class="fas fa-angle-right"></i> მთავარი</a> <a href="#book"><i class="fas fa-angle-right"></i> დაჯავშნა</a>
-            <a href="#packages"><i class="fas fa-angle-right"></i> პაკეტები</a>
-            <a href="#services"><i class="fas fa-angle-right"></i> სერვისები</a>
-            <a href="#gallery"><i class="fas fa-angle-right"></i> გალერეა</a>
-            <a href="#review"><i class="fas fa-angle-right"></i> შეფასებები</a>
-            <a href="#contact"><i class="fas fa-angle-right"></i> კონტაქტი</a>
+            <h3>Quick links</h3>
+            <a href="#home"><i class="fas fa-angle-right"></i> Home</a> 
+            <a href="#packages"><i class="fas fa-angle-right"></i> Packages</a>
+            <a href="#services"><i class="fas fa-angle-right"></i> Services</a>
+            <a href="#gallery"><i class="fas fa-angle-right"></i>Gallery</a>
+            <a href="#review"><i class="fas fa-angle-right"></i> Review</a>
+            
         </div>
 
         <div class="box">
-            <h3>მოგვყევით</h3>
+            <h3>Follow us.</h3>
             <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i> facebook</a> <a href="https://instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i> instagram</a>
             <a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i> twitter</a> <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> linkedin</a> </div>
 
     </div>
 
-    <h1 class="credit">შექმნილია <span>~STURU976</span>-ის მიერ | ყველა უფლება დაცულია!</h1> </section>
+    <h1 class="credit">Created by<span>~STURU976</span> | All rights reserved!</h1> </section>
 
 
 

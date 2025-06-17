@@ -767,63 +767,7 @@ header .search-bar-container label:hover{
 
   
 
-  /*book*/
-
-  .book {
-    min-height: 100vh;
-  }
-
-  #booking{
-    width: 830px;
-    height: 70px;
-    border: 1px solid rgba(0, 0, 0, 0.089);
-    font-size: 30px;
-    padding: 1px 0 0 10px;
-    color: var(--orange);
-
-  }
-
-.book .row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-}
-
-.book .row .image{
-    flex: 1 1 20rem;
-} 
  
-.book .row .image img{
-    width: 100%;
-}
-.book .row form{
-    flex: 1 1 30rem;
-    padding: 1rem;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-}
-
-.book .row form .inputBox{
-    padding: .5rem 0;
-}
-
-.book .row form .inputBox input{
-    width: 100%;
-    padding: 1rem;
-    border: .1rem solid rgba(0,0,0,.1) ;
-    font-size: 1.7rem;
-    color: #333;
-    text-transform: none;
-}
-
-.book .row form .inputBox h3{
-font-size: 2rem;
-padding: 1rem 0;
-color: #667;
-}
-
-
 
 /* package section styles */
 
@@ -1006,13 +950,12 @@ color: #667;
 }
 
 .services .box-container{
-
     display: flex;
    flex-wrap: wrap;
    gap: 3rem;
    height: 30rem;
 position: relative;
-top: 50px;
+top: 150px;
 } 
 
 .services .box-container .box1{
@@ -1189,6 +1132,15 @@ top: 50px;
   background-repeat: no-repeat;background-size: cover;
 }
 
+.inter{
+  color: white;
+  font-size: 2.2rem;
+  font-weight: bold;
+  position: relative;
+  top: 120px;
+  right: 120px;
+}
+
 .chans{
   position: absolute;
   top: 280px;
@@ -1207,8 +1159,8 @@ top: 50px;
 
 .chanhh{
   position: relative;
-  top: 200px;
-  left: 280px;
+  top: 270px;
+  left: 450px;
   font-size: 85px;
   text-align: center;
   background-image: url(foto/Animated_flag_of_Georgia.gif);
@@ -1221,8 +1173,8 @@ top: 50px;
 
 .mapChan{
   position: absolute;
-  top: 0px;
-  left: 520px;
+  top: 90px;
+  left: 850px;
 }
 
 
@@ -1240,53 +1192,6 @@ top: 50px;
  /*review
 
 
-/* review section styles 
-.review .review-slider .swiper-slide .box {
-    text-align: center;
-    padding: 2rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    background: #fff;
-    border: solid 1px #eee; /* მცირე ბორდერი ვიზუალური გამოყოფისთვის 
-}
-
-.review .review-slider .swiper-slide .box img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%; /* წრიული სურათები 
-    object-fit: cover; /* სურათი შეავსებს სივრცეს პროპორციების დამახინჯების გარეშე 
-    margin-bottom: 1rem;
-    box-shadow: var(--box-shadow); /* თუ გაქვთ გლობალური box-shadow ცვლადი 
-}
-
-.review .review-slider .swiper-slide .box h3 {
-    color: #333;
-    font-size: 2.2rem;
-    padding-bottom: 0.5rem;
-}
-
-.review .review-slider .swiper-slide .box p {
-    color: #667;
-    font-size: 1.5rem;
-    padding: 1rem 0;
-    line-height: 2;
-    text-align: center; /* ტექსტი ცენტრში 
-}
-
-.review .review-slider .swiper-slide .box .stars i {
-    color: var(--orange); /* გამოიყენეთ თქვენი orange ფერი 
-    font-size: 1.7rem;
-}
-
-/* Swiper ნავიგაციის (ისრები) და პაგინაციის (წერტილები) სტილები 
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--orange) !important; /* ისრების ფერი 
-}
-
-.swiper-pagination-bullet-active {
-    background: var(--orange) !important; /* აქტიური წერტილის ფერი 
-}
 
 /* responsive design for review section */
 @media (max-width: 991px) {

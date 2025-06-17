@@ -157,6 +157,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+//ლოგინი logi in
+
 const loginForm = document.getElementById('loginForm');
 
 if (loginForm) {
@@ -198,47 +201,6 @@ function showName(name, foto) {
     infoDisplay.style.display = 'block';
   }
 }
-
-
-
-
-//booking
-var book = "Green Kheoba";
- 
-function bookNow() {
-    document.getElementById("booking").innerHTML = book;
-}
-
-var book1 = "Promete Cave";
-
-function bookNow1() {
-     document.getElementById("booking").innerHTML = book1;
-}
-
-var book2 = "Tetra Cave";
-
-function bookNow2() {
-    document.getElementById("booking").innerHTML = book2;
-}
- 
-var book3 = "Sataflia";
-
-function bookNow3() {
-     document.getElementById("booking").innerHTML = book3;
-}
-
-var book4 = "kackhi sveti";
-
-function bookNow4() {
-    document.getElementById("booking").innerHTML = book4;
-}
-
-var book5 = "martvili canion";
-
-function bookNow5() {
-    document.getElementById("booking").innerHTML = book5;
-}
-
 
 
 
