@@ -52,6 +52,14 @@ img{
 
 }
 
+body {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-size: 18px; /* ან შენი სურვილის მიხედვით */
+  line-height: 1.6;
+  color: #222; /* უკეთესი კონტრასტისთვის */
+}
+
+
 
 /* sectopn georgia*/
 
