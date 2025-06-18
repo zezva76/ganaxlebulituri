@@ -1334,21 +1334,25 @@ top: 150px;
  /*voice*/
 
 .main {
-  min-height: 100vh;
+  position: relative;
+  width: 100vw; /* ეს დაამატე — მთლიანად ეკრანის სიგანე */
+  height: 100vh; /* სრული ეკრანის სიმაღლე */
   background-image: url(foto/wine.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 40px;
+  padding: 0; /* padding მოაშორე */
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  overflow: hidden; /* რომ არ გადავიდეს შიგთავსი გარეთ */
 }
 
 .content-wrapper {
+  padding: 40px; /* აქ გადმოვიტანეთ */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1357,6 +1361,7 @@ top: 150px;
   flex-wrap: nowrap;
   gap: 10px;
 }
+
 
 /* მარცხენა ნაწილი */
 .left-side {
