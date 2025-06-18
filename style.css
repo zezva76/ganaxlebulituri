@@ -60,6 +60,7 @@ body {
   background-color: #fff;
   margin: 0;
   padding: 0 20px;
+ 
 }
 
 
@@ -1078,6 +1079,190 @@ top: 150px;
 
 
 
+ /* ================== ძირითადი სტილები ================== */
+.services{
+    min-height: 100vh;
+}
+
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    height: 30rem;
+    position: relative;
+    top: 150px;
+} 
+
+.services .box-container .box1,
+.services .box-container .box2,
+.services .box-container .box3 {
+    flex: 1 1 30rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.services .box-container .box1 i,
+.services .box-container .box2 i,
+.services .box-container .box3 i {
+    padding: 5rem;
+    font-size: 5rem;
+    color: var(--orange);
+}
+
+.services .box-container .box1 h3,
+.services .box-container .box2 h3,
+.services .box-container .box3 h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services .box-container .box1 p,
+.services .box-container .box2 p,
+.services .box-container .box3 p {
+    font-size: 1.5rem;
+    color: #667;
+    padding: 1rem 0;
+}
+
+.services .box-container .box1:hover,
+.services .box-container .box2:hover,
+.services .box-container .box3:hover {
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
+    border: solid rgb(176, 174, 174) 2px;
+    background-size: cover;
+}
+
+/* ინდივიდუალური ფონები hover-ზე */
+.services .box-container .box1:hover {
+    background-image: url(foto/magnolia-hotel.jpg);
+}
+
+.services .box-container .box2:hover {
+    background-image: url(foto/georgian_food.jpg);
+}
+
+.services .box-container .box3:hover {
+    background-image: url(foto/point.webp);
+}
+
+/* ================== ლეპტოპი (მაქს სიგანე 1200px) ================== */
+@media (max-width: 1200px) {
+    .services .box-container {
+        height: auto; /* ავტომატური სიმაღლე, რომ არ გაწელოს */
+        top: 100px;  /* თხელი გადმოწევა */
+        gap: 2rem;
+    }
+
+    .services .box-container .box1,
+    .services .box-container .box2,
+    .services .box-container .box3 {
+        flex: 1 1 45%; /* ორ სვეტად */
+        padding: 1rem;
+    }
+
+    .services .box-container .box1 i,
+    .services .box-container .box2 i,
+    .services .box-container .box3 i {
+        padding: 4rem;
+        font-size: 4rem;
+    }
+
+    .services .box-container .box1 h3,
+    .services .box-container .box2 h3,
+    .services .box-container .box3 h3 {
+        font-size: 2rem;
+    }
+
+    .services .box-container .box1 p,
+    .services .box-container .box2 p,
+    .services .box-container .box3 p {
+        font-size: 1.3rem;
+    }
+}
+
+/* ================== სმარტფონი (მაქს სიგანე 768px) ================== */
+@media (max-width: 768px) {
+    .services .box-container {
+        flex-direction: column;  /* ერთი სვეტი */
+        height: auto;
+        top: 0;
+        gap: 1.5rem;
+    }
+
+    .services .box-container .box1,
+    .services .box-container .box2,
+    .services .box-container .box3 {
+        flex: 1 1 100%;
+        padding: 1rem 0.5rem;
+    }
+
+    .services .box-container .box1 i,
+    .services .box-container .box2 i,
+    .services .box-container .box3 i {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+
+    .services .box-container .box1 h3,
+    .services .box-container .box2 h3,
+    .services .box-container .box3 h3 {
+        font-size: 1.8rem;
+    }
+
+    .services .box-container .box1 p,
+    .services .box-container .box2 p,
+    .services .box-container .box3 p {
+        font-size: 1.2rem;
+    }
+
+    /* ქვედა სივრცე, რომ არ დაემალოს "Contact Us" და სხვა */
+    .services {
+        padding-bottom: 5rem;
+    }
+}
+/* ================== ტაბლეტი (769px - 1024px) ================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services .box-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .services .box-container .box1,
+    .services .box-container .box2,
+    .services .box-container .box3 {
+        flex: 1 1 45%; /* ორი ბლოკი გვერდიგვერდ */
+        padding: 1.2rem;
+    }
+
+    .services .box-container .box1 i,
+    .services .box-container .box2 i,
+    .services .box-container .box3 i {
+        padding: 3rem;
+        font-size: 3.5rem;
+    }
+
+    .services .box-container .box1 h3,
+    .services .box-container .box2 h3,
+    .services .box-container .box3 h3 {
+        font-size: 2rem;
+    }
+
+    .services .box-container .box1 p,
+    .services .box-container .box2 p,
+    .services .box-container .box3 p {
+        font-size: 1.3rem;
+    }
+
+    .services {
+        padding: 4rem 2rem;
+    }
+}
+
+
+
+
 
  /* gallery*/
 .gallery{
@@ -1133,74 +1318,135 @@ top: 150px;
 
 
 
-/*wine*/
 
-.main{
+ /*voice*/
+
+.main {
   min-height: 100vh;
-  position: relative;
-  background-color: blue;
   background-image: url(foto/wine.jpg);
-  background-repeat: no-repeat;background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-.inter{
-  color: white;
-  font-size: 2.2rem;
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+/* მარცხენა ნაწილი */
+.left-side {
+
+   position: relative;
+ bottom: 200px;
+ right: 100px;
+  flex: 1;
+  min-width: 650px;
+}
+
+.inter {
+  font-size: 1.8rem;
   font-weight: bold;
-  position: relative;
-  top: 120px;
-  right: 120px;
+  margin-bottom: 30px;
 }
 
-.chans{
-  position: absolute;
-  top: 280px;
-  left: 100px;
-  font-size: 60px;
+.chans, .vans {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.buton {
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: var(--orange, orange);
+  border: none;
+  border-radius: 6px;
   color: white;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.vans{
-   position: absolute;
-   top: 450px;
-   left: 100px;
-   font-size: 60px;
-   color: white;
- }
+.buton:hover {
+  background-color: darkorange;
+}
 
-.chanhh{
+/* მარჯვენა ნაწილი */
+.right-side {
+
+ position: absolute;
+ bottom: 250px;
+ left: 200px;
+  flex: 1;
+  min-width: 300px;
   position: relative;
-  top: 270px;
-  left: 450px;
-  font-size: 85px;
   text-align: center;
+}
+
+.chanhh {
+  font-size: 60px;
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  transform: translateX(-50%);
   background-image: url(foto/Animated_flag_of_Georgia.gif);
   background-repeat: no-repeat;
   background-position: center;
   color: transparent;
   background-clip: text;
-  z-index: 100;
+  -webkit-background-clip: text;
+  user-select: none;
+  z-index: 2;
 }
 
-.mapChan{
-  position: absolute;
-  top: 90px;
-  left: 850px;
+.mapChan {
+  margin-top: 100px;
 }
 
-
-#buton{
-  position: relative;
-  left: 150px;
-}
-
-.imageimg{
+.imageimg {
+  max-width: 100%;
+  height: auto;
   filter: drop-shadow(10px 8px 6px #ff0055);
 }
 
+/* ========= მედიაკვერები ========= */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .chanhh {
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .mapChan {
+    margin-top: 0;
+  }
+}
 
 
- /*review
+
+
+
+
+
+ /*review*/
 
 
 
@@ -1239,12 +1485,7 @@ top: 150px;
 
 
 
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f0f0f0;
-}
+
 .review {
     padding: 40px 20px;
     background: #fff;
@@ -1306,6 +1547,41 @@ body {
 }
 .swiper-button-next, .swiper-button-prev {
     color: orange;
+}
+
+
+
+/* responsive design for review section */
+@media (max-width: 991px) {
+    .review .review-slider .swiper-slide .box {
+        padding: 1.5rem;
+    }
+    .review .review-slider .swiper-slide .box img {
+        height: 8rem;
+        width: 8rem;
+    }
+    .review .review-slider .swiper-slide .box h3 {
+        font-size: 2rem;
+    }
+    .review .review-slider .swiper-slide .box p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .review .review-slider .swiper-slide .box {
+        padding: 1rem;
+    }
+    .review .review-slider .swiper-slide .box img {
+        height: 7rem;
+        width: 7rem;
+    }
+    .review .review-slider .swiper-slide .box h3 {
+        font-size: 1.8rem;
+    }
+    .review .review-slider .swiper-slide .box p {
+        font-size: 1.3rem;
+    }
 }
 
 
