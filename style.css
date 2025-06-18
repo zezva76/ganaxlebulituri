@@ -1421,22 +1421,99 @@ top: 150px;
   filter: drop-shadow(10px 8px 6px #ff0055);
 }
 
-/* ========= მედიაკვერები ========= */
-@media (max-width: 768px) {
+/* ლეპტოპი და დიდი ეკრანები - > 1024px */
+@media (max-width: 1024px) {
   .content-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .left-side {
+    position: static;
+    min-width: 100%;
+    margin-bottom: 30px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .right-side {
+    position: static;
+    min-width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
   }
 
   .chanhh {
-    position: static;
+    position: relative;
+    top: 0;
+    left: 0;
     transform: none;
+    font-size: 50px;
     margin-bottom: 20px;
-    font-size: 40px;
+  }
+}
+
+/* ტაბლეტი 768px - 1024px */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .mapChan {
-    margin-top: 0;
+  .left-side, .right-side {
+    min-width: 100%;
+    position: static;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .chanhh {
+    font-size: 40px;
+    position: relative;
+    transform: none;
+    margin-bottom: 15px;
+  }
+}
+
+/* სმარტფონი < 480px */
+@media (max-width: 480px) {
+  .content-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-side, .right-side {
+    min-width: 100%;
+    position: static;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .inter {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .chans, .vans {
+    font-size: 24px;
+  }
+
+  .buton {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .chanhh {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .imageimg {
+    filter: none; /* თუ სმარტფონზე ძნელად ჩანს ჩრდილები, აქ შეგიძლია გამორთო */
   }
 }
 
