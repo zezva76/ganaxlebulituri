@@ -120,7 +120,7 @@ function showName(name, foto) {
 
 
 
-
+/*
 // PACKAGE SECTION JS OPTIMIZED
 // 1. "read more" ღილაკების მართვა
 const showButtons = document.querySelectorAll('.show-info-button-class'); // აირჩიეთ ყველა ღილაკი ამ კლასით
@@ -170,6 +170,10 @@ bookNowButtons.forEach(button => {
         alert('Booking initiated!'); // შეგიძლიათ შეცვალოთ ეს შეტყობინება
     });
 });
+
+*/
+
+
 
 
 
