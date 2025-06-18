@@ -927,6 +927,16 @@ header .search-bar-container label:hover{
     text-decoration: line-through;
 }
 
+
+.modal-map-content iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+
+
+
+
 /* Responsive design for box-container */
 @media (max-width: 991px) { /* მაგალითად, პლანშეტებზე 2-2-ად */
     .package .box-container .box {
@@ -951,6 +961,8 @@ header .search-bar-container label:hover{
         flex-direction: column; /* ღილაკები შეიძლება ერთმანეთის ქვეშ გადავიდეს პატარა ეკრანებზე */
     }
 }
+
+
 
 
 

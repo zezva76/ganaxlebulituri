@@ -1,91 +1,3 @@
-/*
-
-let searchBtn = document.querySelector('#search-btn');
-let searchBar = document.querySelector('.search-bar-container');
-let formBtn = document.querySelector('#login-btn');
-let loginForm = document.querySelector('.login-form-container');
-let formClose = document.querySelector('#form-close');
-let menu = document.querySelector('#menu-bar');
-let navbar = document.querySelector('.navbar');
-
-
-window.onscroll = () =>{
-    searchBtn.classList.remove('fa-times');
-    searchBar.classList.remove('active');
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
-    loginForm.classList.remove('active');
- 
-}
-
-menu.addEventListener('click', () => {
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-});
-
-searchBtn.addEventListener('click', () => {
-    searchBtn.classList.toggle('fa-times');
-    searchBar.classList.toggle('active');
-});
-
-formBtn.addEventListener('click', () => {
-    loginForm.classList.add('active');
-});
-
-formClose.addEventListener('click', () => {
-    loginForm.classList.remove('active');
-});
-
-function showName(name, foto) {
-    var nameDisplay = document.getElementById('nameDisplay');
-    var fotoDisplay = document.getElementById('photoDisplay')
-    nameDisplay.textContent = name;
-    fotoDisplay.src = foto;
-
-    var infoDisplay = document.getElementById('infoDisplay');
-    infoDisplay.style.display = 'block';
-}
-
-var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    loop:true,
-    autoplay:{
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    breakpoints:{
-        640:{
-            slidesPerView: 1,
-        },
-            768: {
-                slidesPerView: 2,
-            },
-            1024:{
-                slidesPerView: 3,
-            },
-    },
-});
-
-//home
-
-const showButtonDiscover = document.getElementById('show-info-button-discover');
-const photoInfoDiscover = document.getElementById('info-discover');
-const closeButtonDiscover = document.getElementById('close-button-discover');
-
-showButtonDiscover.addEventListener('click', () => {
-  
-    photoInfoDiscover.style.display = 'flex';
-    showButtonDiscover.style.display = 'none';
-});
-
-closeButtonDiscover.addEventListener('click', () => {
- 
-    photoInfoDiscover.style.display = 'none';
-    showButtonDiscover.style.display = 'inline-block';
-});
-
-
-*/
 
 
 
@@ -259,6 +171,45 @@ bookNowButtons.forEach(button => {
     });
 });
 
+
+
+// ღილაკი "read more" — მხოლოდ ტექსტის ჩვენება
+document.querySelectorAll('.show-info-button-class').forEach(button => {
+  button.addEventListener('click', function () {
+    const box = this.closest('.box');
+    const modal = box.querySelector('.photo-info-modal-class');
+    const map = modal.querySelector('.modal-map-content');
+    const text = modal.querySelector('.modal-text-content');
+
+    modal.style.display = 'flex';
+    text.style.display = 'block';  // ტექსტი ჩართულია
+    map.style.display = 'none';    // რუკა დამალულია
+  });
+});
+
+// იკონაზე დაჭერა — მხოლოდ რუკის ჩვენება
+document.querySelectorAll('.show-map-button-class').forEach(icon => {
+  icon.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const box = this.closest('.box');
+    const modal = box.querySelector('.photo-info-modal-class');
+    const map = modal.querySelector('.modal-map-content');
+    const text = modal.querySelector('.modal-text-content');
+
+    modal.style.display = 'flex';
+    map.style.display = 'block';   // რუკა ჩართულია
+    text.style.display = 'none';   // ტექსტი დამალულია
+  });
+});
+
+// დახურვის ღილაკი
+document.querySelectorAll('.close-button-class').forEach(button => {
+  button.addEventListener('click', function () {
+    const modal = this.closest('.photo-info-modal-class');
+    modal.style.display = 'none';
+  });
+});
 
 
 
