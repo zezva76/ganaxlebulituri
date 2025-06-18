@@ -1335,24 +1335,23 @@ top: 150px;
 
 .main {
   position: relative;
-  width: 100vw; /* ეს დაამატე — მთლიანად ეკრანის სიგანე */
-  height: 100vh; /* სრული ეკრანის სიმაღლე */
+  width: 100vw; /* ეკრანის სრული სიგანე */
+  height: 100vh; /* ეკრანის სრული სიმაღლე */
   background-image: url(foto/wine.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0; /* padding მოაშორე */
+  padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  overflow: hidden; /* რომ არ გადავიდეს შიგთავსი გარეთ */
+  overflow: hidden;
 }
 
 .content-wrapper {
-  padding: 40px; /* აქ გადმოვიტანეთ */
   display: flex;
   justify-content: space-between;
   align-items: center;
