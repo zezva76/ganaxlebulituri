@@ -14,6 +14,7 @@ outline: none;
 border: none;
 text-decoration: none;
 transition: all .2s linear;
+
 }
 
 *::selection{
@@ -27,6 +28,10 @@ html{
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
      overflow-x: hidden; /* მალავს ჰორიზონტალურ სქროლს მთელ გვერდზე */
+     margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 section{
@@ -59,8 +64,9 @@ body {
   color: #222;
   background-color: #fff;
   margin: 0;
-  padding: 0 20px;
- 
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -218,7 +224,7 @@ header .search-bar-container #search-bar{
     width: 100%;
     padding: 1rem;
     text-transform: none;
-    columns: #333;
+    color: #333;
     font-size: 1.7rem;
     border-radius: 5rem;
 }
@@ -231,7 +237,7 @@ header .search-bar-container label{
 }
 
 header .search-bar-container label:hover{
-    columns: var(--orange);
+    color: var(--orange);
 }
 
 /* login start here*/
@@ -338,7 +344,7 @@ header .search-bar-container label:hover{
 
 
 /* home section*/
-.home{
+.home {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -346,6 +352,7 @@ header .search-bar-container label:hover{
     flex-flow: column;
     position: relative;
     z-index: 0;
+
 }
 
 .home .content{
@@ -779,10 +786,13 @@ header .search-bar-container label:hover{
 
   
 
- 
+
 
 /* package section styles */
 
+.package .box-container .box {
+  position: relative; /* საჭირო modals-სთვის */
+}
 
 /* New style for the buttons container */
 .package .box-container .box .content .buttons-container {
@@ -791,6 +801,7 @@ header .search-bar-container label:hover{
     gap: 1rem; /* დაამატეთ სიცარიელე ღილაკებს შორის */
     width: 100%; /* დარწმუნდით, რომ იკავებს სრულ სიგანეს */
     margin-top: 1rem; /* დაამატეთ მცირე სიცარიელე ღილაკების კონტეინერს ზემოთ */
+    
 }
 
 .package .box-container{
@@ -927,6 +938,16 @@ header .search-bar-container label:hover{
     text-decoration: line-through;
 }
 
+
+.modal-map-content iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+
+
+
+
 /* Responsive design for box-container */
 @media (max-width: 991px) { /* მაგალითად, პლანშეტებზე 2-2-ად */
     .package .box-container .box {
@@ -951,6 +972,9 @@ header .search-bar-container label:hover{
         flex-direction: column; /* ღილაკები შეიძლება ერთმანეთის ქვეშ გადავიდეს პატარა ეკრანებზე */
     }
 }
+
+
+
 
 
 
