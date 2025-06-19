@@ -25,13 +25,8 @@ contactForm.addEventListener('submit', function(event) {
   sendBtn.disabled = true;
   sendBtn.textContent = 'იგზავნება...';
 
-  const formData = {
-    name: contactForm.name.value.trim(),
-    email: contactForm.email.value.trim(),
-    message: contactForm.message.value.trim(),
-  };
-
-  emailjs.send('service_1pnr22q', 'template_x6g9wnl', formData)
+  // აქ შეცვალე send() => sendForm() და formData-თი ჩანაცვლება this-ზე
+  emailjs.sendForm('service_1pnr22q', 'template_x6g9wnl', this)
     .then(() => {
       statusMessage.style.color = 'green';
       statusMessage.textContent = 'შეტყობინება წარმატებით გაიგზავნა! მადლობა.';
