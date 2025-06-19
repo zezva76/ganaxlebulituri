@@ -121,7 +121,7 @@ function showName(name, foto) {
 
 
 
-
+/*
 // PACKAGE SECTION JS OPTIMIZED
 // 1. "read more" ღილაკების მართვა
 const showButtons = document.querySelectorAll('.show-info-button-class'); // აირჩიეთ ყველა ღილაკი ამ კლასით
@@ -177,6 +177,13 @@ document.querySelectorAll('.show-info-button-class').forEach(button => {
   });
 });
 
+<<<<<<< HEAD
+=======
+*/
+
+
+
+
 // იკონაზე დაჭერა — მხოლოდ რუკის ჩვენება
 document.querySelectorAll('.show-map-button-class').forEach(icon => {
   icon.addEventListener('click', function (e) {
@@ -200,10 +207,6 @@ document.querySelectorAll('.close-button-class').forEach(button => {
     modal.style.display = 'none';
   });
 });
-
-
-
-
 
 
 

@@ -975,9 +975,6 @@ header .search-bar-container label:hover{
 
 
 
-
-
-
 /*services*/
 
 .services{
@@ -1346,18 +1343,21 @@ top: 150px;
  /*voice*/
 
 .main {
-  min-height: 100vh;
+  position: relative;
+  width: 100vw; /* ეკრანის სრული სიგანე */
+  height: 100vh; /* ეკრანის სრული სიმაღლე */
   background-image: url(foto/wine.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 40px;
+  padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  overflow: hidden;
 }
 
 .content-wrapper {
@@ -1369,6 +1369,7 @@ top: 150px;
   flex-wrap: nowrap;
   gap: 10px;
 }
+
 
 /* მარცხენა ნაწილი */
 .left-side {
