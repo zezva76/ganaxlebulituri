@@ -2023,45 +2023,121 @@ top: 150px;
     }
 }
 
-@media (max-width: 767px) {
-    #infoDisplay,
-    #photoDisplay,
-    .gether .fimg img {
-      width: 100%;
-    }
-  
-    #photoDisplay {
-      height: auto;
-    }
-  
-    #nameDisplay {
-      font-size:10px;
-    }
-  
-    .RegionsMap_RegionsMap__g_AmQ {
-      width: 100%;
-    }
+
+
+
+/* 🖥️ პერსონალური კომპიუტერი – 1200px და ზემოთ */
+@media (min-width: 1200px) {
+  .gether {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  @media (max-width: 479px) {
-    #infoDisplay,
-    #photoDisplay,
-    .gether .fimg img {
-      width: 100%;
-    }
-  
-    #photoDisplay {
-      height: auto;
-    }
-  
-    #nameDisplay {
-      font-size: 5px;
-    }
-  
-    .RegionsMap_RegionsMap__g_AmQ {
-      width: 100%;
-    }
+  #infoDisplay {
+    width: 460px;
   }
+
+  #photoDisplay {
+    width: 460px;
+    height: 280px;
+  }
+
+  #nameDisplay {
+    font-size: 32px;
+  }
+
+  .RegionsMap_RegionsMap__g_AmQ {
+    width: 600px;
+  }
+
+  .ge_video iframe {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+/* 💻 ლეპტოპი – 992px-დან 1199px-მდე */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .gether {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  #infoDisplay,
+  #photoDisplay {
+    width: 100%;
+  }
+
+  #photoDisplay {
+    height: auto;
+  }
+
+  #nameDisplay {
+    font-size: 28px;
+  }
+
+  .RegionsMap_RegionsMap__g_AmQ {
+    width: 100%;
+  }
+
+  .ge_video iframe {
+    width: 700px;
+    height: 380px;
+  }
+}
+
+/* 📱 ტაბლეტი – 768px-დან 991px-მდე */
+@media (max-width: 991px) and (min-width: 768px) {
+  .gether {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #infoDisplay,
+  #photoDisplay,
+  .gether .fimg img {
+    width: 100%;
+  }
+
+  #photoDisplay {
+    height: auto;
+  }
+
+  #nameDisplay {
+    font-size: 22px;
+  }
+
+  .RegionsMap_RegionsMap__g_AmQ {
+    width: 100%;
+  }
+
+  .ge_video iframe {
+    width: 100%;
+    height: 360px;
+  }
+}
+
+/* 📲 სმარტფონი – 767px და ქვევით */
+@media (max-width: 767px) {
+  .gether {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #infoDisplay,
+  #photoDisplay,
+  .gether .fimg img {
+    width: 100%;
+  }
+
+  #photoDisplay {
+    height: auto;
+  }
+
+  #nameDisplay
+
 
 
 
