@@ -31,16 +31,16 @@ contactForm.addEventListener('submit', function(event) {
   emailjs.sendForm('service_1pnr22q', 'template_x6g9wnl', this)
     .then(() => {
       statusMessage.style.color = 'green';
-      statusMessage.textContent = 'შეტყობინება წარმატებით გაიგზავნა! მადლობა.';
+      statusMessage.textContent = 'Message sent successfully! Thank you.';  // შეტყობინება წარმატებით გაიგზავნა! მადლობა.
       contactForm.reset();
       sendBtn.disabled = false;
-      sendBtn.textContent = 'გაგზავნა';
+      sendBtn.textContent = 'Send';  //გაგზავნა
     })
     .catch(() => {
       statusMessage.style.color = 'red';
-      statusMessage.textContent = 'გაგზავნა ვერ მოხერხდა. გთხოვთ სცადეთ თავიდან.';
+      statusMessage.textContent = 'Failed to send. Please try again.'; //გაგზავნა ვერ მოხერხდა. გთხოვთ სცადეთ თავიდან.
       sendBtn.disabled = false;
-      sendBtn.textContent = 'გაგზავნა';
+      sendBtn.textContent = 'Send'; //გაგზავნა
     });
 });
 

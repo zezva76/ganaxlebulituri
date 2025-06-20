@@ -62,6 +62,13 @@ header .navbar a {
 
 header .navbar a:hover {
     color: var(--orange);
+}   
+
+header .navbar.active {
+  display: block;
+  background-color: var(--dark-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 #menu-bar {
@@ -189,125 +196,133 @@ header .navbar a:hover {
     right: 2rem; 
 }
 
-/* --- Media Queries (Responsive Design) --- */
 
+
+/* 💻 პერსონალური (1201px და ზემოთ) — არაფერი განსაკუთრებული არ არის საჭირო */
+@media (min-width: 1201px) {
+  .container {
+    width: 80%;
+  }
+  .header .logo {
+    font-size: 3rem;
+  }
+  .header .navbar a {
+    font-size: 1.8rem;
+  }
+}
+
+/* 🧑‍💻 ლეპტოპისთვის (1025px – 1200px) */
 @media (max-width: 1200px) {
-    html {
-        font-size: 55%; 
-    }
+  .container {
+    width: 90%;
+  }
+
+  header .logo {
+    font-size: 2.5rem;
+  }
+
+  header .page-title {
+    font-size: 2.2rem;
+  }
+
+  header .navbar a {
+    font-size: 1.6rem;
+  }
+
+  .img-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
 
-@media (max-width: 991px) {
-    header {
-        padding: 1rem 3%; 
-    }
-    header .logo {
-        font-size: 2.8rem;
-    }
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--dark-bg);
-        border-top: .1rem solid rgba(255, 255, 255, .2);
-        padding: 1rem 2rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); 
-        transition: clip-path 0.3s ease-in-out;
-    }
-    header .navbar.active { /* ეს კლასი JS-ით დაემატება */
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
-    }
-    header .navbar a {
-        display: block;
-        border-radius: .5rem;
-        padding: 1.5rem;
-        margin: 1.5rem 0;
-        background: #222;
-        color: var(--text-color);
-    }
-    #menu-bar {
-        display: block; 
-    }
+/* 📱 ტაბლეტისთვის (768px – 1024px) */
+@media (max-width: 1024px) {
+  header {
+    padding: 1rem 3%;
+  }
 
-    .container {
-        padding-top: 7rem; 
-        width: 90%; 
-    }
-    .img-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-        gap: 1.5rem;
-    }
-    .full-img span {
-        font-size: 3rem;
-        top: 1rem;
-        right: 1rem;
-        width: 4rem;
-        height: 4rem;
-    }
-    .full-img img {
-        max-width: 95%;
-        max-height: 75vh;
-    }
-    .nav-btn {
-        font-size: 2.5rem;
-        padding: .8rem 1.2rem;
-    }
+  header .logo {
+    font-size: 2.2rem;
+  }
+
+  header .page-title {
+    font-size: 2rem;
+  }
+
+  header .navbar {
+    display: none; /* ტაბლეტზე დამალე მენიუ, შეიძლება მომდევნო ვერსიაში გახსნა ღილაკით */
+  }
+
+  #menu-bar {
+    display: block; /* მენიუ ღილაკი ვჩანდეს ტაბლეტზე */
+  }
+
+  .img-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .full-img img {
+    max-height: 70vh;
+  }
+
+  #closeBtn {
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .nav-btn {
+    font-size: 2.5rem;
+    padding: 0.8rem 1.2rem;
+  }
 }
 
-@media (max-width: 768px) {
-    html {
-        font-size: 50%; 
-    }
-    header .logo {
-        font-size: 2.5rem;
-    }
-    header .page-title {
-        font-size: 2rem;
-    }
-    #menu-bar {
-        font-size: 2.2rem;
-        padding: .6rem 1rem;
-    }
-    .img-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-    }
-    .img-gallery img {
-        height: 150px;
-    }
-}
+/* 📱📱 სმარტფონისთვის (0px – 767px) */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-@media (max-width: 450px) {
-    header {
-        padding: 1rem 2%;
-    }
-    header .logo {
-        font-size: 2.2rem;
-    }
-    header .page-title {
-        font-size: 1.8rem;
-    }
-    .img-gallery {
-        grid-template-columns: 1fr; /* ერთი სვეტი მობილურებზე */
-        gap: 1rem;
-    }
-    .img-gallery img {
-        height: 180px;
-    }
-    .full-img span {
-        font-size: 2.5rem;
-        top: 0.5rem;
-        right: 0.5rem;
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    .full-img img {
-        max-width: 98%;
-        max-height: 70vh;
-    }
-    .nav-btn {
-        font-size: 2rem;
-        padding: .6rem 1rem;
-    }
+  header .logo,
+  header .page-title {
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 95%;
+    padding-top: 6rem;
+  }
+
+  .img-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  .img-gallery img {
+    height: 160px;
+  }
+
+  .full-img img {
+    max-width: 95%;
+    max-height: 60vh;
+  }
+
+  #closeBtn {
+    font-size: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .nav-btn {
+    font-size: 2rem;
+    padding: 0.6rem 1rem;
+  }
+}
+ @media (max-width: 1024px) {
+  header .navbar {
+    display: none; /* default */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
