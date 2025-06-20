@@ -25,7 +25,7 @@ contactForm.addEventListener('submit', function(event) {
   // ღილაკის დეაქტივაცია და ტექსტის შეცვლა გაგზავნის პროცესის დროს
   const sendBtn = contactForm.querySelector('.send-btn');
   sendBtn.disabled = true;
-  sendBtn.textContent = 'იგზავნება...';
+  sendBtn.textContent = 'Sending...';  //იგზავნება
 
   // EmailJS form send
   emailjs.sendForm('service_1pnr22q', 'template_x6g9wnl', this)
