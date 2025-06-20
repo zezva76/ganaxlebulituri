@@ -11,11 +11,15 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+
+  <!-- EmailJS script from jsDelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
-    emailjs.init("RSMphI6KCo-xCq2Pm"); // შენი EmailJS Public Key
+    emailjs.init("RSMphI6KCo-xCq2Pm");
   </script>
 </head>
+
+
 <body>
 
   <!-- Header -->
@@ -42,18 +46,50 @@
       ></iframe>
     </div>
 
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <h3>Contact information</h3>
-      <div class="info-item"><i class="fas fa-phone"></i>+995 599 091 869</div>
-      <div class="info-item"><i class="fas fa-envelope"></i>zazasturua5@gmail.com</div>
-      <div class="info-item"><i class="fas fa-map-marker-alt"></i>Kutaisi, Imereti, Georgia</div>
 
-      <div class="social-media">
-        <a href="https://www.facebook.com/xatuna.loria/" target="_blank" class="fab fa-facebook-f"></a>
-        <a href="https://www.instagram.com/your-instagram-page" target="_blank" class="fab fa-instagram"></a>
-      </div>
-    </div>
+
+   <!-- საკონტაქტო ინფორმაცია -->
+<div class="contact-info">
+  <h3>კონტაქტი</h3>
+  
+  <!-- ტელეფონი -->
+  <div class="info-item">
+    <i class="fas fa-phone"></i> +995 599 091 869
+  </div>
+
+  <!-- WhatsApp ლინკი -->
+  <div class="info-item">
+    <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/995599091869" target="_blank" rel="noopener noreferrer">
+      WhatsApp: +995 599 091 869
+    </a>
+  </div>
+
+  <!-- Viber ლინკი -->
+  <div class="info-item">
+    <i class="fab fa-viber"></i>
+    <a href="viber://chat?number=%2B995599091869" target="_blank" rel="noopener noreferrer">
+      Viber: +995 599 091 869
+    </a>
+  </div>
+
+  <!-- ელ-ფოსტა -->
+  <div class="info-item">
+    <i class="fas fa-envelope"></i> zazasturua5@gmail.com
+  </div>
+
+  <!-- მისამართი -->
+  <div class="info-item">
+    <i class="fas fa-map-marker-alt"></i> ქუთაისი, იმერეთი, საქართველო
+  </div>
+
+  <!-- სოციალური მედია -->
+  <div class="social-media">
+    <a href="https://www.facebook.com/xatuna.loria/" target="_blank" class="fab fa-facebook-f"></a>
+    <a href="https://www.instagram.com/your-instagram-page" target="_blank" class="fab fa-instagram"></a>
+  </div>
+</div>
+
 
     <!-- Contact Form -->
     <div class="contact-form">

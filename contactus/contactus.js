@@ -16,16 +16,18 @@ const statusMessage = document.getElementById('statusMessage');
 contactForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
+  // ვალიდაცია HTML5-ის მეთოდებით
   if (!contactForm.checkValidity()) {
     contactForm.reportValidity();
     return;
   }
 
+  // ღილაკის დეაქტივაცია და ტექსტის შეცვლა გაგზავნის პროცესის დროს
   const sendBtn = contactForm.querySelector('.send-btn');
   sendBtn.disabled = true;
   sendBtn.textContent = 'იგზავნება...';
 
-  // აქ შეცვალე send() => sendForm() და formData-თი ჩანაცვლება this-ზე
+  // EmailJS form send
   emailjs.sendForm('service_1pnr22q', 'template_x6g9wnl', this)
     .then(() => {
       statusMessage.style.color = 'green';
@@ -40,4 +42,27 @@ contactForm.addEventListener('submit', function(event) {
       sendBtn.disabled = false;
       sendBtn.textContent = 'გაგზავნა';
     });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contactForm');
+  const statusMessage = document.getElementById('statusMessage');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_1pnr22q', 'template_x6g9wnl', form)
+      .then(() => {
+        statusMessage.innerText = 'შეტყობინება წარმატებით გაიგზავნა!';
+        statusMessage.style.color = 'green';
+        form.reset(); // ცარიელდება ფორმა
+      })
+      .catch((error) => {
+        console.error('შეცდომა:', error);
+        statusMessage.innerText = 'შეცდომა შეტყობინების გაგზავნისას.';
+        statusMessage.style.color = 'red';
+      });
+  });
 });

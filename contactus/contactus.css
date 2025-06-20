@@ -247,6 +247,28 @@ header .navbar a:hover {
   margin-right: 8px;
 }
 
+
+.info-item a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+  color: #25D366; /* WhatsApp მწვანე ფერი */
+}
+
+/* ვიბერისთვის შეგიძლია ფერი */
+.info-item i.fa-viber {
+  color: #665CAC; /* Viber ფერი */
+}
+
+.info-item i.fa-whatsapp {
+  color: #25D366;
+}
+
 /* სოციალური ღილაკები */
 .social-media {
   margin-top: 10px;
@@ -361,4 +383,141 @@ form textarea:focus {
         padding: 1rem 2rem;
         text-align: center;
     }
+}
+
+.social-media a {
+  color: #333; /* ნაგულისხმევი ფერი */
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #1877F2; /* Facebook-ის მკვეთრი ლურჯი */
+}
+
+.social-media a.fab.fa-instagram:hover {
+  color: #C13584; /* Instagram-ის ფერი */
+}
+
+
+
+/* Desktop (მინიმუმ 1200px და ზემოთ) */
+@media (min-width: 1200px) {
+  /* ფართო მონიტორებისთვის */
+  body {
+    font-size: 18px;
+  }
+  .contact {
+    flex-direction: row; /* გვერდიგვერდ ელემენტები */
+    padding-top: 14rem;
+  }
+  header {
+    padding: 1.5rem 7%;
+  }
+}
+
+/* Laptop (საშუალო ზომის ეკრანები) 992px - 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
+  .contact {
+    flex-direction: row;
+    padding-top: 12rem;
+  }
+  header {
+    padding: 1.2rem 5%;
+  }
+}
+
+/* Tablet (საშუალო ზომის ტაბლეტები, ~768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 15px;
+  }
+  .contact {
+    flex-direction: column; /* სექციები ქვემოთ იყოს რიგ-რიგობით */
+    padding-top: 10rem;
+  }
+  header {
+    padding: 1rem 4%;
+  }
+  header #menu-bar {
+    display: block; /* მენიუს ღილაკი გამოჩნდეს */
+  }
+  header .navbar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--dark-bg);
+    padding: 1rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 10000;
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    display: block;
+    margin: 0.8rem 1rem;
+    font-size: 1.6rem;
+    background: var(--light-bg);
+    color: var(--dark-bg);
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+}
+
+/* Smartphone (მობილური ტელეფონები, მაქსიმუმ 767px) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .contact {
+    flex-direction: column;
+    padding-top: 8rem;
+  }
+  header {
+    padding: 0.8rem 3%;
+  }
+  header #menu-bar {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background: var(--dark-bg);
+    padding: 1rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 10000;
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    display: block;
+    margin: 0.6rem 1rem;
+    font-size: 1.4rem;
+    background: var(--light-bg);
+    color: var(--dark-bg);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.2rem;
+  }
+  .send-btn {
+    font-size: 1.3rem;
+  }
 }
