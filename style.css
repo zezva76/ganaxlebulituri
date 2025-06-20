@@ -34,6 +34,20 @@ html{
   height: 100%;
 }
 
+
+body {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 section{
     padding: 2rem 9%;
 }
@@ -57,16 +71,23 @@ img{
 
 }
 
-body {
-  font-family: 'Noto Sans Georgian', sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #222;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+
+
+.btn{
+    display: inline-block;
+    margin: 16px 32px;
+    background: var(--orange);
+    color: #fff;
+    padding: .8rem 2rem;
+    border: .2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.8rem;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background: rgba(4, 88, 245, 0.979);
+    color: var(--white);
 }
 
 
@@ -142,22 +163,6 @@ body {
 
 
 
-.btn{
-    display: inline-block;
-    margin: 16px 32px;
-    background: var(--orange);
-    color: #fff;
-    padding: .8rem 2rem;
-    border: .2rem solid var(--orange);
-    cursor: pointer;
-    font-size: 1.8rem;
-    border-radius: 10px;
-}
-
-.btn:hover{
-    background: rgba(4, 88, 245, 0.979);
-    color: var(--white);
-}
 
 /* header start here */
 
@@ -239,6 +244,8 @@ header .search-bar-container label{
 header .search-bar-container label:hover{
     color: var(--orange);
 }
+
+
 
 /* login start here*/
 .login-form-container{
@@ -384,6 +391,41 @@ header .search-bar-container label:hover{
   margin-top: 1rem;
 }
 
+.home .content #info-discover {
+  background-color: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 100px 40px;
+  overflow-y: auto;
+  border-radius: 12px;
+  max-height: 80vh;
+  box-shadow: 0 0 20px rgba(255, 183, 51, 0.7);
+  text-align: left;
+}
+
+.home .content #close-button-discover {
+  position: absolute;
+  height: 0px;
+  top: 180px;
+  right: 200px;
+  cursor: pointer;
+ font-size: 70px;
+ z-index: 1000;
+ color: red;
+}
+
+.home .content #info-discover p {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.home .content #info-discover .info-imer-1 {
+  color: #ffb733;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
 .home .video-container video{
     position: absolute;
     top: 0; left: 0;
@@ -401,48 +443,6 @@ header .search-bar-container label:hover{
   background: rgba(0,0,0,0.5); /* ნახევრად გამუქება */
   z-index: -1;
 }
-
-
-.home .content #close-button-discover {
-  position: absolute;
-  height: 0px;
-  top: 50px;
-  right: 10px;
-  cursor: pointer;
- font-size: 70px;
- z-index: 1000;
- color: red;
-}
-
-
-
-
-
-.home .content #info-discover {
-  background-color: rgba(0,0,0,0.85);
-  color: #fff;
-  padding: 100px 40px;
-  overflow-y: auto;
-  border-radius: 12px;
-  max-height: 80vh;
-  box-shadow: 0 0 20px rgba(255, 183, 51, 0.7);
-  text-align: left;
-}
-
-.home .content #info-discover p {
-  font-size: 2rem;
-  line-height: 1.6;
-  color: #ddd;
-  margin-bottom: 1rem;
-}
-
-.home .content #info-discover .info-imer-1 {
-  color: #ffb733;
-  font-weight: 700;
-  font-size: 2.8rem;
-}
-
-
 
 /* General responsiveness */
 @media (max-width: 1024px) {
@@ -520,8 +520,6 @@ header .search-bar-container label:hover{
   }
 }
 
-
-
 /*home section end*/
 
 
@@ -534,62 +532,72 @@ header .search-bar-container label:hover{
 .ge_georgia{
   min-height: 100vh;
 }
-
-
+/*
   .about{
+  border: solid red 2px;
     min-height: 100vh;
     display: flex;
     background-color: lightblue;
   }
-  
-.gether{
-    display: flex;
+  */     
+
+.gether{  
+    display: flex;  
     justify-content: space-between;
     width: 100%;
 }
 
-.gether .fimg img{
-  width: 250px;
-  position: relative;
-  top: 20px;
-  left: 10px;
-}
-
-  #infoDisplay{
+ #infoDisplay{  
     position: relative;
-    width: 400px;
- 
+    width: 460px;
   }
-  #photoDisplay{
-    width: 400px;
-    height: 250px;
+
+  #photoDisplay{  
+    width: 460px;
+    height: 280px;
    border: 5px solid var(--color-black--tint);
    border-radius: 20px;
-  }
-  #nameDisplay{
-   font-size: 30px;
-   font-weight: bold;
-   font-family: Arial, Helvetica, sans-serif; 
-     padding-top: 20px;
-  }
-  .RegionsMap_RegionsMap__g_AmQ {
-   width: 500px;
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 1); /* თანაბარი ჩრდილი ყველა მხრიდან */
+  } 
+
+#nameDisplay {
+  font-size: 32px; /* ოდნავ გაზარდე */
+  font-weight: 700; /* უფრო ხისტი */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* მოდური და წაკითხადი ფონტი */
+  padding-top: 20px;
+  color: #222; /* მუქი ნაცრისფერი ფერი, ძალიან მკვეთრი არა */
+  letter-spacing: 0.05em; /* სიმბოლოებს შორის პატარა სივრცე */
+  line-height: 1.3; /* სიმაღლე ტექსტის ბლოკის */
+  text-shadow: 5px 5px 2px rgba(0,0,0,0.1); /* ძალიან მსუბუქი ჩრდილი, რომ უფრო ღრმა იყოს ტექსტი */
+  user-select: text; /* რომ მომხმარებელს შეეძლოს ტექსტის მონიშვნა */
+}
+
+.gether .fimg img{  
+  width: 380px;
+  position: relative;
+  top: 1px;
+  left: 50px;
+}
+
+  .RegionsMap_RegionsMap__g_AmQ { 
+   width: 600px;
  position: relative;
- bottom: 50px;
+ bottom: 20px;
   }
   
-  .RegionsMap_RegionsMap__Vector__CfpAv {
+  .RegionsMap_RegionsMap__Vector__CfpAv {  
     width: 100%;
-    height: 100%;
+    height: 100%;   
   }
   
-  .RegionsMap_RegionsMap__Path__n3NxB {
+  .RegionsMap_RegionsMap__Path__n3NxB {  
     cursor: pointer;
     fill: rgb(228, 228, 238);
     stroke: var(--color-grey--tint);
     stroke-width: 1.5px;
     stroke-linejoin: round;
     transition: all .2s linear;
+     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
   }
   
   .RegionsMap_RegionsMap__Path--active__ir8Dr,.RegionsMap_RegionsMap__Path__n3NxB:hover {
@@ -602,8 +610,9 @@ header .search-bar-container label:hover{
   
   .tbilisi{
     fill: rgb(72, 72, 192);
-  }
-  .RegionsMapTooltip_RegionsMapTooltip__gjtX0 {
+  } 
+
+  .RegionsMapTooltip_RegionsMapTooltip__gjtX0 {  
     position: absolute;
     display: flex;
     padding: 12px;
@@ -616,7 +625,7 @@ header .search-bar-container label:hover{
     z-index: 100;
   }
   
-  .RegionsMapTooltip_RegionsMapTooltip__gjtX0:before {
+  .RegionsMapTooltip_RegionsMapTooltip__gjtX0:before {  
     display: block;
     content: "";
     height: 20px;
@@ -670,7 +679,7 @@ header .search-bar-container label:hover{
     z-index: 1;
   }
   
-  .RegionCardControls_RegionCardControl__8stb9 {
+  .RegionCardControls_RegionCardControl__8stb9 { 
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -771,16 +780,15 @@ header .search-bar-container label:hover{
     color: var(--color-grey);
   }
 
-  .ge_video {
+  .ge_video { 
    position: relative;
-   top: 10px;
     display: flex;
     justify-content: center;
   }
 
   .ge_video iframe{
     width: 800px;
-    height: 420px;
+    height: 400px;
     box-shadow: 2rem 1rem 3rem rgb(15, 15, 15); 
   }
 
