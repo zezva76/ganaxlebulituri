@@ -885,8 +885,10 @@ header .search-bar-container label:hover{
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-    font-size: 3rem;
-    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+       background-color: transparent; /* სწორი გზაა უკანა ფერის არ ქონისთვის */
+    color:  red;
     z-index: 101;
 }
 
@@ -918,14 +920,25 @@ header .search-bar-container label:hover{
     margin-bottom: 0.5rem;
 }
 
-.package .box-container .box .content h3 i{
+.package .box-container .box .content h3 a{ 
     color: var(--orange);
     padding-right: 10px;
 }
 
-.package .box-container .box .content h3 i:hover{
+.package .box-container .box .content h3 a:hover{
     color: green;
+    
+    transform: scale(1.1);
+}
+
+.package .box-container .box .modal-text-content h3 a{ 
+    color: var(--orange);
     padding-right: 10px;
+}
+
+.package .box-container .box .modal-text-content h3 a:hover{
+    color: green;
+    
     transform: scale(1.1);
 }
 
@@ -945,7 +958,7 @@ header .search-bar-container label:hover{
     margin-bottom: 0.5rem;
 }
 
-.package .box-container .box .content .stars i{
+.package .box-container .box .content .stars i{ 
     font-size: 1.7rem;
     color: var(--orange);
 }
