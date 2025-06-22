@@ -35,7 +35,24 @@ const translations = {
     clickHere: "დააჭირეთ აქ",
     noAccount: "არ გაქვთ ანგარიში?",
     registerNow: "რეგისტრაცია",
-    
+
+    imereti_name: "იმერეთი",
+     afkhazeti_name: "აფხაზეთი",
+     achara_name: "აჭარა",
+      guria_name: "გურია",
+     imereti_name: "იმერეთი",
+     kakheti_name: "კახეთი",
+     kvemo_kartli_name: "ქვემო ქართლი",
+     mtsketa_mtianeti_name: "მცხეტა მთიანეთი",
+     racha_lechkhumi_name: "რაჭა ლეჩხუმი",
+     samtskhe_djavakheti_name: "სამცხე ჯავახეთი",
+     samachablo_name: "სამაჩაბლო",
+     shida_kartli_name: "შიდა ქართლი",
+     samegrelo_zemosvaneti_name: "სამეგრელო-ზემო სვანეთი",
+    tbilisi_name: "თბილისი",
+
+   
+
   },
   en: {
     navHome: "Home",
@@ -68,6 +85,22 @@ const translations = {
     clickHere: "Click here",
     noAccount: "Do not have an account?",
     registerNow: "Register now",
+
+     imereti_name: "Imereti",
+      afkhazeti_name: "Abkhazia",
+       achara_name: "Adjara",
+        guria_name: "Guria",
+     imereti_name: "Imereti",
+     kakheti_name: "Kakheti",
+     kvemo_kartli_name: "Qvemo kartli",
+     mtsketa_mtianeti_name: "Mtskheta mtianeti",
+     racha_lechkhumi_name: "Racha lechkhumi",
+     samtskhe_djavakheti_name: "Samtskhe djavakheti",
+     samachablo_name: "Samachablo",
+     shida_kartli_name: "Shida Qartli",
+     samegrelo_zemosvaneti_name: "Samegrelo-Zeda svaneti",
+    tbilisi_name: "Tbilisi",
+
   }
 };
 
@@ -216,19 +249,22 @@ if (loginForm) {
 }
 
 
-// showName ფუნქცია დარჩება გარეთ თუ სხვაგან იძახები
-function showName(name, foto) {
+function showName(key, foto) {
+  const lang = localStorage.getItem('lang') || 'en';
   const nameDisplay = document.getElementById('nameDisplay');
   const fotoDisplay = document.getElementById('photoDisplay');
   const infoDisplay = document.getElementById('infoDisplay');
 
   if (nameDisplay && fotoDisplay && infoDisplay) {
-    nameDisplay.textContent = name;
+    // translations ობიექტიდან ენაზე მიხედვით ვიღებთ სახელს
+    const translatedName = translations[lang] && translations[lang][key] ? translations[lang][key] : key;
+
+    nameDisplay.textContent = translatedName;
+    nameDisplay.setAttribute('data-translate', key); // რომ setLanguage-ში იმუშაოს
     fotoDisplay.src = foto;
     infoDisplay.style.display = 'block';
   }
 }
-
 
 
 
