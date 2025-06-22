@@ -51,6 +51,10 @@ const translations = {
      samegrelo_zemosvaneti_name: "სამეგრელო-ზემო სვანეთი",
     tbilisi_name: "თბილისი",
 
+    mwvane_xeoba: "მწვანე ხეობა",
+     browse_gallery: "დაათვალიერეთ გალერეა",
+     see_more: "ნახეთ მეტი",
+     promete_cave: "პრომეთეს მღვიმე",
    
 
   },
@@ -100,6 +104,11 @@ const translations = {
      shida_kartli_name: "Shida Qartli",
      samegrelo_zemosvaneti_name: "Samegrelo-Zeda svaneti",
     tbilisi_name: "Tbilisi",
+
+     mwvane_xeoba: "Mtsvane Kheoba",
+     browse_gallery: "Browse the gallery",
+       see_more: "See more",
+       promete_cave: "Promete cave",
 
   }
 };
