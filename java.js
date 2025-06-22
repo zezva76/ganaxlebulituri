@@ -65,7 +65,10 @@ const translations = {
        read_more: "გაიგეთ მეტი",
 
        title_info: "პრომეთეს მღვიმე სათაფლია-წყალტუბოს კარსტულ მასივში ჩამოყალიბდა. მღვიმის საერთო სიგრძე დაახლოებით 11 კმ-ია, საიდანაც 1800 მ ღიაა ვიზიტორებისთვის. მღვიმეს სულ 22 დარბაზი აქვს, რომელთაგან ექვსი ამჟამად ტურისტებისთვის ღიაა. ვიზიტორებს ამჟამად ამ მღვიმეების დათვალიერება მიწის დონიდან დაახლოებით 80 მეტრის სიღრმეზე შეუძლიათ.",
-
+        
+       hotel_title:"ხელმისაწვდომი სასტუმროები",
+        food_title: "საკვები და სასმელები",
+        contact_title: "დაგვიკავშირდეით",
   },
   en: {
     navHome: "Home",
@@ -126,6 +129,10 @@ const translations = {
        read_more: "Read more",
 
        title_info: " Prometheus Cave formed in Sataphlia-Tskaltubo karst massif. The total length of the cave is about 11 km, of which 1800 m are open to visitors. The cave has a total of 22 halls, six of which are currently open to tourists. Visitors currently could experience these caves at depths of about 80 mts below ground level.",
+ 
+        hotel_title:"Affordable hotels",
+        food_title: "Food and Drink",
+        contact_title: "დაგვიკავშირდეით",
 
   }
 };
