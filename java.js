@@ -12,7 +12,30 @@ const translations = {
     navServices: "სერვისები",
     navVoice: "ხმები",
     navReview: "მიმოხილვა",
-    navFooter: "კონტაქტი"
+    navFooter: "კონტაქტი",
+
+     homeTitle: "მოგზაურობა ღირსეულია",
+    homeSubtitle: "აღმოაჩინე ახალი ადგილები ჩვენთან ერთად",
+    homeSlogan: "იმოგზაურე იმერეთში",
+    showDiscoverBtn: "აღმოაჩინე იმერეთი",
+    imeretiDescription: `
+      <label class="info-imer-1">იმერეთი</label>— დასავლეთ საქართველოს ერთ-ერთი ისტორიულ-გეოგრაფიული რეგიონი, ამჟამად იმერეთის რეგიონის ნაწილი. ფართო გაგებით, ეს არის დასავლეთ საქართველოს ისტორიული სახელწოდება, ასევე უძველესი კოლხეთი, ეგრისი, აფხაზეთი.
+
+თავად იმერეთს აღმოსავლეთით ესაზღვრება შავი ზღვა, დასავლეთით ცხენისწყალი, ჩრდილოეთით კავკასიონის ქედი და სამხრეთით ფერსათის, ანუ მესხეთის მთები. სახელი დაკავშირებულია ამ რეგიონის მდებარეობასთან, იმერეთთან, ანუ ლიხსიკის რეგიონთან.
+
+იმერეთი ორ ნაწილად იყოფა: ქვემო და ზემო იმერეთად. იმერეთის ტერიტორიაზე აღმოჩენილი არქეოლოგიური ძეგლები ადასტურებს, რომ ამ რეგიონში ადამიანები ჯერ კიდევ ქვედა პალეოლითის ხანაში დასახლდნენ. მათ შორისაა საკაზის გამოქვაბული და ჭახატი (მდინარე წყალწითელას ნაპირებზე), დევისხვრელის (მდინარე ჩხერიმელას ნაპირებზე) გამოქვაბულები, სათაფლიის ტერიტორია და სხვა. ქალაქური ცხოვრების უძველესი პერიოდის არქეოლოგიური ძეგლები აღმოჩენილია ქუთაისში, ვანში, ვარციხეში (როდოპოლისი), შორაპანში და სხვა. რეგიონის ხელსაყრელი გეოგრაფიული მდებარეობის გამო, ამ ქალაქებს უძველესი დროიდან დიდი სტრატეგიული, ეკონომიკური და პოლიტიკური მნიშვნელობა ჰქონდათ.
+    `,
+
+  loginTitle: "შესვლა",
+    emailPlaceholder: "შეიყვანეთ ელ.ფოსტა",
+    passwordPlaceholder: "შეიყვანეთ პაროლი",
+    loginBtn: "შესვლა",
+    rememberMe: "დამიმახსოვრე",
+    forgetPassword: "დაგავიწყდა პაროლი?",
+    clickHere: "დააჭირეთ აქ",
+    noAccount: "არ გაქვთ ანგარიში?",
+    registerNow: "რეგისტრაცია",
+    
   },
   en: {
     navHome: "Home",
@@ -22,12 +45,36 @@ const translations = {
     navServices: "Services",
     navVoice: "Voice",
     navReview: "Review",
-    navFooter: "Footer"
+    navFooter: "Footer",
+
+     homeTitle: "adventure is worthwhite",
+    homeSubtitle: "Discover new places with us",
+    homeSlogan: "travel to Imereti",
+    showDiscoverBtn: "discover imereti",
+    imeretiDescription: `
+      <label class="info-imer-1">Imereti</label> — one of the historical and geographical regions of Western Georgia, currently part of the Imereti region. In a broad sense, it is the historical name of Western Georgia, as well as ancient Colchis, Egrisi, Abkhazia.
+
+                    Imereti itself is bordered by the Black Sea to the east, Tskhenistskali to the west, the Caucasus Range to the north, and the Persati, or Meskheti, mountains to the south. The name is associated with the location of this region, Imereti, or the Likhsiki region.
+                    
+                    Imereti is divided into two parts: Lower and Upper Imereti. Archaeological monuments discovered on the territory of Imereti confirm that people began to live in this region as early as the Lower Paleolithic era. Among them are the Sakazii Cave and the Chakhati (on the banks of the Tskaltsitela River), Deviskhvreli (on the banks of the Chkherimela River) caves, the Sataplia area, and others. Archaeological monuments from the ancient period of urban life have been found in Kutaisi, Vani, Vartsikhe (Rhodopolis), Shorapani, and others. Due to the favorable geographical location of the region, these cities have had great strategic, economic, and political importance since ancient times
+
+    `,
+     loginTitle: "Login",
+    emailPlaceholder: "Enter your email",
+    passwordPlaceholder: "Enter your password",
+    loginBtn: "Login now",
+    rememberMe: "Remember me",
+    forgetPassword: "Forget password?",
+    clickHere: "Click here",
+    noAccount: "Do not have an account?",
+    registerNow: "Register now",
   }
 };
 
 function setLanguage(lang) {
   localStorage.setItem('lang', lang);
+
+  // textContent-ების განახლება
   document.querySelectorAll('[data-translate]').forEach(el => {
     const key = el.getAttribute('data-translate');
     if (translations[lang][key]) {
@@ -35,20 +82,33 @@ function setLanguage(lang) {
     }
   });
 
-  // აქ ვამატებთ active კლასს შესაბამის ღილაკზე
+  // placeholder-ის განახლება
+  document.querySelectorAll('[data-translate-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-translate-placeholder');
+    if (translations[lang][key]) {
+      el.setAttribute('placeholder', translations[lang][key]);
+    }
+  });
+
+  // input value-ს განახლება (submit button)
+  document.querySelectorAll('[data-translate-value]').forEach(el => {
+    const key = el.getAttribute('data-translate-value');
+    if (translations[lang][key]) {
+      el.setAttribute('value', translations[lang][key]);
+    }
+  });
+
+  // დიდ ტექსტს ინახავ
+  const imeretiTextEl = document.getElementById('imereti-description');
+  if (imeretiTextEl && translations[lang].imeretiDescription) {
+    imeretiTextEl.innerHTML = translations[lang].imeretiDescription;
+  }
+
+  // active კლასის გადართვა ენის ღილაკებზე
   document.querySelectorAll('.language-switcher button').forEach(btn => {
-  btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-});
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
 }
-
-
-
-// როცა გვერდი იტვირთება, ავტომატურად წაიკითხოს და ჩართოს ბოლო ენა
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang") || "ka";
-  setLanguage(savedLang);
-});
-
 
 
 

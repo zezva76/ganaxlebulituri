@@ -91,23 +91,23 @@
 
 
 
-    <!-- login form container -->
+ <!-- login form container -->
 <div class="login-form-container">  
   <i class="fas fa-times" id="form-close"></i>
 
   <form id="loginForm">
-    <h3>Login</h3>
+    <h3 data-translate="loginTitle">Login</h3>
 
-    <input type="email" name="email" class="box" placeholder="Enter your email" required>
-    <input type="password" name="password" class="box" placeholder="Enter your password" required>
+    <input type="email" name="email" class="box" placeholder="Enter your email" data-translate-placeholder="emailPlaceholder" required>
+    <input type="password" name="password" class="box" placeholder="Enter your password" data-translate-placeholder="passwordPlaceholder" required>
 
-    <input type="submit" value="Login now" class="btn">
+    <input type="submit" value="Login now" class="btn" data-translate-value="loginBtn">
 
     <input type="checkbox" id="remember">
-    <label for="remember">Remember me</label>
+    <label for="remember" data-translate="rememberMe">Remember me</label>
 
-    <p>Forget password? <a href="#">Click here</a></p>
-    <p>Do not have an account? <a href="#">Register now</a></p>
+    <p data-translate="forgetPassword">Forget password? <a href="#" data-translate="clickHere">Click here</a></p>
+    <p data-translate="noAccount">Do not have an account? <a href="#" data-translate="registerNow">Register now</a></p>
   </form>
 </div>
 
@@ -118,14 +118,14 @@
     <section class="home" id="home">
 
         <div class="content">
-            <h3>adventure is worthwhite</h3>
-            <p>Discover new places with us</p>
-            <p class="imereti">travel to Imereti</p>
+            <h3 data-translate="homeTitle">adventure is worthwhite</h3>
+            <p data-translate="homeSubtitle">Discover new places with us</p>
+            <p  data-translate="homeSlogan" class="imereti">travel to Imereti</p>
 
             <div id="info-discover" style="display: none;">
                 <button id="close-button-discover">×</button>
       
-                <p class="info-imer"> <label class="info-imer-1">Imereti</label> — one of the historical and geographical regions of Western Georgia, currently part of the Imereti region. In a broad sense, it is the historical name of Western Georgia, as well as ancient Colchis, Egrisi, Abkhazia.
+                <p class="info-imer"  id="imereti-description"> <label class="info-imer-1">Imereti</label> — one of the historical and geographical regions of Western Georgia, currently part of the Imereti region. In a broad sense, it is the historical name of Western Georgia, as well as ancient Colchis, Egrisi, Abkhazia.
 
                     Imereti itself is bordered by the Black Sea to the east, Tskhenistskali to the west, the Caucasus Range to the north, and the Persati, or Meskheti, mountains to the south. The name is associated with the location of this region, Imereti, or the Likhsiki region.
                     
@@ -133,7 +133,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d514826.63042987394!2d42.822421427938494!3d42.19954512468036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c95f53cd5aae7%3A0x909baec3349c8b19!2z4YOY4YOb4YOU4YOg4YOU4YOX4YOY4YOhIOGDm-GDruGDkOGDoOGDlA!5e0!3m2!1ska!2sge!4v1735840491270!5m2!1ska!2sge" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <a href="#" class="btn"  id="show-info-button-discover">discover imereti</a>
+            <a href="#" class="btn"  data-translate="showDiscoverBtn" id="show-info-button-discover">discover imereti</a>
         </div>
 
         <div class="controls">
