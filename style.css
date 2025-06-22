@@ -209,6 +209,46 @@ header .icons i:hover{
     color: var(--orange);
 }
 
+header .language-switcher {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+header .language-switcher button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+header .language-switcher button.active {
+  background-color: var(--orange);
+  color: white;
+  cursor: default;
+  pointer-events: none; /* რომ აღარ ჩასჭიდო */
+}
+
+header .language-switcher button img {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+header .language-switcher button:hover {
+  background-color: var(--orange);
+}
+
+
 header .search-bar-container{
     position: absolute;
     top: 100%; left: 0; right: 0;

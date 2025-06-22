@@ -2,6 +2,60 @@
 
 
 
+
+const translations = {
+  ka: {
+    navHome: "მთავარი",
+    navGeorgia: "საქართველო",
+    navGallery: "გალერეა",
+    navPackage: "პაკეტები",
+    navServices: "სერვისები",
+    navVoice: "ხმები",
+    navReview: "მიმოხილვა",
+    navFooter: "კონტაქტი"
+  },
+  en: {
+    navHome: "Home",
+    navGeorgia: "Georgia",
+    navGallery: "Gallery",
+    navPackage: "Package",
+    navServices: "Services",
+    navVoice: "Voice",
+    navReview: "Review",
+    navFooter: "Footer"
+  }
+};
+
+function setLanguage(lang) {
+  localStorage.setItem('lang', lang);
+  document.querySelectorAll('[data-translate]').forEach(el => {
+    const key = el.getAttribute('data-translate');
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+
+  // აქ ვამატებთ active კლასს შესაბამის ღილაკზე
+  document.querySelectorAll('.language-switcher button').forEach(btn => {
+  btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+});
+}
+
+
+
+// როცა გვერდი იტვირთება, ავტომატურად წაიკითხოს და ჩართოს ბოლო ენა
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "ka";
+  setLanguage(savedLang);
+});
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
   const searchBtn = document.querySelector('#search-btn');
@@ -288,3 +342,6 @@ form.addEventListener('submit', (e) => {
     };
     reader.readAsDataURL(file);
 });
+
+
+

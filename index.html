@@ -42,30 +42,49 @@
 <body>
     <p style="font-family: 'Noto Sans Georgian', sans-serif;">გამარჯობა, ეს არის ქართული ტექსტი ტესტისთვის</p>
 
-    <!--header section start-->
-    <header>
-        <div id="menu-bar" class="fas fa-bars"></div>
-  <a href=""  class="logo"><span>T</span>ravel <span>T</span>o <span>I</span>mereti</a>
-        <nav class="navbar">
-            <a href="#home">home</a>  
-            <a href="#ge_georgia">georgia</a> 
-            <a href="#gallery">gallery</a> 
-            <a href="#package">package</a>
-            <a href="#services">services</a>
-            <a href="#voice">voice</a>
-            <a href="#review">review</a>
-            <a href="#footer">Footer</a>
-        </nav>
-        <div class="icons">
-        <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
-        </div>
-        <form action="" class="search-bar-container">
-            <input type="search" id="search-bar" placeholder="search here....">
-            <label for="search-bar" class="fas fa-search"></label>
-        </form>
-    </header>
-    <!--header section end-->
+ <!--header section start-->
+<header>
+  <div id="menu-bar" class="fas fa-bars"></div>
+
+  <a href="" class="logo"><span>T</span>ravel <span>T</span>o <span>I</span>mereti</a>
+
+  <nav class="navbar">
+    <a href="#home" data-translate="navHome">home</a>
+    <a href="#ge_georgia" data-translate="navGeorgia">georgia</a>
+    <a href="#gallery" data-translate="navGallery">gallery</a>
+    <a href="#package" data-translate="navPackage">package</a>
+    <a href="#services" data-translate="navServices">services</a>
+    <a href="#voice" data-translate="navVoice">voice</a>
+    <a href="#review" data-translate="navReview">review</a>
+    <a href="#footer" data-translate="navFooter">Footer</a>
+  </nav>
+
+  <div class="icons">
+    <i class="fas fa-search" id="search-btn"></i>
+    <i class="fas fa-user" id="login-btn"></i>
+
+    <!-- ენის ღილაკები აქ უნდა იყოს icons-ის შიგნით -->
+
+<div class="language-switcher">
+  <button data-lang="ka" onclick="setLanguage('ka')">
+    <img src="flags/geo.png" alt="KA" />
+    KA
+  </button>
+  <button data-lang="en" onclick="setLanguage('en')">
+    <img src="flags/gbr.png" alt="EN" />
+    EN
+  </button>
+</div>
+
+
+
+  <form action="" class="search-bar-container">
+    <input type="search" id="search-bar" placeholder="search here....">
+    <label for="search-bar" class="fas fa-search"></label>
+  </form>
+</header>
+<!--header section end-->
+
 
     
     <!--login form container-->
