@@ -286,6 +286,38 @@ header .search-bar-container label:hover{
 }
 
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 5%;
+  }
+
+  header .navbar {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  header .language-switcher {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+
+  header .language-switcher button {
+    font-size: 1.1rem;
+    padding: 0.3rem 0.6rem;
+    gap: 0.3rem;
+  }
+
+  header .language-switcher button img {
+    width: 18px;
+    height: 12px;
+  }
+}
+
+
 
 /* login start here*/
 .login-form-container{
