@@ -36,6 +36,8 @@ const translations = {
     noAccount: "არ გაქვთ ანგარიში?",
     registerNow: "რეგისტრაცია",
 
+   
+
     imereti_name: "იმერეთი",
      afkhazeti_name: "აფხაზეთი",
      achara_name: "აჭარა",
@@ -51,11 +53,18 @@ const translations = {
      samegrelo_zemosvaneti_name: "სამეგრელო-ზემო სვანეთი",
     tbilisi_name: "თბილისი",
 
+   gallery_title: "გალერია",
     mwvane_xeoba: "მწვანე ხეობა",
-     browse_gallery: "დაათვალიერეთ გალერეა",
-     see_more: "ნახეთ მეტი",
      promete_cave: "პრომეთეს მღვიმე",
-   
+      tetra_name: "თეთრა მღვიმე",
+       sataplia_name: "სათაფლია",
+       katskhi_name: "კაცხის სვეტი",
+       martvili_name: "მარტვილის კანიონი", 
+       browse_gallery: "დაათვალიერეთ გალერეა",
+        see_more: "ნახეთ მეტი",
+       read_more: "გაიგეთ მეტი",
+
+       title_info: "პრომეთეს მღვიმე სათაფლია-წყალტუბოს კარსტულ მასივში ჩამოყალიბდა. მღვიმის საერთო სიგრძე დაახლოებით 11 კმ-ია, საიდანაც 1800 მ ღიაა ვიზიტორებისთვის. მღვიმეს სულ 22 დარბაზი აქვს, რომელთაგან ექვსი ამჟამად ტურისტებისთვის ღიაა. ვიზიტორებს ამჟამად ამ მღვიმეების დათვალიერება მიწის დონიდან დაახლოებით 80 მეტრის სიღრმეზე შეუძლიათ.",
 
   },
   en: {
@@ -90,6 +99,7 @@ const translations = {
     noAccount: "Do not have an account?",
     registerNow: "Register now",
 
+    
      imereti_name: "Imereti",
       afkhazeti_name: "Abkhazia",
        achara_name: "Adjara",
@@ -109,6 +119,13 @@ const translations = {
      browse_gallery: "Browse the gallery",
        see_more: "See more",
        promete_cave: "Promete cave",
+       tetra_name: "Tetra cave",
+       sataplia_name: "Sataplia",
+       katskhi_name: "Katskhi sveti",
+       martvili_name: "Martvili canion",
+       read_more: "Read more",
+
+       title_info: " Prometheus Cave formed in Sataphlia-Tskaltubo karst massif. The total length of the cave is about 11 km, of which 1800 m are open to visitors. The cave has a total of 22 halls, six of which are currently open to tourists. Visitors currently could experience these caves at depths of about 80 mts below ground level.",
 
   }
 };
@@ -151,6 +168,9 @@ function setLanguage(lang) {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
 }
+
+
+
 
 
 

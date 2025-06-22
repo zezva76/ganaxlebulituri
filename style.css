@@ -60,10 +60,11 @@ padding: 2rem 0;
 
 .heading span{
     font-size: 4.5rem;
-    color: var(--orange );
-    border-radius: .5rem;
-    padding: .1rem 2rem;
-    animation: animate 3s infinite linear;
+  color: var(--orange);
+  border-radius: .5rem;
+  padding: .1rem 2rem;
+  animation: animate 3s infinite linear;
+  display: inline-block;
 }
 
 img{
