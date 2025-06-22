@@ -607,31 +607,29 @@ Martvili Canion</a>
 
 
 
-             <!--voice-->
- <section class="main" id="voice">
 
+
+
+
+  <section class="main" id="voice">
   <div class="content-wrapper">
 
     <!-- მარცხენა ნაწილი -->
     <div class="left-side">
       <div class="inter">
-        <h2 class="get-name">If you enjoy the Georgian wines and dishes, give like</h2>
+        <h2 class="get-name" data-translate="voice_title">
+          If you enjoy the Georgian wines and dishes, give like
+        </h2>
       </div>
 
       <div class="chans">
-        Georgian wines
-        <br>
-        <a href="vine/vine.html">
-          <button class="btn buton">Voice</button>
-        </a>
+        <p data-translate="chans_name">Georgian wines</p>
+        <a href="vine/vine.html" class="btn buton" data-translate="voice_name">Like it</a>
       </div>
 
       <div class="vans">
-        Georgian dishes
-        <br>
-        <a href="dishes/dishes.html">
-          <button class="btn buton">Voice</button>
-        </a>
+        <p data-translate="vans_name">Georgian dishes</p>
+        <a href="dishes/dishes.html" class="btn buton" data-translate="voice_name">Like it</a>
       </div>
     </div>
 
@@ -643,23 +641,24 @@ Martvili Canion</a>
       </div>
     </div>
 
-  </div>
-
-</section>
+  </div> <!-- content-wrapper -->
+</section> <!-- main -->
 
 
 
 
 
  <section class="review" id="review">
-  <h1>Leave a comment and photo</h1>
+  <h1 data-translate="revie_title">Leave a comment and photo</h1>
 
   <div class="form-container">
     <form id="commentForm">
-      <input type="text" id="username" placeholder="Your name" required>
-      <textarea id="commentInput" placeholder="Your opinion" required></textarea>
+    <input type="text" id="username" placeholder="Your name"data-translate-placeholder="PlaceHolder" required>
+<textarea id="commentInput" placeholder="Your opinion" data-translate-placeholder="opinionPlaceHolder" required></textarea>
       <input type="file" id="imageInput" accept="image/*" required>
-      <button type="submit">Add</button>
+<button type="submit" data-translate="sub_name">Add</button>
+
+
     </form>
   </div>
 
@@ -688,10 +687,21 @@ Martvili Canion</a>
         </div>
 
         <div class="box">
-            <h3>Location</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Kutaisi, Georgia</p> <iframe src="https://www.google.com/maps/d/embed?mid=1SeKjdVgNAIedzEFEiG8EvTMqeeOlf_E&ehbc=2E312F" width="640" height="480"></iframe>
-                    width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    title="Location on the map - Kutaisi"></iframe> </div>
+  <h3>Location</h3>
+  <p><i class="fas fa-map-marker-alt"></i> Kutaisi, Georgia</p>
+  
+  <iframe 
+    src="https://www.google.com/maps/d/embed?mid=1SeKjdVgNAIedzEFEiG8EvTMqeeOlf_E&ehbc=2E312F" 
+    width="300" 
+    height="150" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Location on the map - Kutaisi">
+  </iframe>
+</div>
+
 
         <div class="box">
             <h3>Quick links</h3>

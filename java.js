@@ -68,7 +68,17 @@ const translations = {
         
        hotel_title:"ხელმისაწვდომი სასტუმროები",
         food_title: "საკვები და სასმელები",
-        contact_title: "დაგვიკავშირდეით",
+        contact_title: "დაგვიკავშირდით",
+
+        voice_title: "თუ მოგწონთ ქართული ღვინოები და კერძები, მოიწონეთ",
+          chans_name: "ქართული ღვინო",
+        vans_name: "ქართული კერძები",
+        voice_name: "მოიწონე",
+
+         revie_title: "დატოვეთ კომენტარი და ფოტო",
+        PlaceHolder: "თქვენი სახელი",
+        opinionPlaceHolder: "თქვენი აზრი",
+          sub_name: "დამატება",
   },
   en: {
     navHome: "Home",
@@ -132,7 +142,17 @@ const translations = {
  
         hotel_title:"Affordable hotels",
         food_title: "Food and Drink",
-        contact_title: "დაგვიკავშირდეით",
+        contact_title: "Contact us",
+
+        voice_title: "If you enjoy the Georgian wines and dishes, give like",
+        chans_name: "Georgian wines",
+        vans_name: "Georgian dishes",
+        voice_name: "Like it",
+        
+          revie_title: "Leave a comment and photo",
+        PlaceHolder: "Your name",
+       opinionPlaceHolder: "Your oponion",
+          sub_name: "Add"
 
   }
 };
