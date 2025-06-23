@@ -648,9 +648,10 @@ header .search-bar-container label:hover{
   }
 
   #photoDisplay{  
-     width: 460px;
-  height: 280px;
-  object-fit: cover; /* მთავარია ეს დაემატოს */
+     width: 100%;
+  max-width: 460px;
+  aspect-ratio: 460 / 280; /* ან 16 / 9 */
+  object-fit: cover;
   border: 5px solid var(--color-black--tint);
   border-radius: 20px;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 1);
