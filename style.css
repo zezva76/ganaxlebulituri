@@ -638,6 +638,7 @@ header .search-bar-container label:hover{
     display: flex;  
     justify-content: space-between;
     width: 100%;
+    
 }
 
  #infoDisplay{  

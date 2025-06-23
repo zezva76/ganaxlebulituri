@@ -4,6 +4,84 @@
 
 
 const translations = {
+  en: {
+    navHome: "Home",
+    navGeorgia: "Georgia",
+    navGallery: "Gallery",
+    navPackage: "Package",
+    navServices: "Services",
+    navVoice: "Voice",
+    navReview: "Review",
+    navFooter: "Footer",
+
+     homeTitle: "adventure is worthwhite",
+    homeSubtitle: "Discover new places with us",
+    homeSlogan: "travel to Imereti",
+    showDiscoverBtn: "discover imereti",
+    imeretiDescription: `
+      <label class="info-imer-1">Imereti</label> — one of the historical and geographical regions of Western Georgia, currently part of the Imereti region. In a broad sense, it is the historical name of Western Georgia, as well as ancient Colchis, Egrisi, Abkhazia.
+
+                    Imereti itself is bordered by the Black Sea to the east, Tskhenistskali to the west, the Caucasus Range to the north, and the Persati, or Meskheti, mountains to the south. The name is associated with the location of this region, Imereti, or the Likhsiki region.
+                    
+                    Imereti is divided into two parts: Lower and Upper Imereti. Archaeological monuments discovered on the territory of Imereti confirm that people began to live in this region as early as the Lower Paleolithic era. Among them are the Sakazii Cave and the Chakhati (on the banks of the Tskaltsitela River), Deviskhvreli (on the banks of the Chkherimela River) caves, the Sataplia area, and others. Archaeological monuments from the ancient period of urban life have been found in Kutaisi, Vani, Vartsikhe (Rhodopolis), Shorapani, and others. Due to the favorable geographical location of the region, these cities have had great strategic, economic, and political importance since ancient times
+
+    `,
+     loginTitle: "Login",
+    emailPlaceholder: "Enter your email",
+    passwordPlaceholder: "Enter your password",
+    loginBtn: "Login now",
+    rememberMe: "Remember me",
+    forgetPassword: "Forget password?",
+    clickHere: "Click here",
+    noAccount: "Do not have an account?",
+    registerNow: "Register now",
+
+    
+     imereti_name: "Imereti",
+      afkhazeti_name: "Abkhazia",
+       achara_name: "Adjara",
+        guria_name: "Guria",
+     imereti_name: "Imereti",
+     kakheti_name: "Kakheti",
+     kvemo_kartli_name: "Qvemo kartli",
+     mtsketa_mtianeti_name: "Mtskheta mtianeti",
+     racha_lechkhumi_name: "Racha lechkhumi",
+     samtskhe_djavakheti_name: "Samtskhe djavakheti",
+     samachablo_name: "Samachablo",
+     shida_kartli_name: "Shida Qartli",
+     samegrelo_zemosvaneti_name: "Samegrelo-Zeda svaneti",
+    tbilisi_name: "Tbilisi",
+
+     mwvane_xeoba: "Mtsvane Kheoba",
+     browse_gallery: "Browse the gallery",
+       see_more: "See more",
+       promete_cave: "Promete cave",
+       tetra_name: "Tetra cave",
+       sataplia_name: "Sataplia",
+       katskhi_name: "Katskhi sveti",
+       martvili_name: "Martvili canion",
+       read_more: "Read more",
+
+       title_info: " Prometheus Cave formed in Sataphlia-Tskaltubo karst massif. The total length of the cave is about 11 km, of which 1800 m are open to visitors. The cave has a total of 22 halls, six of which are currently open to tourists. Visitors currently could experience these caves at depths of about 80 mts below ground level.",
+ 
+        hotel_title:"Affordable hotels",
+        food_title: "Food and Drink",
+        contact_title: "Contact us",
+
+        voice_title: "If you enjoy the Georgian wines and dishes, give like",
+        chans_name: "Georgian wines",
+        vans_name: "Georgian dishes",
+        voice_name: "Like it",
+        
+          revie_title: "Leave a comment and photo",
+        PlaceHolder: "Your name",
+       opinionPlaceHolder: "Your oponion",
+          sub_name: "Add"
+
+  },
+
+
+
   ka: {
     navHome: "მთავარი",
     navGeorgia: "საქართველო",
@@ -80,81 +158,9 @@ const translations = {
         opinionPlaceHolder: "თქვენი აზრი",
           sub_name: "დამატება",
   },
-  en: {
-    navHome: "Home",
-    navGeorgia: "Georgia",
-    navGallery: "Gallery",
-    navPackage: "Package",
-    navServices: "Services",
-    navVoice: "Voice",
-    navReview: "Review",
-    navFooter: "Footer",
 
-     homeTitle: "adventure is worthwhite",
-    homeSubtitle: "Discover new places with us",
-    homeSlogan: "travel to Imereti",
-    showDiscoverBtn: "discover imereti",
-    imeretiDescription: `
-      <label class="info-imer-1">Imereti</label> — one of the historical and geographical regions of Western Georgia, currently part of the Imereti region. In a broad sense, it is the historical name of Western Georgia, as well as ancient Colchis, Egrisi, Abkhazia.
+  
 
-                    Imereti itself is bordered by the Black Sea to the east, Tskhenistskali to the west, the Caucasus Range to the north, and the Persati, or Meskheti, mountains to the south. The name is associated with the location of this region, Imereti, or the Likhsiki region.
-                    
-                    Imereti is divided into two parts: Lower and Upper Imereti. Archaeological monuments discovered on the territory of Imereti confirm that people began to live in this region as early as the Lower Paleolithic era. Among them are the Sakazii Cave and the Chakhati (on the banks of the Tskaltsitela River), Deviskhvreli (on the banks of the Chkherimela River) caves, the Sataplia area, and others. Archaeological monuments from the ancient period of urban life have been found in Kutaisi, Vani, Vartsikhe (Rhodopolis), Shorapani, and others. Due to the favorable geographical location of the region, these cities have had great strategic, economic, and political importance since ancient times
-
-    `,
-     loginTitle: "Login",
-    emailPlaceholder: "Enter your email",
-    passwordPlaceholder: "Enter your password",
-    loginBtn: "Login now",
-    rememberMe: "Remember me",
-    forgetPassword: "Forget password?",
-    clickHere: "Click here",
-    noAccount: "Do not have an account?",
-    registerNow: "Register now",
-
-    
-     imereti_name: "Imereti",
-      afkhazeti_name: "Abkhazia",
-       achara_name: "Adjara",
-        guria_name: "Guria",
-     imereti_name: "Imereti",
-     kakheti_name: "Kakheti",
-     kvemo_kartli_name: "Qvemo kartli",
-     mtsketa_mtianeti_name: "Mtskheta mtianeti",
-     racha_lechkhumi_name: "Racha lechkhumi",
-     samtskhe_djavakheti_name: "Samtskhe djavakheti",
-     samachablo_name: "Samachablo",
-     shida_kartli_name: "Shida Qartli",
-     samegrelo_zemosvaneti_name: "Samegrelo-Zeda svaneti",
-    tbilisi_name: "Tbilisi",
-
-     mwvane_xeoba: "Mtsvane Kheoba",
-     browse_gallery: "Browse the gallery",
-       see_more: "See more",
-       promete_cave: "Promete cave",
-       tetra_name: "Tetra cave",
-       sataplia_name: "Sataplia",
-       katskhi_name: "Katskhi sveti",
-       martvili_name: "Martvili canion",
-       read_more: "Read more",
-
-       title_info: " Prometheus Cave formed in Sataphlia-Tskaltubo karst massif. The total length of the cave is about 11 km, of which 1800 m are open to visitors. The cave has a total of 22 halls, six of which are currently open to tourists. Visitors currently could experience these caves at depths of about 80 mts below ground level.",
- 
-        hotel_title:"Affordable hotels",
-        food_title: "Food and Drink",
-        contact_title: "Contact us",
-
-        voice_title: "If you enjoy the Georgian wines and dishes, give like",
-        chans_name: "Georgian wines",
-        vans_name: "Georgian dishes",
-        voice_name: "Like it",
-        
-          revie_title: "Leave a comment and photo",
-        PlaceHolder: "Your name",
-       opinionPlaceHolder: "Your oponion",
-          sub_name: "Add"
-
-  }
 };
 
 function setLanguage(lang) {
