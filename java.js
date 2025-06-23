@@ -305,6 +305,9 @@ if (loginForm) {
 }
 
 
+
+
+
 function showName(key, foto) {
   const lang = localStorage.getItem('lang') || 'en';
   const nameDisplay = document.getElementById('nameDisplay');
