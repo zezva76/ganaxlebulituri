@@ -41,7 +41,6 @@ const translations = {
       afkhazeti_name: "Abkhazia",
        achara_name: "Adjara",
         guria_name: "Guria",
-     imereti_name: "Imereti",
      kakheti_name: "Kakheti",
      kvemo_kartli_name: "Qvemo kartli",
      mtsketa_mtianeti_name: "Mtskheta mtianeti",
