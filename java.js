@@ -423,9 +423,8 @@ document.querySelectorAll('.close-button-class').forEach(button => {
 
 
 
-
-
-const API_BASE_URL = "https://steadfast-liberation.up.railway.app"; // შეცვალე აქ თუ სერვერი არ არის ლოკალზე
+const API_BASE_URL = "https://my-tourism-production.up.railway.app";
+ // შეცვალე აქ თუ სერვერი არ არის ლოკალზე
 
 
 const form = document.getElementById("commentForm");
