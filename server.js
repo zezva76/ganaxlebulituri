@@ -1,70 +1,101 @@
-const express = require("express");
-const multer = require("multer");
-const cors = require("cors");
-const fs = require("fs");
-const path = require("path");
+const express = require('express');
+const multer = require('multer');
+const cors = require('cors');
+const fs = require('fs');
+const path = require('path');
 
 const app = express();
-const PORT = 3000;
+
+const PORT = process.env.PORT || 3001;
+
 
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+// ფაილების შენახვის ფოლდერი
+const uploadsDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir);
+}
+app.use('/uploads', express.static(uploadsDir));
 
+// multer-ის კონფიგურაცია
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, "uploads/");
+  destination(req, file, cb) {
+    cb(null, uploadsDir);
   },
-  filename: (req, file, cb) => {
-    const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
+  filename(req, file, cb) {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
     cb(null, uniqueSuffix + path.extname(file.originalname));
-  },
+  }
 });
-const upload = multer({ storage: storage });
+const upload = multer({
+  storage,
+  fileFilter(req, file, cb) {
+    if (!file.mimetype.startsWith('image/')) {
+      return cb(new Error('Only images are allowed'));
+    }
+    cb(null, true);
+  },
+  limits: { fileSize: 5 * 1024 * 1024 } // მაქსიმუმ 5MB
+});
 
-app.post("/api/comments", upload.single("photo"), (req, res) => {
+const COMMENTS_FILE = path.join(__dirname, 'comments.json');
+
+function readComments() {
+  if (!fs.existsSync(COMMENTS_FILE)) return [];
+  try {
+    const data = fs.readFileSync(COMMENTS_FILE, 'utf8');
+    return JSON.parse(data);
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveComments(comments) {
+  fs.writeFileSync(COMMENTS_FILE, JSON.stringify(comments, null, 2));
+}
+
+app.get('/api/comments', (req, res) => {
+  const comments = readComments();
+  res.json(comments);
+});
+
+app.post('/api/comments', upload.single('photo'), (req, res) => {
+  console.log('Incoming request body:', req.body);
+  console.log('Incoming file:', req.file);
+
   const { name, text } = req.body;
-  const photoUrl = req.file ? `/uploads/${req.file.filename}` : null;
-
-  if (!name || !text) {
-    return res.status(400).json({ message: "Name and text are required" });
+  if (!name || !text || !req.file) {
+    console.log('Missing name, text or photo!');
+    return res.status(400).json({ message: 'Name, text and photo are required.' });
   }
 
-  const commentData = {
+  const comments = readComments();
+
+  const newComment = {
+    id: Date.now(),
     name,
     text,
-    photo: photoUrl,
-    createdAt: new Date().toISOString(),
+    photo: `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}`,
+    createdAt: new Date().toISOString()
   };
 
-  const dataFile = "comments.json";
-  let existing = [];
+  comments.push(newComment);
+  saveComments(comments);
 
-  if (fs.existsSync(dataFile)) {
-    const raw = fs.readFileSync(dataFile);
-    existing = JSON.parse(raw);
-  }
-
-  existing.push(commentData);
-  fs.writeFileSync(dataFile, JSON.stringify(existing, null, 2));
-
-  res.json({ message: "Comment added", comment: commentData });
+  res.status(201).json(newComment);
 });
 
-app.get("/api/comments", (req, res) => {
-  const dataFile = "comments.json";
-  let existing = [];
-
-  if (fs.existsSync(dataFile)) {
-    const raw = fs.readFileSync(dataFile);
-    existing = JSON.parse(raw);
+// Error handling middleware
+app.use((err, req, res, next) => {
+  if (err) {
+    console.error('Error:', err.message);
+    return res.status(400).json({ message: err.message });
   }
-
-  res.json(existing);
+  next();
 });
 
 app.listen(PORT, () => {
-  console.log(`Server listening on http://localhost:${PORT}`);
+  console.log(`Server listening at http://localhost:${PORT}`);
 });

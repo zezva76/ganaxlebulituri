@@ -488,12 +488,12 @@ async function loadReviews() {
     console.error("Failed to load reviews:", error);
   }
 }
-
-// ფორმის წარდგენა და კომენტარის გაგზავნა
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const formData = new FormData(form);
+
+  console.log("Sending formData:", [...formData.entries()]); // აქ ვნახავ, რა მიდის ფრონტენდიდან
 
   try {
     const res = await fetch(`${API_BASE_URL}/api/comments`, {
@@ -501,9 +501,12 @@ form.addEventListener("submit", async (e) => {
       body: formData,
     });
 
+    const data = await res.json();
+
+    console.log("Response from server:", data);
+
     if (!res.ok) {
-      const errorData = await res.json();
-      alert(errorData.message || "Error submitting comment");
+      alert(data.message || "Error submitting comment");
       return;
     }
 
@@ -515,6 +518,3 @@ form.addEventListener("submit", async (e) => {
     console.error(error);
   }
 });
-
-// გვერდის ჩატვირთვისას ჩატვირთე კომენტარები
-loadReviews();
