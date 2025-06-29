@@ -422,86 +422,99 @@ document.querySelectorAll('.close-button-class').forEach(button => {
 
 
 
+
+
+
+
 //review
 
-const form = document.getElementById('commentForm');
-const wrapper = document.getElementById('reviewWrapper');
+const API_BASE_URL = "http://localhost:3000"; // თუ გადაშენებ სერვერის URL-ს, აქ შეცვალე
 
-let reviews = JSON.parse(localStorage.getItem('reviews') || '[]');
+const form = document.getElementById("commentForm");
+const wrapper = document.getElementById("reviewWrapper");
 
-const renderReview = (review) => {
-    const div = document.createElement('div');
-    div.className = 'swiper-slide';
-    div.innerHTML = `
-        <div class="box">
-            <img src="${review.image}" alt="User Photo">
-            <h3>${review.name}</h3>
-            <p>${review.text}</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <i class="far fa-star"></i>
-            </div>
-        </div>
-    `;
-    wrapper.appendChild(div);
+// სლაიდერის ობიექტი (Swiper)
+let swiper;
+
+// კომენტარის DOM-ში დამატება
+function renderReview(review) {
+  const div = document.createElement("div");
+  div.className = "swiper-slide";
+  div.innerHTML = `
+    <div class="box">
+      ${review.photo ? `<img src="${review.photo}" alt="User Photo" width="200" />` : ""}
+      <h3>${review.name}</h3>
+      <p>${review.text}</p>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+    </div>
+  `;
+  wrapper.appendChild(div);
 }
 
-// პირველადი კომენტარების ნახვა და სლაიდერისთვის დამატება
-reviews.forEach(renderReview);
+// კომენტარების ჩატვირთვა სერვერიდან
+async function loadReviews() {
+  wrapper.innerHTML = "";
+  try {
+    const res = await fetch(`${API_BASE_URL}/api/comments`);
+    if (!res.ok) throw new Error("Failed to fetch comments");
 
-// დააამატე სლაიდერი აქ, რათა შემდეგ მოხდეს update
-var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        0: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        991: { slidesPerView: 3 }
-    },
-});
+    const reviews = await res.json();
 
-// ფორმის გასააქტიურებლად
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('username').value;
-    const comment = document.getElementById('commentInput').value;
-    const file = document.getElementById('imageInput').files[0];
+    reviews.forEach(renderReview);
 
-    if (!file) {
-        alert("გთხოვ, ატვირთე სურათი!");
-        return;
+    if (!swiper) {
+      swiper = new Swiper(".review-slider", {
+        spaceBetween: 20,
+        loop: true,
+        autoplay: { delay: 2500, disableOnInteraction: false },
+        pagination: { el: ".swiper-pagination", clickable: true },
+        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          991: { slidesPerView: 3 },
+        },
+      });
+    } else {
+      swiper.update();
+    }
+  } catch (error) {
+    console.error("Failed to load reviews:", error);
+  }
+}
+
+// ფორმის წარდგენა და კომენტარის გაგზავნა
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  try {
+    const res = await fetch(`${API_BASE_URL}/api/comments`, {
+      method: "POST",
+      body: formData,
+    });
+
+    if (!res.ok) {
+      const errorData = await res.json();
+      alert(errorData.message || "Error submitting comment");
+      return;
     }
 
-    const reader = new FileReader();
-    reader.onload = function(e) {
-        const newReview = {
-            name: name,
-            text: comment,
-            image: e.target.result
-        };
-        reviews.push(newReview);
-        localStorage.setItem('reviews', JSON.stringify(reviews));
-        renderReview(newReview);
-        swiper.update();  // აუცილებლად განაახლე სლაიდერი
-        form.reset();
-    };
-    reader.readAsDataURL(file);
+    alert("Comment added successfully!");
+    form.reset();
+    loadReviews();
+  } catch (error) {
+    alert("Failed to send comment.");
+    console.error(error);
+  }
 });
 
-
-
+// გვერდის ჩატვირთვისას ჩატვირთე კომენტარები
+loadReviews();
