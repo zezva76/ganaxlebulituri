@@ -423,9 +423,10 @@ document.querySelectorAll('.close-button-class').forEach(button => {
 
 
 
+//review
 
-
-const API_BASE_URL = "http://localhost:3000"; // თუ გადაშენებ სერვერის URL-ს, აქ შეცვალე
+// აქ ჩაწერე შენი Railway სერვერის Public URL (არა localhost)
+const API_BASE_URL = "https://steadfast-liberation.up.railway.app"; // შეცვალე შენს URL-ით
 
 const form = document.getElementById("commentForm");
 const wrapper = document.getElementById("reviewWrapper");
@@ -517,7 +518,5 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-// **აქ ვამატებ, რომ გვერდის გახსნისას ავტომატურად ჩაიტვირთოს კომენტარები**
-window.addEventListener('DOMContentLoaded', () => {
-  loadReviews();
-});
+// გვერდის ჩატვირთვისას დაიძახე დატვირთვა
+loadReviews();
