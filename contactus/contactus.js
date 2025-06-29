@@ -9,60 +9,40 @@ menuBar.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 
-// ფორმის გაგზავნის ლოჯიკა EmailJS-ით
-const contactForm = document.getElementById('contactForm');
-const statusMessage = document.getElementById('statusMessage');
-
-contactForm.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  // ვალიდაცია HTML5-ის მეთოდებით
-  if (!contactForm.checkValidity()) {
-    contactForm.reportValidity();
-    return;
-  }
-
-  // ღილაკის დეაქტივაცია და ტექსტის შეცვლა გაგზავნის პროცესის დროს
-  const sendBtn = contactForm.querySelector('.send-btn');
-  sendBtn.disabled = true;
-  sendBtn.textContent = 'Sending...';  //იგზავნება
-
-  // EmailJS form send
-  emailjs.sendForm('service_1pnr22q', 'template_x6g9wnl', this)
-    .then(() => {
-      statusMessage.style.color = 'green';
-      statusMessage.textContent = 'Message sent successfully! Thank you.';  // შეტყობინება წარმატებით გაიგზავნა! მადლობა.
-      contactForm.reset();
-      sendBtn.disabled = false;
-      sendBtn.textContent = 'Send';  //გაგზავნა
-    })
-    .catch(() => {
-      statusMessage.style.color = 'red';
-      statusMessage.textContent = 'Failed to send. Please try again.'; //გაგზავნა ვერ მოხერხდა. გთხოვთ სცადეთ თავიდან.
-      sendBtn.disabled = false;
-      sendBtn.textContent = 'Send'; //გაგზავნა
-    });
-});
-
-
-
+// ფორმის გაგზავნის ლოგიკა EmailJS-ით
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contactForm');
   const statusMessage = document.getElementById('statusMessage');
+  const sendBtn = form.querySelector('.send-btn');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_1pnr22q', 'template_x6g9wnl', form)
+    // ვალიდაცია HTML5 მეთოდით
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    // ღილაკის დაბლოკვა და სტატუსის ჩვენება
+    sendBtn.disabled = true;
+    sendBtn.textContent = 'Sending...';
+
+    emailjs.sendForm('service_gf3puag', 'template_x6g9wnl', form)
       .then(() => {
-        statusMessage.innerText = 'შეტყობინება წარმატებით გაიგზავნა!';
+        statusMessage.innerText = 'Message sent successfully!';
         statusMessage.style.color = 'green';
         form.reset(); // ცარიელდება ფორმა
       })
       .catch((error) => {
-        console.error('შეცდომა:', error);
-        statusMessage.innerText = 'შეცდომა შეტყობინების გაგზავნისას.';
+        console.error('Error:', error);
+        statusMessage.innerText = 'Failed to send. Please try again.';
         statusMessage.style.color = 'red';
+      })
+      .finally(() => {
+        sendBtn.disabled = false;
+        sendBtn.textContent = 'Send';
       });
   });
 });
+
