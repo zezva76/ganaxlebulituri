@@ -423,18 +423,16 @@ document.querySelectorAll('.close-button-class').forEach(button => {
 
 
 
-//review
 
-// აქ ჩაწერე შენი Railway სერვერის Public URL (არა localhost)
-const API_BASE_URL = "https://steadfast-liberation.up.railway.app"; // შეცვალე შენს URL-ით
+
+const API_BASE_URL = "https://steadfast-liberation.up.railway.app"; // შეცვალე აქ თუ სერვერი არ არის ლოკალზე
+
 
 const form = document.getElementById("commentForm");
 const wrapper = document.getElementById("reviewWrapper");
 
-// სლაიდერის ობიექტი (Swiper)
 let swiper;
 
-// კომენტარის DOM-ში დამატება
 function renderReview(review) {
   const div = document.createElement("div");
   div.className = "swiper-slide";
@@ -455,7 +453,6 @@ function renderReview(review) {
   wrapper.appendChild(div);
 }
 
-// კომენტარების ჩატვირთვა სერვერიდან
 async function loadReviews() {
   wrapper.innerHTML = "";
   try {
@@ -492,7 +489,7 @@ form.addEventListener("submit", async (e) => {
 
   const formData = new FormData(form);
 
-  console.log("Sending formData:", [...formData.entries()]); // აქ ვნახავ, რა მიდის ფრონტენდიდან
+  console.log("Sending formData:", [...formData.entries()]);
 
   try {
     const res = await fetch(`${API_BASE_URL}/api/comments`, {
@@ -518,5 +515,5 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-// გვერდის ჩატვირთვისას დაიძახე დატვირთვა
+// გვერდის ჩატვირთვისას დატვირთე კომენტარები
 loadReviews();
