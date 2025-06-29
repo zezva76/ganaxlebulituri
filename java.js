@@ -425,9 +425,6 @@ document.querySelectorAll('.close-button-class').forEach(button => {
 
 
 
-
-//review
-
 const API_BASE_URL = "http://localhost:3000"; // თუ გადაშენებ სერვერის URL-ს, აქ შეცვალე
 
 const form = document.getElementById("commentForm");
@@ -488,6 +485,7 @@ async function loadReviews() {
     console.error("Failed to load reviews:", error);
   }
 }
+
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -517,4 +515,9 @@ form.addEventListener("submit", async (e) => {
     alert("Failed to send comment.");
     console.error(error);
   }
+});
+
+// **აქ ვამატებ, რომ გვერდის გახსნისას ავტომატურად ჩაიტვირთოს კომენტარები**
+window.addEventListener('DOMContentLoaded', () => {
+  loadReviews();
 });
