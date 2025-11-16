@@ -1,42 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700&display=swap");
 
-:root{
-    --orange:#ffa500;
-    --white:#fff;
+:root {
+  --orange: #ffa500;
+  --white: #fff;
 }
 
-*{font-family: 'Nunito Sans', sans-serif;
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-text-transform: capitalize;
-outline: none;
-border: none;
-text-decoration: none;
-transition: all .2s linear;
-
+* {
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
 }
 
-*::selection{
-    background: var(--orange);
-    color: #fff;
+*::selection {
+  background: var(--orange);
+  color: #fff;
 }
 
-html{
-    font-size: 62.5%;
-    overflow: auto;
-    scroll-padding-top: 6rem;
-    scroll-behavior: smooth;
-     overflow-x: hidden; /* მალავს ჰორიზონტალურ სქროლს მთელ გვერდზე */
-     margin: 0;
+html {
+  font-size: 62.5%;
+  overflow: auto;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* მალავს ჰორიზონტალურ სქროლს მთელ გვერდზე */
+  margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
 
-
 body {
-  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: "Noto Sans Georgian", sans-serif;
   font-size: 18px;
   line-height: 1.6;
   color: #222;
@@ -47,176 +46,165 @@ body {
   height: 100%;
 }
 
-
-section{
-    padding: 2rem 9%;
+section {
+  padding: 2rem 9%;
 }
 
-.heading{
-text-align: center;
-padding: 2rem 0;
-
+.heading {
+  text-align: center;
+  padding: 2rem 0;
 }
 
-.heading span{
-    font-size: 4.5rem;
+.heading span {
+  font-size: 4.5rem;
   color: var(--orange);
-  border-radius: .5rem;
-  padding: .1rem 2rem;
+  border-radius: 0.5rem;
+  padding: 0.1rem 2rem;
   animation: animate 3s infinite linear;
   display: inline-block;
 }
 
-img{
+img {
   width: 100%;
-
 }
 
-
-
-.btn{
-    display: inline-block;
-    margin: 16px 32px;
-    background: var(--orange);
-    color: #fff;
-    padding: .8rem 2rem;
-    border: .2rem solid var(--orange);
-    cursor: pointer;
-    font-size: 1.8rem;
-    border-radius: 10px;
+.btn {
+  display: inline-block;
+  margin: 16px 32px;
+  background: var(--orange);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: 0.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.8rem;
+  border-radius: 10px;
 }
 
-.btn:hover{
-    background: rgba(4, 88, 245, 0.979);
-    color: var(--white);
+.btn:hover {
+  background: rgba(4, 88, 245, 0.979);
+  color: var(--white);
 }
-  
-
 
 /* sectopn georgia*/
 
-@keyframes animate{
-    0%{
-        color:#bbbcbc;
-        text-shadow: none;
-    }
-    18%{
-        color: #bbbcbc;
-        text-shadow: none;
-    }
-    20%{
-        color: #ff0000;
-        text-shadow: 0 0 7px #fff900,
-        0 0 20px #c00606;
-    }
-    30%{
-        color: #f05252;
-        text-shadow: none;
-    }
-    35%{
-        color: #ff0000;
-        text-shadow: 0 0 7px #fff900,
-        0 0 20px  #c00606;
-    }
-    70%{
-        color:#bbbcbc;
-        text-shadow: none;
-    }
-    85%{
-        color: #ff0000;
-        text-shadow: 0 0 7px #fff900,
-        0 0 20px #c00606;
-    }
-    90%{
-        color: #bbbcbc;
-        text-shadow: none;
-    }
-    100%{
-        color:#bbbcbc;
-        text-shadow: none;
-    }
+@keyframes animate {
+  0% {
+    color: #bbbcbc;
+    text-shadow: none;
+  }
+  18% {
+    color: #bbbcbc;
+    text-shadow: none;
+  }
+  20% {
+    color: #ff0000;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #c00606;
+  }
+  30% {
+    color: #f05252;
+    text-shadow: none;
+  }
+  35% {
+    color: #ff0000;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #c00606;
+  }
+  70% {
+    color: #bbbcbc;
+    text-shadow: none;
+  }
+  85% {
+    color: #ff0000;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #c00606;
+  }
+  90% {
+    color: #bbbcbc;
+    text-shadow: none;
+  }
+  100% {
+    color: #bbbcbc;
+    text-shadow: none;
+  }
 }
-.heading span:nth-child(1){
-    animation-delay: .2s;
+.heading span:nth-child(1) {
+  animation-delay: 0.2s;
 }
-.heading span:nth-child(2){
-    animation-delay: .4s;
+.heading span:nth-child(2) {
+  animation-delay: 0.4s;
 }
-.heading span:nth-child(3){
-    animation-delay: .6s;
+.heading span:nth-child(3) {
+  animation-delay: 0.6s;
 }
-.heading span:nth-child(4){
-    animation-delay: .8s;
+.heading span:nth-child(4) {
+  animation-delay: 0.8s;
 }
-.heading span:nth-child(5){
-    animation-delay: 1s;
+.heading span:nth-child(5) {
+  animation-delay: 1s;
 }
-.heading span:nth-child(6){
-    animation-delay: 1.2s;
+.heading span:nth-child(6) {
+  animation-delay: 1.2s;
 }
-.heading span:nth-child(7){
-    animation-delay: 1.4s;
+.heading span:nth-child(7) {
+  animation-delay: 1.4s;
 }
 
-.heading span .space{
-    background: none;
+.heading span .space {
+  background: none;
 }
-
-
-
 
 /* header start here */
 
-header{
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    background: #333;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 9%;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 9%;
 }
 
-header .logo{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-
-header .logo span{
-    color: var(--orange);
+header .logo span {
+  color: var(--orange);
 }
 
-header .navbar a{
-    color: #fff;
-    font-size: 2rem;
-    margin: 0 .8rem;
+header .navbar a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0.8rem;
 }
 
-header .navbar a:hover{
-    color: var(--orange);
+header .navbar a:hover {
+  color: var(--orange);
 }
 
-header .icons i{
-    font-size: 2.5rem;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 2rem;
+header .icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
 }
 
-header .icons i:hover{
-    color: var(--orange);
+header .icons i:hover {
+  color: var(--orange);
 }
 
+/* ეს არის შენს ენების გადამრთველისთვის უკვე სწორი სტილი */
 header .language-switcher {
   display: inline-flex;
   gap: 0.5rem;
   align-items: center;
 }
 
-header .language-switcher button {
+header .language-switcher a {
   background-color: #555;
   color: white;
   border: none;
@@ -228,16 +216,17 @@ header .language-switcher button {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  text-decoration: none;
 }
 
-header .language-switcher button.active {
+header .language-switcher a.active {
   background-color: var(--orange);
   color: white;
   cursor: default;
   pointer-events: none; /* რომ აღარ ჩასჭიდო */
 }
 
-header .language-switcher button img {
+header .language-switcher a img {
   width: 20px;
   height: 14px;
   object-fit: cover;
@@ -245,47 +234,47 @@ header .language-switcher button img {
   border-radius: 2px;
 }
 
-header .language-switcher button:hover {
+header .language-switcher a:hover {
   background-color: var(--orange);
 }
 
-
-header .search-bar-container{
-    position: absolute;
-    top: 100%; left: 0; right: 0;
-    padding: 1.5rem 2rem;
-    background: #333;
-    border-top: .2rem solid rgba(255,255,255,2);
-    display: flex;
-    align-items: center;
-    z-index: 1001;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border-top: 0.2rem solid rgba(255, 255, 255, 2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
-header .search-bar-container.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-header .search-bar-container #search-bar{
-    width: 100%;
-    padding: 1rem;
-    text-transform: none;
-    color: #333;
-    font-size: 1.7rem;
-    border-radius: 5rem;
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: 5rem;
 }
 
-header .search-bar-container label{
-    color: #fff;
-    cursor: pointer;
-    font-size: 3rem;
-    margin-left: 1.5rem;
+header .search-bar-container label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
 }
 
-header .search-bar-container label:hover{
-    color: var(--orange);
+header .search-bar-container label:hover {
+  color: var(--orange);
 }
-
 
 @media (max-width: 768px) {
   header {
@@ -318,125 +307,122 @@ header .search-bar-container label:hover{
   }
 }
 
-
-
 /* login start here*/
-.login-form-container{
-    position: fixed;
-    top: -120%; left: 0;
-    z-index: 10000;
-    min-height: 100vh;
-    width: 100%;
-    background: rgba(0,0,0,.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.login-form-container {
+  position: fixed;
+  top: -120%;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.login-form-container.active{
-    top: 0;
+.login-form-container.active {
+  top: 0;
 }
 
-.login-form-container form{
-    margin: 2rem; /* გარე სიცარიელე ფორმის გარშემო */
-    padding: 1.5rem 2rem;
-    border-radius: .5rem;
-    background: #fff;
-    width: 90%; /* ფორმა დაიკავებს ეკრანის 90%-ს */
-    max-width: 50rem; /* მაგრამ არ იქნება 50rem-ზე დიდი დიდ ეკრანებზე */
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.3); /* ეს ვიზუალურად უკეთ გამოიყურება */
-    text-align: center; /* ეს დაგეხმარებათ შიდა ინლაინ ელემენტების ცენტრში გასწორებაში */
+.login-form-container form {
+  margin: 2rem; /* გარე სიცარიელე ფორმის გარშემო */
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 90%; /* ფორმა დაიკავებს ეკრანის 90%-ს */
+  max-width: 50rem; /* მაგრამ არ იქნება 50rem-ზე დიდი დიდ ეკრანებზე */
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3); /* ეს ვიზუალურად უკეთ გამოიყურება */
+  text-align: center; /* ეს დაგეხმარებათ შიდა ინლაინ ელემენტების ცენტრში გასწორებაში */
 }
 
-.login-form-container form h3{
-    font-size: 3rem;
-    color: #444; /* 'columns' შეცვალეთ 'color'-ით */
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1rem 0;
+.login-form-container form h3 {
+  font-size: 3rem;
+  color: #444; /* 'columns' შეცვალეთ 'color'-ით */
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0;
 }
 
-.login-form-container form .box{
-    width: 100%; /* '1005' შეცვალეთ '100%'-ით */
-    padding: 1rem;
-    font-size: 1.7rem;
-    color: #333; /* 'columns' შეცვალეთ 'color'-ით */
-    margin: .6rem 0;
-    border: .1rem solid rgba(0,0,0,.3);
-    text-transform: none;
-    box-sizing: border-box; /* ეს აუცილებელია, რომ padding და border არ გასცდეს 100%-ს */
+.login-form-container form .box {
+  width: 100%; /* '1005' შეცვალეთ '100%'-ით */
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333; /* 'columns' შეცვალეთ 'color'-ით */
+  margin: 0.6rem 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  text-transform: none;
+  box-sizing: border-box; /* ეს აუცილებელია, რომ padding და border არ გასცდეს 100%-ს */
 }
 
-.login-form-container form .box:focus{
-    border-color: var(--orange);
+.login-form-container form .box:focus {
+  border-color: var(--orange);
 }
 
-.login-form-container form #remember{
-    margin: 2rem 0;
+.login-form-container form #remember {
+  margin: 2rem 0;
 }
 
-.login-form-container form label{
-    font-size: 1.5rem ;
+.login-form-container form label {
+  font-size: 1.5rem;
 }
 
-.login-form-container form .btn{
-    display: block; /* ღილაკი ცალკე ხაზზე იქნება */
-    width: 100%;    /* დაიკავებს ფორმის 100% სიგანეს (რომელიც უკვე რეაგირებადია) */
-    max-width: 300px; /* დააწესეთ მაქსიმალური სიგანე ღილაკისთვის, მაგალითად 300px */
-    margin: 1.5rem auto; /* ცენტრში გასასწორებლად ჰორიზონტალურად */
-    /* დარწმუნდით, რომ global .btn კლასიდან სხვა სტილები (ფონი, ფერი, padding, border) სწორად გადმოდის. */
+.login-form-container form .btn {
+  display: block; /* ღილაკი ცალკე ხაზზე იქნება */
+  width: 100%; /* დაიკავებს ფორმის 100% სიგანეს (რომელიც უკვე რეაგირებადია) */
+  max-width: 300px; /* დააწესეთ მაქსიმალური სიგანე ღილაკისთვის, მაგალითად 300px */
+  margin: 1.5rem auto; /* ცენტრში გასასწორებლად ჰორიზონტალურად */
+  /* დარწმუნდით, რომ global .btn კლასიდან სხვა სტილები (ფონი, ფერი, padding, border) სწორად გადმოდის. */
 }
 
-.login-form-container form p{
-    padding: .5rem 0;
-    font-size: 1.5rem;
-    color: #667; /* 'columns' შეცვალეთ 'color'-ით */
+.login-form-container form p {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #667; /* 'columns' შეცვალეთ 'color'-ით */
 }
 
-.login-form-container form p a{
-    color: var(--orange);
+.login-form-container form p a {
+  color: var(--orange);
 }
 
-.login-form-container form p a:hover{
-    color: #333;
-    text-decoration: underline;
+.login-form-container form p a:hover {
+  color: #333;
+  text-decoration: underline;
 }
 
-.login-form-container #form-close{
-    position: absolute;
-    top: 1rem; right: 3rem;
-    font-size: 5rem;
-    color: #fff;
-    cursor: pointer;
+.login-form-container #form-close {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  font-size: 5rem;
+  color: #fff;
+  cursor: pointer;
 }
 
-#menu-bar{
-    color: #fff;
-    border: .1rem solid #fff;
-    border-radius: .5rem;
-    font-size: 3rem;
-    padding: .5rem 1.2rem;
-    cursor: pointer;
-    display: none;
+#menu-bar {
+  color: #fff;
+  border: 0.1rem solid #fff;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  display: none;
 }
 /* login end here*/
 
-
-
 /* home section*/
 .home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    position: relative;
-    z-index: 0;
-
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
 }
 
-.home .content{
-    text-align: center;
+.home .content {
+  text-align: center;
 }
 
 .home .content h3 {
@@ -444,7 +430,7 @@ header .search-bar-container label:hover{
   line-height: 1.2;
   color: #fff;
   text-transform: uppercase;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   margin-bottom: 0.5rem;
 }
 
@@ -452,7 +438,7 @@ header .search-bar-container label:hover{
   font-size: 1.5rem;
   line-height: 1.6;
   color: #ddd;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   margin: 0.3rem 0;
 }
 
@@ -460,13 +446,13 @@ header .search-bar-container label:hover{
   font-size: 2rem;
   font-style: italic;
   color: #ffb733; /* თბილი ყვითელი */
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   margin-top: 1rem;
 }
 
 .home .content #info-discover {
   position: relative; /* დასჭირდება ღილაკის გასანაწილებლად */
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
   padding: 100px 40px;
   overflow-y: auto;
@@ -501,22 +487,24 @@ header .search-bar-container label:hover{
   font-size: 2.8rem;
 }
 
-.home .video-container video{
-    position: absolute;
-    top: 0; left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-      z-index: -2;
+.home .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
 }
 
-
 .home .video-overlay {
-
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5); /* ნახევრად გამუქება */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* ნახევრად გამუქება */
   z-index: -1;
 }
 
@@ -596,7 +584,6 @@ header .search-bar-container label:hover{
   }
 }
 
-
 @media (max-width: 1024px) {
   .home .content #close-button-discover {
     top: 20px;
@@ -613,17 +600,11 @@ header .search-bar-container label:hover{
   }
 }
 
-
 /*home section end*/
-
-
-
-
-
 
 /*georgia*/
 
-.ge_georgia{
+.ge_georgia {
   min-height: 100vh;
 }
 /*
@@ -633,266 +614,259 @@ header .search-bar-container label:hover{
     display: flex;
     background-color: lightblue;
   }
-  */     
+  */
 
-.gether{  
-    display: flex;  
-    justify-content: space-between;
-    width: 100%;
-    
+.gether {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
- #infoDisplay{  
-    position: relative;
-    width: 460px;
-  }
+#infoDisplay {
+  position: relative;
+  width: 460px;
+}
 
-  #photoDisplay{  
-     width: 100%;
+#photoDisplay {
+  width: 100%;
   max-width: 460px;
   aspect-ratio: 460 / 280; /* ან 16 / 9 */
   object-fit: cover;
   border: 5px solid var(--color-black--tint);
   border-radius: 20px;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 1);
-  } 
-  
+}
 
 #nameDisplay {
   font-size: 32px; /* ოდნავ გაზარდე */
   font-weight: 700; /* უფრო ხისტი */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* მოდური და წაკითხადი ფონტი */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* მოდური და წაკითხადი ფონტი */
   padding-top: 20px;
   color: #222; /* მუქი ნაცრისფერი ფერი, ძალიან მკვეთრი არა */
   letter-spacing: 0.05em; /* სიმბოლოებს შორის პატარა სივრცე */
   line-height: 1.3; /* სიმაღლე ტექსტის ბლოკის */
-  text-shadow: 5px 5px 2px rgba(0,0,0,0.1); /* ძალიან მსუბუქი ჩრდილი, რომ უფრო ღრმა იყოს ტექსტი */
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1); /* ძალიან მსუბუქი ჩრდილი, რომ უფრო ღრმა იყოს ტექსტი */
   user-select: text; /* რომ მომხმარებელს შეეძლოს ტექსტის მონიშვნა */
 }
 
-.gether .fimg img{  
+.gether .fimg img {
   width: 380px;
   position: relative;
   top: 1px;
   left: 50px;
 }
 
-  .RegionsMap_RegionsMap__g_AmQ { 
-   width: 600px;
- position: relative;
- bottom: 20px;
-  }
-  
-  .RegionsMap_RegionsMap__Vector__CfpAv {  
-    width: 100%;
-    height: 100%;   
-  }
-  
-  .RegionsMap_RegionsMap__Path__n3NxB {  
-    cursor: pointer;
-    fill: rgb(228, 228, 238);
-    stroke: var(--color-grey--tint);
-    stroke-width: 1.5px;
-    stroke-linejoin: round;
-    transition: all .2s linear;
-     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-  }
-  
-  .RegionsMap_RegionsMap__Path--active__ir8Dr,.RegionsMap_RegionsMap__Path__n3NxB:hover {
-    fill: blue;
-  }
-  
-  .RegionsMap_RegionsMap__Path--disabled__2jHrp {
-    fill: hsla(0, 98%, 50%, 0.993);
-  }
-  
-  .tbilisi{
-    fill: rgb(72, 72, 192);
-  } 
+.RegionsMap_RegionsMap__g_AmQ {
+  width: 600px;
+  position: relative;
+  bottom: 20px;
+}
 
-  .RegionsMapTooltip_RegionsMapTooltip__gjtX0 {  
-    position: absolute;
-    display: flex;
-    padding: 12px;
-    align-items: center;
-    transform: translate(-50%,-125%);
-    border-radius: 12px;
-    background-color: var(--color-white);
-    box-shadow: 0 5px 20px rgba(0,0,0,.1);
-    pointer-events: none;
-    z-index: 100;
-  }
-  
-  .RegionsMapTooltip_RegionsMapTooltip__gjtX0:before {  
-    display: block;
-    content: "";
-    height: 20px;
-    width: 20px;
-    background-color: inherit;
-    border: inherit;
-    position: absolute;
-    bottom: -9px;
-    left: calc(50% - 10px);
-    -webkit-clip-path: polygon(0 0,100% 100%,0 100%);
-    clip-path: polygon(0 0,100% 100%,0 100%);
-    transform: rotate(-45deg);
-    border-radius: 0 0 0 .25em;
-  }
-  
-  .RegionsMapTooltip_RegionsMapTooltip__Title___vugY {
-    margin-right: 10px;
-    color: var(--color-black--tint);
-    font-size: var(--font-size--xsmall);
-    font-family: var(--font-base--caps);
-    font-weight: 700;
-    line-height: 1;
-    text-transform: uppercase;
-  }
-  
-  .RegionsMapTooltip_RegionsMapTooltip__Icon__fdZHM {
-    color: var(--color-black--tint);
-    font-size: var(--font-size--small);
-    line-height: 1;
-  }
-  
-  
-    .RegionsMapTooltip_RegionsMapTooltip__gjtX0 {
-        padding:20px 30px;
-    }
-  
-    .RegionsMapTooltip_RegionsMapTooltip__Title___vugY {
-        font-size: var(--font-size--small);
-    }
-  
-    .RegionsMapTooltip_RegionsMapTooltip__Icon__fdZHM {
-        font-size: var(--font-size--base);
-    }
-  
-  
-  .RegionCardControls_RegionCardControls__IyqXd {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
-  }
-  
-  .RegionCardControls_RegionCardControl__8stb9 { 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 60px;
-    background-color: hsla(0,0%,100%,.3);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    border-radius: 100%;
-    color: var(--color-primary);
-    font-size: 26px;
-    line-height: 1;
-    pointer-events: all;
-    transition: background-color .2s;
-    cursor: pointer;
-  }
-  
-  .RegionCardControls_RegionCardControl__8stb9:hover {
-    background-color: hsla(0,0%,100%,.7);
-  }
-  
-  .RegionCardControls_RegionCardControl--Prev__xxZrB {
-    left: -30px;
-  }
-  
-  .RegionCardControls_RegionCardControl--Next__d1E_a {
-    right: -30px;
-  }
-  
-  .RegionCard_RegionCard__laUgx {
-    background: var(--color-white);
-    border: 1px solid rgba(0,0,0,.07);
-    border-radius: 12px;
-  }
-  
-  .RegionCard_RegionCard__Link__D7txr {
-    display: block;
-    height: 100%;
-    border-radius: 12px 12px 0 0;
-    overflow: hidden;
-  }
-  
-  .RegionCard_RegionCard__Content__JuBhs {
-    padding: 30px;
-    min-height: 176px;
-  }
-  
-  .RegionCard_RegionCard__Title__rDA_E {
-    margin-bottom: 10px;
-    color: var(--color-black--tint);
-    font-size: var(--font-size--2x-large);
-    font-weight: 700;
-    text-transform: capitalize;
-  }
-  
-  .RegionCard_RegionCard__Title__rDA_E a {
-    color: var(--color-black--tint);
-  }
-  
-  .RegionCard_RegionCard__Text__ZDD6j {
-    margin-bottom: 10px;
-    color: var(--color-grey);
-    font-size: var(--font-size--small);
-  }
-  
-  .RegionCard_RegionCard__List__MI1gi {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .RegionCard_RegionCard__ListItem__04LEq {
-    padding-right: 15px;
-    margin-right: 10px;
-    color: var(--color-grey);
-    font-size: var(--font-size--medium);
-  }
-  
-  .RegionCard_RegionCard__ListItem__04LEq:after {
-    content: "";
-    position: absolute;
-    top: 56%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: var(--color-grey);
-  }
-  
-  .RegionCard_RegionCard__ListItem__04LEq:last-child:after {
-    display: none;
-  }
-  
-  .RegionCard_RegionCard__ListItem__04LEq a {
-    color: var(--color-grey);
-  }
+.RegionsMap_RegionsMap__Vector__CfpAv {
+  width: 100%;
+  height: 100%;
+}
 
-  .ge_video { 
-   position: relative;
-    display: flex;
-    justify-content: center;
-  }
+.RegionsMap_RegionsMap__Path__n3NxB {
+  cursor: pointer;
+  fill: rgb(228, 228, 238);
+  stroke: var(--color-grey--tint);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  transition: all 0.2s linear;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
 
-  .ge_video iframe{
-    width: 800px;
-    height: 400px;
-    box-shadow: 2rem 1rem 3rem rgb(15, 15, 15); 
-  }
+.RegionsMap_RegionsMap__Path--active__ir8Dr,
+.RegionsMap_RegionsMap__Path__n3NxB:hover {
+  fill: blue;
+}
 
-  
+.RegionsMap_RegionsMap__Path--disabled__2jHrp {
+  fill: hsla(0, 98%, 50%, 0.993);
+}
 
+.tbilisi {
+  fill: rgb(72, 72, 192);
+}
 
+.RegionsMapTooltip_RegionsMapTooltip__gjtX0 {
+  position: absolute;
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  transform: translate(-50%, -125%);
+  border-radius: 12px;
+  background-color: var(--color-white);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.RegionsMapTooltip_RegionsMapTooltip__gjtX0:before {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: inherit;
+  border: inherit;
+  position: absolute;
+  bottom: -9px;
+  left: calc(50% - 10px);
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  transform: rotate(-45deg);
+  border-radius: 0 0 0 0.25em;
+}
+
+.RegionsMapTooltip_RegionsMapTooltip__Title___vugY {
+  margin-right: 10px;
+  color: var(--color-black--tint);
+  font-size: var(--font-size--xsmall);
+  font-family: var(--font-base--caps);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.RegionsMapTooltip_RegionsMapTooltip__Icon__fdZHM {
+  color: var(--color-black--tint);
+  font-size: var(--font-size--small);
+  line-height: 1;
+}
+
+.RegionsMapTooltip_RegionsMapTooltip__gjtX0 {
+  padding: 20px 30px;
+}
+
+.RegionsMapTooltip_RegionsMapTooltip__Title___vugY {
+  font-size: var(--font-size--small);
+}
+
+.RegionsMapTooltip_RegionsMapTooltip__Icon__fdZHM {
+  font-size: var(--font-size--base);
+}
+
+.RegionCardControls_RegionCardControls__IyqXd {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.RegionCardControls_RegionCardControl__8stb9 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 100%;
+  color: var(--color-primary);
+  font-size: 26px;
+  line-height: 1;
+  pointer-events: all;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.RegionCardControls_RegionCardControl__8stb9:hover {
+  background-color: hsla(0, 0%, 100%, 0.7);
+}
+
+.RegionCardControls_RegionCardControl--Prev__xxZrB {
+  left: -30px;
+}
+
+.RegionCardControls_RegionCardControl--Next__d1E_a {
+  right: -30px;
+}
+
+.RegionCard_RegionCard__laUgx {
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.RegionCard_RegionCard__Link__D7txr {
+  display: block;
+  height: 100%;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.RegionCard_RegionCard__Content__JuBhs {
+  padding: 30px;
+  min-height: 176px;
+}
+
+.RegionCard_RegionCard__Title__rDA_E {
+  margin-bottom: 10px;
+  color: var(--color-black--tint);
+  font-size: var(--font-size--2x-large);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.RegionCard_RegionCard__Title__rDA_E a {
+  color: var(--color-black--tint);
+}
+
+.RegionCard_RegionCard__Text__ZDD6j {
+  margin-bottom: 10px;
+  color: var(--color-grey);
+  font-size: var(--font-size--small);
+}
+
+.RegionCard_RegionCard__List__MI1gi {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.RegionCard_RegionCard__ListItem__04LEq {
+  padding-right: 15px;
+  margin-right: 10px;
+  color: var(--color-grey);
+  font-size: var(--font-size--medium);
+}
+
+.RegionCard_RegionCard__ListItem__04LEq:after {
+  content: "";
+  position: absolute;
+  top: 56%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-grey);
+}
+
+.RegionCard_RegionCard__ListItem__04LEq:last-child:after {
+  display: none;
+}
+
+.RegionCard_RegionCard__ListItem__04LEq a {
+  color: var(--color-grey);
+}
+
+.ge_video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.ge_video iframe {
+  width: 800px;
+  height: 400px;
+  box-shadow: 2rem 1rem 3rem rgb(15, 15, 15);
+}
 
 /* package section styles */
 
@@ -902,569 +876,439 @@ header .search-bar-container label:hover{
 
 /* New style for the buttons container */
 .package .box-container .box .content .buttons-container {
-    display: flex; /* გახადეთ Flexbox კონტეინერი */
-    justify-content: center; /* ღილაკები ცენტრში გაასწორეთ ჰორიზონტალურად */
-    gap: 1rem; /* დაამატეთ სიცარიელე ღილაკებს შორის */
-    width: 100%; /* დარწმუნდით, რომ იკავებს სრულ სიგანეს */
-    margin-top: 1rem; /* დაამატეთ მცირე სიცარიელე ღილაკების კონტეინერს ზემოთ */
-    
+  display: flex; /* გახადეთ Flexbox კონტეინერი */
+  justify-content: center; /* ღილაკები ცენტრში გაასწორეთ ჰორიზონტალურად */
+  gap: 1rem; /* დაამატეთ სიცარიელე ღილაკებს შორის */
+  width: 100%; /* დარწმუნდით, რომ იკავებს სრულ სიგანეს */
+  margin-top: 1rem; /* დაამატეთ მცირე სიცარიელე ღილაკების კონტეინერს ზემოთ */
 }
 
-.package .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem; /* დატოვეთ 1rem gap */
-    justify-content: center; /* ეს ასწორებს Flexbox ელემენტებს ჰორიზონტალურად ცენტრში */
+.package .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* დატოვეთ 1rem gap */
+  justify-content: center; /* ეს ასწორებს Flexbox ელემენტებს ჰორიზონტალურად ცენტრში */
 }
 
-.package .box-container .box{
-    /* ეს flex მნიშვნელობა ცდილობს, რომ 3 ელემენტი იყოს ერთ რიგში,
+.package .box-container .box {
+  /* ეს flex მნიშვნელობა ცდილობს, რომ 3 ელემენტი იყოს ერთ რიგში,
        გაპის გათვალისწინებით. თუ ეკრანი საკმარისად ფართო არაა,
        ავტომატურად გადავა 2-2-ზე ან 1-1-ზე მედია ქუერების მიხედვით. */
-    flex: 1 1 calc(33.33% - 0.67rem); /* (100% - 2 * gap) / 3 */
-    position: relative;
-    max-width: calc(33.33% - 0.67rem); /* დავამატე max-width, რომ არ გასცდეს ზომას */
-    /* დამატებითი სტილები, თუ გჭირდებათ, მაგალითად border ან background */
+  flex: 1 1 calc(33.33% - 0.67rem); /* (100% - 2 * gap) / 3 */
+  position: relative;
+  max-width: calc(
+    33.33% - 0.67rem
+  ); /* დავამატე max-width, რომ არ გასცდეს ზომას */
+  /* დამატებითი სტილები, თუ გჭირდებათ, მაგალითად border ან background */
 }
 
-.package .box-container .box img{
-    height: 20rem;
-    width: 100%; /* სურათი სრულად მოერგება მის მშობელ კონტეინერს */
-    object-fit: cover;
-    box-shadow: 1rem 1rem .5rem rgba(26, 25, 25, 0.39);
-    border-radius: 10px;
+.package .box-container .box img {
+  height: 20rem;
+  width: 100%; /* სურათი სრულად მოერგება მის მშობელ კონტეინერს */
+  object-fit: cover;
+  box-shadow: 1rem 1rem 0.5rem rgba(26, 25, 25, 0.39);
+  border-radius: 10px;
 }
 
-.package .box-container .box .content{
-    padding: .6rem;
-    display: flex;
-    flex-direction: column; /* კონტენტი ერთმანეთის ქვეშ იყოს */
-    justify-content: center;
-    align-items: center; /* კონტენტი ჰორიზონტალურად ცენტრში */
-    gap: 0.5rem; /* კონტენტის ელემენტებს შორის სიცარიელე */
+.package .box-container .box .content {
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column; /* კონტენტი ერთმანეთის ქვეშ იყოს */
+  justify-content: center;
+  align-items: center; /* კონტენტი ჰორიზონტალურად ცენტრში */
+  gap: 0.5rem; /* კონტენტის ელემენტებს შორის სიცარიელე */
 }
 
 /* book now ღილაკი */
-.package .box-container .box .content .btn-1{
-    display: inline-block;
-    width: auto;
-    /* margin-top: 1rem; - მოვაშორე, რადგან gap უკვე აგვარებს სიცარიელეს */
+.package .box-container .box .content .btn-1 {
+  display: inline-block;
+
+  width: auto;
+  /* margin-top: 1rem; - მოვაშორე, რადგან gap უკვე აგვარებს სიცარიელეს */
 }
 
 /* read more ღილაკი */
-.package .box-container .box .content .btn-2{
-    display: inline-block;
-    width: auto;
+.package .box-container .box .content .btn-2 {
+  display: inline-block;
+
+  width: auto;
 }
 
 /* Close Button */
 .close-button-class {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    font-size: 5rem;
-    font-weight: bold;
-       background-color: transparent; /* სწორი გზაა უკანა ფერის არ ქონისთვის */
-    color:  red;
-    z-index: 101;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 5rem;
+  font-weight: bold;
+  background-color: transparent; /* სწორი გზაა უკანა ფერის არ ქონისთვის */
+  color: red;
+  z-index: 101;
 }
 
 /* Photo Info Modal */
 .photo-info-modal-class {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 /* Heading styles */
-.package .box-container .box .content h3{
-    font-size: 2rem;
-    color: #333;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 0.5rem;
+.package .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
 
-.package .box-container .box .content h3 a{ 
-    color: var(--orange);
-    padding-right: 10px;
+.package .box-container .box .content h3 a {
+  color: var(--orange);
+  padding-right: 10px;
 }
 
-.package .box-container .box .content h3 a:hover{
-    color: green;
-    
-    transform: scale(1.1);
+.package .box-container .box .content h3 a:hover {
+  color: green;
+
+  transform: scale(1.1);
 }
 
-.package .box-container .box .modal-text-content h3 a{ 
-    color: var(--orange);
-    padding-right: 10px;
+.package .box-container .box .modal-text-content h3 a {
+  color: var(--orange);
+  padding-right: 10px;
 }
 
-.package .box-container .box .modal-text-content h3 a:hover{
-    color: green;
-    
-    transform: scale(1.1);
+.package .box-container .box .modal-text-content h3 a:hover {
+  color: green;
+
+  transform: scale(1.1);
 }
 
 /* Paragraph styles */
-.package .box-container .box .content p{
-    font-size: 1.5rem;
-    color: #667;
-    padding: .5rem 0;
-    text-align: center;
-    width: 100%;
+.package .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #667;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
 }
 
 /* Stars styles */
-.package .box-container .box .content .stars{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0.5rem;
+.package .box-container .box .content .stars {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
-.package .box-container .box .content .stars i{ 
-    font-size: 1.7rem;
-    color: var(--orange);
+.package .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
 }
 
 /* Price styles */
-.package .box-container .box .content .price{
-    font-size: 2rem;
-    color: #333;
-    padding-top: 1rem;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
+.package .box-container .box .content .price {
+  font-size: 2rem;
+  color: #333;
+  padding-top: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.package .box-container .box .content .price span{
-    color: #667;
-    font-size: 1.5rem;
-    text-decoration: line-through;
+.package .box-container .box .content .price span {
+  color: #667;
+  font-size: 1.5rem;
+  text-decoration: line-through;
 }
-
 
 .modal-map-content iframe {
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
-
-
-
-
 
 /* Responsive design for box-container */
-@media (max-width: 991px) { /* მაგალითად, პლანშეტებზე 2-2-ად */
-    .package .box-container .box {
-        flex: 1 1 calc(50% - 0.5rem); /* 2 ელემენტი რიგში, gap-ის გათვალისწინებით */
-        max-width: calc(50% - 0.5rem);
-    }
+@media (max-width: 991px) {
+  /* მაგალითად, პლანშეტებზე 2-2-ად */
+  .package .box-container .box {
+    flex: 1 1 calc(50% - 0.5rem); /* 2 ელემენტი რიგში, gap-ის გათვალისწინებით */
+    max-width: calc(50% - 0.5rem);
+  }
 }
 
-@media (max-width: 768px) { /* პატარა პლანშეტებზე */
-    .package .box-container .box {
-        flex: 1 1 90%; /* თითქმის 100%, მაგრამ gap-ის გათვალისწინებით */
-        max-width: 90%;
-    }
+@media (max-width: 768px) {
+  /* პატარა პლანშეტებზე */
+  .package .box-container .box {
+    flex: 1 1 90%; /* თითქმის 100%, მაგრამ gap-ის გათვალისწინებით */
+    max-width: 90%;
+  }
 }
 
-@media (max-width: 450px) { /* მობილურებზე, თითო-თითო */
-    .package .box-container .box {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-    .package .box-container .box .content {
-        flex-direction: column; /* ღილაკები შეიძლება ერთმანეთის ქვეშ გადავიდეს პატარა ეკრანებზე */
-    }
+@media (max-width: 450px) {
+  /* მობილურებზე, თითო-თითო */
+  .package .box-container .box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .package .box-container .box .content {
+    flex-direction: column; /* ღილაკები შეიძლება ერთმანეთის ქვეშ გადავიდეს პატარა ეკრანებზე */
+  }
 }
 
-
-
-/*services*/
-
-.services{
-    min-height: 100vh;
-   
+/* ================== ძირითადი სტილები ================== */
+.services {
+  min-height: 100vh;
 }
 
-.services .box-container{
-    display: flex;
-   flex-wrap: wrap;
-   gap: 3rem;
-   height: 30rem;
-position: relative;
-top: 150px;
-} 
-
-.services .box-container .box1{
-    flex: 1 1 30rem;
-    padding: 1rem;
-    border-radius: .5rem;
-    text-align: center;
-  
+.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  height: 30rem;
+  position: relative;
+  top: 150px;
 }
-
-.services .box-container .box1 i{
-    padding: 5rem;
-    font-size: 5rem;
-    color: var(--orange);
-    
-}
-
-.services .box-container .box1 h3{
-   font-size: 2.5rem;
-   color: #333;
- 
-}
-.services .box-container .box1 p{
-    font-size: 1.5rem;
-    color: #667;
-    padding: 1rem 0;
-
- }
-
- .services .box-container .box1:hover{
-   box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
-   border: solid rgb(176, 174, 174) 2px;
-   background-image: url(foto/magnolia-hotel.jpg);
-   background-size: cover;
- }
-
- 
-
-.services .box-container .box2{
-    flex: 1 1 30rem;
-    padding: 1rem;
-    border-radius: .5rem;
-    text-align: center;
-  
-}
-
-.services .box-container .box2 i{
-    padding: 5rem;
-    font-size: 5rem;
-    color: var(--orange);
-}
-
-
-
-.services .box-container .box2 h3{
-   font-size: 2.5rem;
-   color: #333;
-}
-.services .box-container .box2 p{
-    font-size: 1.5rem;
-    color: #667;
-    padding: 1rem 0;
-    
- }
-
- .services .box-container .box2:hover{
-   box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
-   border: solid rgb(176, 174, 174) 2px;
-   background-image: url(foto/georgian\ food.jpg);
-   background-size: cover;
-
- }
-
-
- .services .box-container .box3{
-    flex: 1 1 30rem;
-    padding: 1rem;
-    border-radius: .5rem;
-    text-align: center;
-  
-}
-
-.services .box-container .box3 i{
-    padding: 5rem;
-    font-size: 5rem;
-    color: var(--orange);
-}
-
-
-
-.services .box-container .box3 h3{
-   font-size: 2.5rem;
-   color: #333;
-}
-.services .box-container .box3 p{
-    font-size: 1.5rem;
-    color: #667;
-    padding: 1rem 0;
-    
- }
-
- .services .box-container .box3:hover{
-   box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
-   border: solid rgb(176, 174, 174) 2px;
-   background-image: url(foto/point.webp);
-   background-size: cover;
-
- }
-
-
-
- /* ================== ძირითადი სტილები ================== */
-.services{
-    min-height: 100vh;
-}
-
-.services .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    height: 30rem;
-    position: relative;
-    top: 150px;
-} 
 
 .services .box-container .box1,
 .services .box-container .box2,
 .services .box-container .box3 {
-    flex: 1 1 30rem;
-    padding: 1rem;
-    border-radius: .5rem;
-    text-align: center;
+  flex: 1 1 30rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  border: none;
 }
 
 .services .box-container .box1 i,
 .services .box-container .box2 i,
 .services .box-container .box3 i {
-    padding: 5rem;
-    font-size: 5rem;
-    color: var(--orange);
+  padding: 5rem;
+  font-size: 5rem;
+  color: var(--orange);
 }
 
 .services .box-container .box1 h3,
 .services .box-container .box2 h3,
 .services .box-container .box3 h3 {
-    font-size: 2.5rem;
-    color: #333;
+  font-size: 2.5rem;
+  color: #333;
 }
 
 .services .box-container .box1 p,
 .services .box-container .box2 p,
 .services .box-container .box3 p {
-    font-size: 1.5rem;
-    color: #667;
-    padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #667;
+  padding: 1rem 0;
 }
 
 .services .box-container .box1:hover,
 .services .box-container .box2:hover,
 .services .box-container .box3:hover {
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
-    border: solid rgb(176, 174, 174) 2px;
-    background-size: cover;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.8);
+  border: solid rgb(176, 174, 174) 2px;
+  background-size: cover;
 }
 
 /* ინდივიდუალური ფონები hover-ზე */
 .services .box-container .box1:hover {
-    background-image: url(foto/magnolia-hotel.jpg);
+  background-image: url(foto/magnolia-hotel.jpg);
 }
 
 .services .box-container .box2:hover {
-    background-image: url(foto/georgian_food.jpg);
+  background-image: url(foto/georgian_food.jpg);
 }
 
 .services .box-container .box3:hover {
-    background-image: url(foto/point.webp);
+  background-image: url(foto/point.webp);
 }
 
 /* ================== ლეპტოპი (მაქს სიგანე 1200px) ================== */
 @media (max-width: 1200px) {
-    .services .box-container {
-        height: auto; /* ავტომატური სიმაღლე, რომ არ გაწელოს */
-        top: 100px;  /* თხელი გადმოწევა */
-        gap: 2rem;
-    }
+  .services .box-container {
+    height: auto; /* ავტომატური სიმაღლე, რომ არ გაწელოს */
+    top: 100px; /* თხელი გადმოწევა */
+    gap: 2rem;
+  }
 
-    .services .box-container .box1,
-    .services .box-container .box2,
-    .services .box-container .box3 {
-        flex: 1 1 45%; /* ორ სვეტად */
-        padding: 1rem;
-    }
+  .services .box-container .box1,
+  .services .box-container .box2,
+  .services .box-container .box3 {
+    flex: 1 1 45%; /* ორ სვეტად */
+    padding: 1rem;
+  }
 
-    .services .box-container .box1 i,
-    .services .box-container .box2 i,
-    .services .box-container .box3 i {
-        padding: 4rem;
-        font-size: 4rem;
-    }
+  .services .box-container .box1 i,
+  .services .box-container .box2 i,
+  .services .box-container .box3 i {
+    padding: 4rem;
+    font-size: 4rem;
+  }
 
-    .services .box-container .box1 h3,
-    .services .box-container .box2 h3,
-    .services .box-container .box3 h3 {
-        font-size: 2rem;
-    }
+  .services .box-container .box1 h3,
+  .services .box-container .box2 h3,
+  .services .box-container .box3 h3 {
+    font-size: 2rem;
+  }
 
-    .services .box-container .box1 p,
-    .services .box-container .box2 p,
-    .services .box-container .box3 p {
-        font-size: 1.3rem;
-    }
+  .services .box-container .box1 p,
+  .services .box-container .box2 p,
+  .services .box-container .box3 p {
+    font-size: 1.3rem;
+  }
 }
 
 /* ================== სმარტფონი (მაქს სიგანე 768px) ================== */
 @media (max-width: 768px) {
-    .services .box-container {
-        flex-direction: column;  /* ერთი სვეტი */
-        height: auto;
-        top: 0;
-        gap: 1.5rem;
-    }
+  .services .box-container {
+    flex-direction: column; /* ერთი სვეტი */
+    height: auto;
+    top: 0;
+    gap: 1.5rem;
+  }
 
-    .services .box-container .box1,
-    .services .box-container .box2,
-    .services .box-container .box3 {
-        flex: 1 1 100%;
-        padding: 1rem 0.5rem;
-    }
+  .services .box-container .box1,
+  .services .box-container .box2,
+  .services .box-container .box3 {
+    flex: 1 1 100%;
+    padding: 1rem 0.5rem;
+  }
 
-    .services .box-container .box1 i,
-    .services .box-container .box2 i,
-    .services .box-container .box3 i {
-        padding: 2rem;
-        font-size: 3rem;
-    }
+  .services .box-container .box1 i,
+  .services .box-container .box2 i,
+  .services .box-container .box3 i {
+    padding: 2rem;
+    font-size: 3rem;
+  }
 
-    .services .box-container .box1 h3,
-    .services .box-container .box2 h3,
-    .services .box-container .box3 h3 {
-        font-size: 1.8rem;
-    }
+  .services .box-container .box1 h3,
+  .services .box-container .box2 h3,
+  .services .box-container .box3 h3 {
+    font-size: 1.8rem;
+  }
 
-    .services .box-container .box1 p,
-    .services .box-container .box2 p,
-    .services .box-container .box3 p {
-        font-size: 1.2rem;
-    }
+  .services .box-container .box1 p,
+  .services .box-container .box2 p,
+  .services .box-container .box3 p {
+    font-size: 1.2rem;
+  }
 
-    /* ქვედა სივრცე, რომ არ დაემალოს "Contact Us" და სხვა */
-    .services {
-        padding-bottom: 5rem;
-    }
+  /* ქვედა სივრცე, რომ არ დაემალოს "Contact Us" და სხვა */
+  .services {
+    padding-bottom: 5rem;
+  }
 }
 /* ================== ტაბლეტი (769px - 1024px) ================== */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .services .box-container {
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: center;
-    }
-
-    .services .box-container .box1,
-    .services .box-container .box2,
-    .services .box-container .box3 {
-        flex: 1 1 45%; /* ორი ბლოკი გვერდიგვერდ */
-        padding: 1.2rem;
-    }
-
-    .services .box-container .box1 i,
-    .services .box-container .box2 i,
-    .services .box-container .box3 i {
-        padding: 3rem;
-        font-size: 3.5rem;
-    }
-
-    .services .box-container .box1 h3,
-    .services .box-container .box2 h3,
-    .services .box-container .box3 h3 {
-        font-size: 2rem;
-    }
-
-    .services .box-container .box1 p,
-    .services .box-container .box2 p,
-    .services .box-container .box3 p {
-        font-size: 1.3rem;
-    }
-
-    .services {
-        padding: 4rem 2rem;
-    }
-}
-
-
-
-
-
- /* gallery*/
-.gallery{
-    min-height: 100vh;
-}
- .gallery .box-container{ 
-    display: flex;
+  .services .box-container {
     flex-wrap: wrap;
     gap: 2rem;
- }
+    justify-content: center;
+  }
 
- .gallery .box-container .box{ 
-    overflow: hidden;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.032);
-    border: 1rem solid #fff;
-    border-radius: 3rem;
-    flex: 1 1 45rem;
-    position: relative;
-    height: 35rem;
- }
+  .services .box-container .box1,
+  .services .box-container .box2,
+  .services .box-container .box3 {
+    flex: 1 1 45%; /* ორი ბლოკი გვერდიგვერდ */
+    padding: 1.2rem;
+  }
 
- .gallery .box-container .box img{ 
-   height: 100%;
-   width: 600px;
- object-fit: cover;
- }
-
- .gallery .box-container .box .content{
-    position: absolute;
-    top: -100%; left: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    background: rgba(0,0,0,.7);
-    padding: 2rem;
-    padding-top: 4rem;
- }
-
- .gallery .box-container .box:hover .content{
-   top: 0; 
- }
-
- .gallery .box-container .box .content h3{
+  .services .box-container .box1 i,
+  .services .box-container .box2 i,
+  .services .box-container .box3 i {
+    padding: 3rem;
     font-size: 3.5rem;
-    color: var(--orange);
- }
+  }
 
- .gallery .box-container .box .content p{
-    font-size: 1.5rem;
-    color: #eee;
-    padding: 5rem 0;
- }
+  .services .box-container .box1 h3,
+  .services .box-container .box2 h3,
+  .services .box-container .box3 h3 {
+    font-size: 2rem;
+  }
 
+  .services .box-container .box1 p,
+  .services .box-container .box2 p,
+  .services .box-container .box3 p {
+    font-size: 1.3rem;
+  }
 
+  .services {
+    padding: 4rem 2rem;
+  }
+}
 
+/* gallery*/
+.gallery {
+  min-height: 100vh;
+}
+.gallery .box-container {
+  display: flex;
+  flex-wrap: wrap;
 
- /*voice*/
+  gap: 2rem;
+}
 
+.gallery .box-container .box {
+  overflow: hidden;
+  box-shadow: 01rem 2rem rgba(0, 0, 0, 0.032);
+  border: 1rem solid #f7f4f4;
+  border-radius: 3rem;
+  flex: 1 1 40rem;
+  position: relative;
+  height: 40rem;
+}
+
+.gallery .box-container .box img {
+  height: 100%;
+  width: 800px;
+  object-fit: cover;
+}
+
+.gallery .box-container .box .content {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+.gallery .box-container .box:hover .content {
+  top: 0;
+}
+
+.gallery .box-container .box .content h3 {
+  font-size: 3.5rem;
+  color: var(--orange);
+}
+
+.gallery .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 5rem 0;
+}
+
+/* ძირითადი სტილი */
 .main {
   position: relative;
-  width: 100vw; /* ეკრანის სრული სიგანე */
-  height: 100vh; /* ეკრანის სრული სიმაღლე */
+  width: 100vw;
+  height: 100vh;
   background-image: url(foto/wine.jpg);
   background-size: cover;
   background-position: center;
@@ -1482,22 +1326,20 @@ top: 150px;
 .content-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1400px;
   width: 100%;
+  gap: 20px;
   flex-wrap: nowrap;
-  gap: 10px;
 }
-
 
 /* მარცხენა ნაწილი */
 .left-side {
-
-   position: relative;
- bottom: 200px;
- right: 100px;
+  border: solid red 2px;
   flex: 1;
-  min-width: 650px;
+  min-width: 250px;
+  position: relative;
+  order: 1; /* default რიგი */
 }
 
 .inter {
@@ -1506,7 +1348,8 @@ top: 150px;
   margin-bottom: 30px;
 }
 
-.chans, .vans {
+.chans,
+.vans {
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -1528,20 +1371,17 @@ top: 150px;
 }
 
 /* მარჯვენა ნაწილი */
-
-
 .right-side {
-
-
- bottom: 250px;
- left: 200px;
+  border: solid red 2px;
   flex: 1;
   min-width: 300px;
   position: relative;
   text-align: center;
+  order: 2; /* default რიგი */
 }
 
 .chanhh {
+  border: solid red 2px;
   font-size: 60px;
   position: absolute;
   top: 230px;
@@ -1567,76 +1407,60 @@ top: 150px;
   filter: drop-shadow(10px 8px 6px #ff0055);
 }
 
-/* ლეპტოპი და დიდი ეკრანები - > 1024px */
+/* ლეპტოპები და საშუალო ეკრანები */
 @media (max-width: 1024px) {
   .content-wrapper {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
   }
 
-  .left-side {
-    position: static;
-    min-width: 100%;
-    margin-bottom: 30px;
-    bottom: 0;
-    right: 0;
-  }
-
+  .left-side,
   .right-side {
-    position: static;
     min-width: 100%;
-    text-align: center;
-    bottom: 0;
-    left: 0;
+    position: relative;
   }
 
   .chanhh {
     position: relative;
-    top: 0;
-    left: 0;
+    top: auto;
+    left: auto;
     transform: none;
     font-size: 50px;
     margin-bottom: 20px;
   }
 }
 
-/* ტაბლეტი 768px - 1024px */
+/* ტაბლეტები */
 @media (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
     align-items: center;
   }
 
-  .left-side, .right-side {
-    min-width: 100%;
-    position: static;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  .left-side {
+    order: 2;
+  }
+  .right-side {
+    order: 1;
   }
 
   .chanhh {
     font-size: 40px;
-    position: relative;
-    transform: none;
-    margin-bottom: 15px;
   }
 }
 
-/* სმარტფონი < 480px */
+/* სმარტფონები */
 @media (max-width: 480px) {
   .content-wrapper {
     flex-direction: column;
     padding: 20px;
   }
 
-  .left-side, .right-side {
-    min-width: 100%;
-    position: static;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  .left-side {
+    order: 2;
+  }
+  .right-side {
+    order: 1;
   }
 
   .inter {
@@ -1644,7 +1468,8 @@ top: 150px;
     margin-bottom: 20px;
   }
 
-  .chans, .vans {
+  .chans,
+  .vans {
     font-size: 24px;
   }
 
@@ -1655,489 +1480,344 @@ top: 150px;
 
   .chanhh {
     font-size: 32px;
-    margin-bottom: 10px;
   }
 
   .imageimg {
-    filter: none; /* თუ სმარტფონზე ძნელად ჩანს ჩრდილები, აქ შეგიძლია გამორთო */
+    filter: none;
   }
 }
 
-
-
-
-
-
-
- /*review*/
-
-
+/*review*/
 
 /* responsive design for review section */
 @media (max-width: 991px) {
-    .review .review-slider .swiper-slide .box {
-        padding: 1.5rem;
-    }
-    .review .review-slider .swiper-slide .box img {
-        height: 8rem;
-        width: 8rem;
-    }
-    .review .review-slider .swiper-slide .box h3 {
-        font-size: 2rem;
-    }
-    .review .review-slider .swiper-slide .box p {
-        font-size: 1.4rem;
-    }
+  .review .review-slider .swiper-slide .box {
+    padding: 1.5rem;
+  }
+  .review .review-slider .swiper-slide .box img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .review .review-slider .swiper-slide .box h3 {
+    font-size: 2rem;
+  }
+  .review .review-slider .swiper-slide .box p {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .review .review-slider .swiper-slide .box {
-        padding: 1rem;
-    }
-    .review .review-slider .swiper-slide .box img {
-        height: 7rem;
-        width: 7rem;
-    }
-    .review .review-slider .swiper-slide .box h3 {
-        font-size: 1.8rem;
-    }
-    .review .review-slider .swiper-slide .box p {
-        font-size: 1.3rem;
-    }
+  .review .review-slider .swiper-slide .box {
+    padding: 1rem;
+  }
+  .review .review-slider .swiper-slide .box img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .review .review-slider .swiper-slide .box h3 {
+    font-size: 1.8rem;
+  }
+  .review .review-slider .swiper-slide .box p {
+    font-size: 1.3rem;
+  }
 }
-
-
-
 
 .review {
-    padding: 40px 20px;
-    background: #fff;
-    min-height: 100vh;
+  padding: 40px 20px;
+  background: #fff;
+  min-height: 100vh;
 }
 .review h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 .form-container {
-    max-width: 600px;
-    margin: 0 auto 50px;
-    padding: 20px;
-    background: #fafafa;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto 50px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .form-container input,
 .form-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 .form-container button {
-    padding: 10px 20px;
-    background: orange;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background: orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .swiper-slide .box {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .swiper-slide .box img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 .swiper-slide .box h3 {
-    margin: 10px 0;
-    font-size: 20px;
+  margin: 10px 0;
+  font-size: 20px;
 }
 .swiper-slide .box p {
-    font-size: 16px;
-    color: #444;
+  font-size: 16px;
+  color: #444;
 }
 .swiper-slide .box .stars i {
-    color: orange;
+  color: orange;
 }
-.swiper-button-next, .swiper-button-prev {
-    color: orange;
+.swiper-button-next,
+.swiper-button-prev {
+  color: orange;
 }
-
-
 
 /* responsive design for review section */
 @media (max-width: 991px) {
-    .review .review-slider .swiper-slide .box {
-        padding: 1.5rem;
-    }
-    .review .review-slider .swiper-slide .box img {
-        height: 8rem;
-        width: 8rem;
-    }
-    .review .review-slider .swiper-slide .box h3 {
-        font-size: 2rem;
-    }
-    .review .review-slider .swiper-slide .box p {
-        font-size: 1.4rem;
-    }
+  .review .review-slider .swiper-slide .box {
+    padding: 1.5rem;
+  }
+  .review .review-slider .swiper-slide .box img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .review .review-slider .swiper-slide .box h3 {
+    font-size: 2rem;
+  }
+  .review .review-slider .swiper-slide .box p {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .review .review-slider .swiper-slide .box {
-        padding: 1rem;
-    }
-    .review .review-slider .swiper-slide .box img {
-        height: 7rem;
-        width: 7rem;
-    }
-    .review .review-slider .swiper-slide .box h3 {
-        font-size: 1.8rem;
-    }
-    .review .review-slider .swiper-slide .box p {
-        font-size: 1.3rem;
-    }
-}
-
-
-
- 
- /*contact*/
-
-/* Contact Section Styles */
-.contact {
-    /* min-height: 100vh; */ /* ეს ხშირად არ არის საჭირო და შეიძლება ზედმეტი სიცარიელე გამოიწვიოს */
-    padding: 5rem 0; /* დავამატე ზედა და ქვედა padding სექციისთვის */
-}
-
-.contact .row {
-    display: flex;
-    flex-wrap: wrap; /* საშუალებას აძლევს ელემენტებს, გადავიდნენ შემდეგ ხაზზე */
-    gap: 1.5rem; /* სიცარიელე ელემენტებს შორის */
-    align-items: center; /* ცენტრში ასწორებს ელემენტებს ვერტიკალურად */
-    justify-content: center; /* ცენტრში ასწორებს ელემენტებს ჰორიზონტალურად, როდესაც ისინი გვერდიგვერდ ვერ ეტევა */
-    /* position: relative; */ /* მოვაშალე, რადგან არ არის რეკომენდებული განლაგებისთვის */
-    /* top: 70px; */ /* მოვაშალე */
-    margin-top: 3rem; /* ნაცვლად 'top', დავამატე margin-top ზემოთ სიცარიელისთვის */
-}
-
-.contact .row .image {
-    flex: 1 1 35rem; /* მოქნილი სიგანე: იკავებს მინიმუმ 350px სიგანეს, გაიწელება/შეკუმშება საჭიროებისამებრ */
-    text-align: center; /* სურათის ცენტრში გასწორება მცირე ეკრანებზე */
-}
-
-.contact .row .image img {
-    width: 100%;
-    max-width: 45rem; /* სურათის მაქსიმალური სიგანე, რომ არ გაიწელოს ზედმეტად დიდ ეკრანებზე */
-    object-fit: contain; /* სურათი სრულად გამოჩნდება პროპორციების დამახინჯების გარეშე */
-}
-
-.contact .row form {
-    flex: 1 1 50rem; /* მოქნილი სიგანე: იკავებს მინიმუმ 500px სიგანეს */
-    padding: 3rem; /* გავზარდე padding ფორმის შიგნით */
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.15); /* ოდნავ გამოკვეთილი და თანამედროვე ჩრდილი */
-    border-radius: .8rem; /* ოდნავ მომრგვალებული კუთხეები */
-    background: #fff; /* თეთრი ფონი */
-    border: 1px solid #eee; /* მცირე საზღვარი */
-}
-
-.contact .row form .inputBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* ველებს შორის თანაბარი სიცარიელე */
-}
-
-.contact .row form .inputBox input,
-.contact .row form textarea {
-    width: 49%; /* ორ ინფუთს ათავსებს ერთ ხაზზე */
-    margin: 1rem 0; /* ზედა და ქვედა margin */
-    padding: 1.2rem 1.5rem; /* გაზრდილი padding ველებში */
-    font-size: 1.6rem; /* შრიფტის ზომა */
-    color: #333;
-    background: #f7f7f7;
-    text-transform: none; /* არ ცვლის ტექსტს (მაგ. დიდი ასოებად) */
-    border: 1px solid #ddd; /* მცირე საზღვარი */
-    border-radius: .5rem; /* მომრგვალებული კუთხეები */
-}
-
-.contact .row form textarea {
-    height: 18rem; /* გავზარდე სიმაღლე, მეტი სივრცე შეტყობინებისთვის */
-    resize: none; /* მომხმარებელს არ შეუძლია ზომის შეცვლა */
-    width: 100%; /* ტექსტარეა ყოველთვის სრულ სიგანეზე */
-    padding: 1.2rem 1.5rem; /* padding textarea-სთვისაც */
-    font-size: 1.6rem;
-    color: #333;
-    background: #f7f7f7;
-    border: 1px solid #ddd;
-    border-radius: .5rem;
-}
-
-.contact .row form .btn {
-    margin-top: 2rem; /* ღილაკის დაშორება textarea-სგან */
-    background: var(--orange); /* თქვენი ბრენდის ფერი */
-    color: #fff;
-    padding: 1.2rem 3rem;
+  .review .review-slider .swiper-slide .box {
+    padding: 1rem;
+  }
+  .review .review-slider .swiper-slide .box img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .review .review-slider .swiper-slide .box h3 {
     font-size: 1.8rem;
-    cursor: pointer; /* მაუსის კურსორი შეიცვლება ხელის ფორმად */
-    border: none;
-    border-radius: .5rem;
-    transition: all .3s ease; /* გლუვი ანიმაცია hover-ზე */
-    display: inline-block; /* საჭიროა text-align-ის გარეშე ცენტრში გასასწორებლად */
+  }
+  .review .review-slider .swiper-slide .box p {
+    font-size: 1.3rem;
+  }
 }
 
-.contact .row form .btn:hover {
-    letter-spacing: .1rem; /* ასოებს შორის მანძილის გაზრდა hover-ზე */
-    opacity: 0.9; /* მცირე გამჭვირვალობა hover-ზე */
-}
+/*footer*/
 
-/* Responsive Styles for Contact Section */
-@media (max-width: 991px) { /* პლანშეტებისთვის */
-    .contact .row .image,
-    .contact .row form {
-        flex: 1 1 100%; /* სურათი და ფორმა მთელ სიგანეზე */
-    }
-}
-
-@media (max-width: 768px) { /* მობილურებისთვის */
-    .contact .row form .inputBox input {
-        width: 100%; /* ყველა ინფუთი ერთმანეთის ქვეშ */
-    }
-}
-
-@media (max-width: 450px) { /* ძალიან პატარა ეკრანებისთვის */
-    .contact .row form {
-        padding: 2rem;
-    }
-    .contact .row form .inputBox input,
-    .contact .row form textarea {
-        font-size: 1.5rem;
-    }
-    .contact .row form .btn {
-        font-size: 1.6rem;
-        padding: 1rem 2rem;
-    }
-}
-
- /*footer*/
-
- /* Footer Section Styles */
+/* Footer Section Styles */
 .footer {
-    background: #333; /* მუქი ფონი Footer-ისთვის */
-    padding: 5rem 10%; /* ზედა/ქვედა padding და ჰორიზონტალური padding */
+  background: #333; /* მუქი ფონი Footer-ისთვის */
+  padding: 5rem 10%; /* ზედა/ქვედა padding და ჰორიზონტალური padding */
 }
 
 .footer .box-container {
-    display: grid; /* გამოიყენე Grid, უკეთესი კონტროლისთვის */
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* ოთხი სვეტი, ადაპტური */
-    gap: 2rem; /* სიცარიელე box-ებს შორის */
+  display: grid; /* გამოიყენე Grid, უკეთესი კონტროლისთვის */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(25rem, 1fr)
+  ); /* ოთხი სვეტი, ადაპტური */
+  gap: 2rem; /* სიცარიელე box-ებს შორის */
 }
 
 .footer .box-container .box h3 {
-    font-size: 2.2rem;
-    color: #fff; /* თეთრი ფერი სათაურებისთვის */
-    padding: 1rem 0;
+  font-size: 2.2rem;
+  color: #fff; /* თეთრი ფერი სათაურებისთვის */
+  padding: 1rem 0;
 }
 
 .footer .box-container .box p {
-    font-size: 1.5rem;
-    color: #eee; /* ღია ნაცრისფერი ტექსტისთვის */
-    padding: 0.7rem 0;
-    line-height: 1.8; /* ხაზებს შორის მანძილი */
+  font-size: 1.5rem;
+  color: #eee; /* ღია ნაცრისფერი ტექსტისთვის */
+  padding: 0.7rem 0;
+  line-height: 1.8; /* ხაზებს შორის მანძილი */
 }
 
 .footer .box-container .box a {
-    display: block; /* ლინკები ცალკე ხაზზე */
-    font-size: 1.7rem;
-    color: #eee;
-    padding: 0.7rem 0;
-    transition: all .2s ease; /* გლუვი გადასვლა hover-ზე */
+  display: block; /* ლინკები ცალკე ხაზზე */
+  font-size: 1.7rem;
+  color: #eee;
+  padding: 0.7rem 0;
+  transition: all 0.2s ease; /* გლუვი გადასვლა hover-ზე */
 }
 
 .footer .box-container .box a i {
-    color: var(--orange); /* ხატულების ფერი */
-    padding-right: .5rem;
+  color: var(--orange); /* ხატულების ფერი */
+  padding-right: 0.5rem;
 }
 
 .footer .box-container .box a:hover {
-    color: var(--orange); /* ლინკის ფერი hover-ზე */
-    letter-spacing: .1rem; /* ასოებს შორის მანძილის გაზრდა */
+  color: var(--orange); /* ლინკის ფერი hover-ზე */
+  letter-spacing: 0.1rem; /* ასოებს შორის მანძილის გაზრდა */
 }
 
 /* Google Maps iframe specific styles */
 .footer .box-container .box iframe {
-    border-radius: .5rem;
-    margin-top: 1rem;
-    width: 100%; /* iframe სრული სიგანე */
-    height: 18rem; /* iframe სიმაღლე */
-    filter: grayscale(100%); /* რუკა შავ-თეთრი */
-    transition: all .3s ease;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  width: 100%; /* iframe სრული სიგანე */
+  height: 18rem; /* iframe სიმაღლე */
+  filter: grayscale(100%); /* რუკა შავ-თეთრი */
+  transition: all 0.3s ease;
 }
 
 .footer .box-container .box iframe:hover {
-    filter: grayscale(0%); /* hover-ზე ფერადი რუკა */
+  filter: grayscale(0%); /* hover-ზე ფერადი რუკა */
 }
 
 .footer .credit {
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 3rem;
-    font-size: 2rem;
-    color: #fff;
-    border-top: .1rem solid rgba(255,255,255,.2); /* ხაზი ზემოთ */
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2); /* ხაზი ზემოთ */
 }
 
 .footer .credit span {
-    color: var(--orange); /* თქვენი ბრენდის ფერი */
+  color: var(--orange); /* თქვენი ბრენდის ფერი */
 }
 
 /* Responsive Styles for Footer */
 @media (max-width: 991px) {
-    .footer {
-        padding: 3rem 5%; /* padding-ის შემცირება პლანშეტებზე */
-    }
+  .footer {
+    padding: 3rem 5%; /* padding-ის შემცირება პლანშეტებზე */
+  }
 }
 
 @media (max-width: 768px) {
-    .footer .box-container {
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* სვეტების შემცირება */
-        gap: 1.5rem;
-    }
-    .footer .box-container .box h3 {
-        font-size: 2rem;
-    }
-    .footer .box-container .box a {
-        font-size: 1.6rem;
-    }
-    .footer .credit {
-        font-size: 1.8rem;
-    }
+  .footer .box-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(20rem, 1fr)
+    ); /* სვეტების შემცირება */
+    gap: 1.5rem;
+  }
+  .footer .box-container .box h3 {
+    font-size: 2rem;
+  }
+  .footer .box-container .box a {
+    font-size: 1.6rem;
+  }
+  .footer .credit {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 450px) {
-    .footer .box-container {
-        grid-template-columns: 1fr; /* ერთი სვეტი მობილურებზე */
-    }
-    .footer .box-container .box iframe {
-        height: 15rem; /* რუკის სიმაღლის შემცირება */
-    }
+  .footer .box-container {
+    grid-template-columns: 1fr; /* ერთი სვეტი მობილურებზე */
+  }
+  .footer .box-container .box iframe {
+    height: 15rem; /* რუკის სიმაღლის შემცირება */
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*media queries*/
 
-@media (max-width:1200px){
-    html{
-        font-size: 55%;
-    }
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
 }
 
-@media(max-width:991px){
-    header{
-        padding: 2rem;
-    }
-    section{
-        padding: 2rem;
-    }
-    #infoDisplay,
-    #photoDisplay,
-    .gether .fimg img {
-      width: 100%;
-    }
-  
-    #photoDisplay {
-      height: auto;
-    }
-  
-    #nameDisplay {
-      font-size:10px;
-    }
-  
+@media (max-width: 991px) {
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+  #infoDisplay,
+  #photoDisplay,
+  .gether .fimg img {
+    width: 100%;
+  }
+
+  #photoDisplay {
+    height: auto;
+  }
+
+  #nameDisplay {
+    font-size: 10px;
+  }
 }
 
-@media(max-width:768px){
-    #menu-bar{
-        display: initial;
-    }
+@media (max-width: 768px) {
+  #menu-bar {
+    display: initial;
+  }
 
-    #infoDisplay,
-    #photoDisplay,
-    .gether .fimg img {
-      width: 100%;
-    }
-  
-    #photoDisplay {
-      height: auto;
-    }
-  
-    #nameDisplay {
-      font-size:10px;
-    }
-  
-    header .navbar{
+  #infoDisplay,
+  #photoDisplay,
+  .gether .fimg img {
+    width: 100%;
+  }
+
+  #photoDisplay {
+    height: auto;
+  }
+
+  #nameDisplay {
+    font-size: 10px;
+  }
+
+  header .navbar {
     position: absolute;
-    top: 100%; right: 0; left: 0;
-    background: .1rem solid rgba(255,255,255,.2);
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: 0.1rem solid rgba(255, 255, 255, 0.2);
     padding: 1rem 2rem;
-    clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
-    }
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
 
-    header .navbar.active{
-        clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
-    }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 
-    header .navbar a{
-        display: block;
-        border-radius: .5rem;
-        padding: 1.5rem;
-        margin: 1.5rem 0;
-        background: #222;
-    }
+  header .navbar a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #222;
+  }
 }
 
-@media (max-width:450px){
-    html{
-        font-size: 50%;
-    }
-    .heading span{
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading span {
     font-size: 2.5rem;
-    }
-    #infoDisplay,
-    #photoDisplay,
-    .gether .fimg img {
-      width: 100%;
-    }
+  }
+  #infoDisplay,
+  #photoDisplay,
+  .gether .fimg img {
+    width: 100%;
+  }
 
-    .contact .row form .inputBox input{
-      width: 100%;
-    }
+  .contact .row form .inputBox input {
+    width: 100%;
+  }
 }
-
-
-
 
 /* 🖥️ პერსონალური კომპიუტერი – 1200px და ზემოთ */
 @media (min-width: 1200px) {

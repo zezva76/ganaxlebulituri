@@ -70,6 +70,48 @@ header .navbar a:hover {
     color: var(--orange);
 }
 
+/* ეს არის შენს ენების გადამრთველისთვის უკვე სწორი სტილი */
+header .language-switcher {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+header .language-switcher a {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+
+header .language-switcher a.active {
+  background-color: var(--orange);
+  color: white;
+  cursor: default;
+  pointer-events: none; /* რომ აღარ ჩასჭიდო */
+}
+
+header .language-switcher a img {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+header .language-switcher a:hover {
+  background-color: var(--orange);
+}
+
+
 #menu-bar {
     color: var(--text-color);
     border: .1rem solid var(--text-color);

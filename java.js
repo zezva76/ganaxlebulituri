@@ -1,167 +1,4 @@
 
-
-
-
-
-const translations = {
-  en: {
-    navHome: "Home",
-    navGeorgia: "Georgia",
-    navGallery: "Gallery",
-    navPackage: "Package",
-    navServices: "Services",
-    navVoice: "Voice",
-    navReview: "Review",
-    navFooter: "Footer",
-
-     homeTitle: "adventure is worthwhite",
-    homeSubtitle: "Discover new places with us",
-    homeSlogan: "travel to Imereti",
-    showDiscoverBtn: "discover imereti",
-    imeretiDescription: `
-      <label class="info-imer-1">Imereti</label> — one of the historical and geographical regions of Western Georgia, currently part of the Imereti region. In a broad sense, it is the historical name of Western Georgia, as well as ancient Colchis, Egrisi, Abkhazia.
-
-                    Imereti itself is bordered by the Black Sea to the east, Tskhenistskali to the west, the Caucasus Range to the north, and the Persati, or Meskheti, mountains to the south. The name is associated with the location of this region, Imereti, or the Likhsiki region.
-                    
-                    Imereti is divided into two parts: Lower and Upper Imereti. Archaeological monuments discovered on the territory of Imereti confirm that people began to live in this region as early as the Lower Paleolithic era. Among them are the Sakazii Cave and the Chakhati (on the banks of the Tskaltsitela River), Deviskhvreli (on the banks of the Chkherimela River) caves, the Sataplia area, and others. Archaeological monuments from the ancient period of urban life have been found in Kutaisi, Vani, Vartsikhe (Rhodopolis), Shorapani, and others. Due to the favorable geographical location of the region, these cities have had great strategic, economic, and political importance since ancient times
-
-    `,
-     loginTitle: "Login",
-    emailPlaceholder: "Enter your email",
-    passwordPlaceholder: "Enter your password",
-    loginBtn: "Login now",
-    rememberMe: "Remember me",
-    forgetPassword: "Forget password?",
-    clickHere: "Click here",
-    noAccount: "Do not have an account?",
-    registerNow: "Register now",
-
-    
-     imereti_name: "Imereti",
-      afkhazeti_name: "Abkhazia",
-       achara_name: "Adjara",
-        guria_name: "Guria",
-     kakheti_name: "Kakheti",
-     kvemo_kartli_name: "Qvemo kartli",
-     mtsketa_mtianeti_name: "Mtskheta mtianeti",
-     racha_lechkhumi_name: "Racha lechkhumi",
-     samtskhe_djavakheti_name: "Samtskhe djavakheti",
-     samachablo_name: "Samachablo",
-     shida_kartli_name: "Shida Qartli",
-     samegrelo_zemosvaneti_name: "Samegrelo-Zeda svaneti",
-    tbilisi_name: "Tbilisi",
-
-     mwvane_xeoba: "Mtsvane Kheoba",
-     browse_gallery: "Browse the gallery",
-       see_more: "See more",
-       promete_cave: "Promete cave",
-       tetra_name: "Tetra cave",
-       sataplia_name: "Sataplia",
-       katskhi_name: "Katskhi sveti",
-       martvili_name: "Martvili canion",
-       read_more: "Read more",
-
-       title_info: " Prometheus Cave formed in Sataphlia-Tskaltubo karst massif. The total length of the cave is about 11 km, of which 1800 m are open to visitors. The cave has a total of 22 halls, six of which are currently open to tourists. Visitors currently could experience these caves at depths of about 80 mts below ground level.",
- 
-        hotel_title:"Affordable hotels",
-        food_title: "Food and Drink",
-        contact_title: "Contact us",
-
-        voice_title: "If you enjoy the Georgian wines and dishes, give like",
-        chans_name: "Georgian wines",
-        vans_name: "Georgian dishes",
-        voice_name: "Like it",
-        
-          revie_title: "Leave a comment and photo",
-        PlaceHolder: "Your name",
-       opinionPlaceHolder: "Your oponion",
-          sub_name: "Add"
-
-  },
-
-
-
-  ka: {
-    navHome: "მთავარი",
-    navGeorgia: "საქართველო",
-    navGallery: "გალერეა",
-    navPackage: "პაკეტები",
-    navServices: "სერვისები",
-    navVoice: "ხმები",
-    navReview: "მიმოხილვა",
-    navFooter: "კონტაქტი",
-
-     homeTitle: "მოგზაურობა ღირსეულია",
-    homeSubtitle: "აღმოაჩინე ახალი ადგილები ჩვენთან ერთად",
-    homeSlogan: "იმოგზაურე იმერეთში",
-    showDiscoverBtn: "აღმოაჩინე იმერეთი",
-    imeretiDescription: `
-      <label class="info-imer-1">იმერეთი</label>— დასავლეთ საქართველოს ერთ-ერთი ისტორიულ-გეოგრაფიული რეგიონი, ამჟამად იმერეთის რეგიონის ნაწილი. ფართო გაგებით, ეს არის დასავლეთ საქართველოს ისტორიული სახელწოდება, ასევე უძველესი კოლხეთი, ეგრისი, აფხაზეთი.
-
-თავად იმერეთს აღმოსავლეთით ესაზღვრება შავი ზღვა, დასავლეთით ცხენისწყალი, ჩრდილოეთით კავკასიონის ქედი და სამხრეთით ფერსათის, ანუ მესხეთის მთები. სახელი დაკავშირებულია ამ რეგიონის მდებარეობასთან, იმერეთთან, ანუ ლიხსიკის რეგიონთან.
-
-იმერეთი ორ ნაწილად იყოფა: ქვემო და ზემო იმერეთად. იმერეთის ტერიტორიაზე აღმოჩენილი არქეოლოგიური ძეგლები ადასტურებს, რომ ამ რეგიონში ადამიანები ჯერ კიდევ ქვედა პალეოლითის ხანაში დასახლდნენ. მათ შორისაა საკაზის გამოქვაბული და ჭახატი (მდინარე წყალწითელას ნაპირებზე), დევისხვრელის (მდინარე ჩხერიმელას ნაპირებზე) გამოქვაბულები, სათაფლიის ტერიტორია და სხვა. ქალაქური ცხოვრების უძველესი პერიოდის არქეოლოგიური ძეგლები აღმოჩენილია ქუთაისში, ვანში, ვარციხეში (როდოპოლისი), შორაპანში და სხვა. რეგიონის ხელსაყრელი გეოგრაფიული მდებარეობის გამო, ამ ქალაქებს უძველესი დროიდან დიდი სტრატეგიული, ეკონომიკური და პოლიტიკური მნიშვნელობა ჰქონდათ.
-    `,
-
-  loginTitle: "შესვლა",
-    emailPlaceholder: "შეიყვანეთ ელ.ფოსტა",
-    passwordPlaceholder: "შეიყვანეთ პაროლი",
-    loginBtn: "შესვლა",
-    rememberMe: "დამიმახსოვრე",
-    forgetPassword: "დაგავიწყდა პაროლი?",
-    clickHere: "დააჭირეთ აქ",
-    noAccount: "არ გაქვთ ანგარიში?",
-    registerNow: "რეგისტრაცია",
-
-   
-
-    imereti_name: "იმერეთი",
-     afkhazeti_name: "აფხაზეთი",
-     achara_name: "აჭარა",
-      guria_name: "გურია",
-     imereti_name: "იმერეთი",
-     kakheti_name: "კახეთი",
-     kvemo_kartli_name: "ქვემო ქართლი",
-     mtsketa_mtianeti_name: "მცხეტა მთიანეთი",
-     racha_lechkhumi_name: "რაჭა ლეჩხუმი",
-     samtskhe_djavakheti_name: "სამცხე ჯავახეთი",
-     samachablo_name: "სამაჩაბლო",
-     shida_kartli_name: "შიდა ქართლი",
-     samegrelo_zemosvaneti_name: "სამეგრელო-ზემო სვანეთი",
-    tbilisi_name: "თბილისი",
-
-   gallery_title: "გალერია",
-    mwvane_xeoba: "მწვანე ხეობა",
-     promete_cave: "პრომეთეს მღვიმე",
-      tetra_name: "თეთრა მღვიმე",
-       sataplia_name: "სათაფლია",
-       katskhi_name: "კაცხის სვეტი",
-       martvili_name: "მარტვილის კანიონი", 
-       browse_gallery: "დაათვალიერეთ გალერეა",
-        see_more: "ნახეთ მეტი",
-       read_more: "გაიგეთ მეტი",
-
-       title_info: "პრომეთეს მღვიმე სათაფლია-წყალტუბოს კარსტულ მასივში ჩამოყალიბდა. მღვიმის საერთო სიგრძე დაახლოებით 11 კმ-ია, საიდანაც 1800 მ ღიაა ვიზიტორებისთვის. მღვიმეს სულ 22 დარბაზი აქვს, რომელთაგან ექვსი ამჟამად ტურისტებისთვის ღიაა. ვიზიტორებს ამჟამად ამ მღვიმეების დათვალიერება მიწის დონიდან დაახლოებით 80 მეტრის სიღრმეზე შეუძლიათ.",
-        
-       hotel_title:"ხელმისაწვდომი სასტუმროები",
-        food_title: "საკვები და სასმელები",
-        contact_title: "დაგვიკავშირდით",
-
-        voice_title: "თუ მოგწონთ ქართული ღვინოები და კერძები, მოიწონეთ",
-          chans_name: "ქართული ღვინო",
-        vans_name: "ქართული კერძები",
-        voice_name: "მოიწონე",
-
-         revie_title: "დატოვეთ კომენტარი და ფოტო",
-        PlaceHolder: "თქვენი სახელი",
-        opinionPlaceHolder: "თქვენი აზრი",
-          sub_name: "დამატება",
-  },
-
-  
-
-};
-
 function setLanguage(lang) {
   localStorage.setItem('lang', lang);
 
@@ -203,6 +40,117 @@ function setLanguage(lang) {
 
 
 
+
+function search() {
+  const query = document.getElementById("search-bar").value.trim().toLowerCase();
+  if (!query) { closePopup(); return; }
+
+  const box = Array.from(document.querySelectorAll("#package .box"))
+    .find(b => {
+      const name = b.getAttribute("data-name");
+      return name && name.toLowerCase().includes(query);
+    });
+
+  if (!box) {
+    alert("ადგილი არ მოიძებნა: " + query);
+    return;
+  }
+
+  // === 1. გადავდივართ home-ზე ===
+  document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+
+  // === 2. ვქმნით მინიმალურ popup box-ს ===
+  const clone = document.createElement("div");
+  clone.className = "box popup-box";
+  clone.style.cursor = "pointer";
+
+  const originalImg = box.querySelector("img");
+  const originalTitle = box.querySelector("h3 a") || box.querySelector("h3");
+
+  // სურათი
+  if (originalImg) {
+    const img = originalImg.cloneNode();
+    img.style.width = "100%";
+    img.style.height = "200px";
+    img.style.objectFit = "cover";
+    img.style.borderRadius = "15px 15px 0 0";
+    clone.appendChild(img);
+  }
+
+  // სახელი
+  if (originalTitle) {
+    const title = document.createElement("h3");
+    title.innerHTML = originalTitle.innerHTML;
+    title.style.margin = "15px 0 10px";
+    title.style.textAlign = "center";
+    title.style.fontSize = "1.4rem";
+    clone.appendChild(title);
+  }
+
+  // ღილაკი
+  const btn = document.createElement("button");
+  btn.innerText = "აჩვენე ინფორმაცია";
+  btn.className = "btn";
+  btn.style.display = "block";
+  btn.style.margin = "0 auto 15px";
+  btn.style.padding = "10px 20px";
+  btn.onclick = function(e) {
+    e.stopPropagation();
+    closePopup();
+    setTimeout(() => {
+      goToPackage(box.id);
+    }, 300);
+  };
+  clone.appendChild(btn);
+
+  // === 3. popup-ში ჩასმა ===
+  const popupContent = document.getElementById("popup-content");
+  popupContent.innerHTML = "";
+  popupContent.appendChild(clone);
+
+  document.getElementById("search-popup").style.display = "block";
+  document.getElementById("popup-overlay").style.display = "block";
+
+  // === 4. დააჭირე box-ზე (არა ღილაკზე) → გადადი #package-ზე ===
+  clone.onclick = function(e) {
+    if (e.target.tagName === "BUTTON") return;
+    closePopup();
+    setTimeout(() => {
+      goToPackage(box.id);
+    }, 300);
+  };
+}
+
+// === ფუნქცია: გადასვლა #package-ზე + ანათება (არა ავტომატური ინფო!) ===
+function goToPackage(boxId) {
+  document.getElementById("package").scrollIntoView({ behavior: "smooth" });
+
+  setTimeout(() => {
+    const originalBox = document.getElementById(boxId);
+    if (!originalBox) return;
+
+    // გადადის და ანათებს
+    originalBox.scrollIntoView({ behavior: "smooth", block: "center" });
+    originalBox.style.transition = "all 0.4s ease";
+    originalBox.style.transform = "scale(1.06)";
+    originalBox.style.boxShadow = "0 0 30px rgba(255, 193, 7, 0.9)";
+    originalBox.style.zIndex = "10";
+
+    // ანიმაციის დასრულება
+    setTimeout(() => {
+      originalBox.style.transform = "";
+      originalBox.style.boxShadow = "";
+      originalBox.style.zIndex = "";
+    }, 5200);
+
+    // ინფორმაცია არ იხსნება ავტომატურად!
+  }, 500);
+}
+
+function closePopup() {
+  document.getElementById("search-popup").style.display = "none";
+  document.getElementById("popup-overlay").style.display = "none";
+}
 
 
 

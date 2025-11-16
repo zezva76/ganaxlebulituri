@@ -37,6 +37,10 @@ header {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
 }
 
+header a:hover{
+  color: var(--orange);
+}
+
 header h1 {
     color: var(--text-color);
     font-size: 2.5rem; /* Adjusted for consistency */
@@ -84,6 +88,51 @@ header .navbar a:focus {
     display: none; /* Hidden by default on desktop */
 }
 
+
+
+/* ეს არის შენს ენების გადამრთველისთვის უკვე სწორი სტილი */
+header .language-switcher {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+header .language-switcher a {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+
+header .language-switcher a.active {
+  background-color: var(--orange);
+  color: white;
+  cursor: default;
+  pointer-events: none; /* რომ აღარ ჩასჭიდო */
+}
+
+header .language-switcher a img {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+header .language-switcher a:hover {
+  background-color: var(--orange);
+}
+
+
+
 /* Section Title */
 .typeVine h2 {
     display: flex;
@@ -94,6 +143,9 @@ header .navbar a:focus {
     margin-bottom: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 /* Vine Gallery Container */
 .vine-gallery {
