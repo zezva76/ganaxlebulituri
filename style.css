@@ -1380,12 +1380,12 @@ header .search-bar-container label:hover {
   order: 2; /* default რიგი */
 }
 
-.chanhh {
+.chanhh { 
 
   font-size: 60px;
   position: absolute;
-  top: 230px;
-  left: 50%;
+  top: 50px;
+  left: 60%;
   transform: translateX(-50%);
   background-image: url(foto/Animated_flag_of_Georgia.gif);
   background-repeat: no-repeat;
@@ -1398,7 +1398,10 @@ header .search-bar-container label:hover {
 }
 
 .mapChan {
-  margin-top: 100px;
+   position: relative;
+  top: -100px;
+  left: 10%;
+
 }
 
 .imageimg {
