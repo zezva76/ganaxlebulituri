@@ -1,3 +1,21 @@
+const translations = {
+  en: {
+    imereti: "Imereti",
+    guria: "Guria",
+    samegrelo: "Samegrelo",
+    kakheti: "Kakheti",
+    qartli: "Qartli"
+  },
+  ka: {
+    imereti: "იმერეთი",
+    guria: "გურია",
+    samegrelo: "სამეგრელო",
+    kakheti: "კახეთი",
+    qartli: "ქართლი"
+  }
+};
+
+
 
 function setLanguage(lang) {
   localStorage.setItem('lang', lang);
