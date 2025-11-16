@@ -290,20 +290,23 @@ header .language-switcher a:hover {
 }
 
 
-.info-item a {
+.info-item a { 
   color: inherit;
   text-decoration: none;
   margin-left: 0.5rem;
   font-weight: 600;
 }
 
-.info-item a:hover {
+.info-item .whatsup:hover { 
   text-decoration: underline;
   color: #25D366; /* WhatsApp მწვანე ფერი */
 }
-
+.info-item .viber:hover { 
+  text-decoration: underline;
+  color: #665CAC; 
+}
 /* ვიბერისთვის შეგიძლია ფერი */
-.info-item i.fa-viber {
+.info-item i.fa-viber { 
   color: #665CAC; /* Viber ფერი */
 }
 
