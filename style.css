@@ -902,6 +902,10 @@ header .search-bar-container label:hover {
   /* დამატებითი სტილები, თუ გჭირდებათ, მაგალითად border ან background */
 }
 
+.package .box-container .box:hover {
+  transform: scale(0.9);
+}
+
 .package .box-container .box img {
   height: 20rem;
   width: 100%; /* სურათი სრულად მოერგება მის მშობელ კონტეინერს */
@@ -919,25 +923,23 @@ header .search-bar-container label:hover {
   gap: 0.5rem; /* კონტენტის ელემენტებს შორის სიცარიელე */
 }
 
-/* book now ღილაკი */
+/* book now ღილაკი 
 .package .box-container .box .content .btn-1 {
   display: inline-block;
-
   width: auto;
-  /* margin-top: 1rem; - მოვაშორე, რადგან gap უკვე აგვარებს სიცარიელეს */
-}
+  margin-top: 1rem; - მოვაშორე, რადგან gap უკვე აგვარებს სიცარიელეს 
+}*/
 
 /* read more ღილაკი */
 .package .box-container .box .content .btn-2 {
   display: inline-block;
-
   width: auto;
 }
 
 /* Close Button */
 .close-button-class {
   position: absolute;
-  top: 1rem;
+  top: 0.1rem;
   right: 1rem;
   cursor: pointer;
   font-size: 5rem;
@@ -993,17 +995,28 @@ header .search-bar-container label:hover {
 
 .package .box-container .box .modal-text-content h3 a:hover {
   color: green;
-
   transform: scale(1.1);
 }
 
 /* Paragraph styles */
-.package .box-container .box .content p {
-  font-size: 1.5rem;
-  color: #667;
-  padding: 0.5rem 0;
+.package .box-container .box  p {
+
+  font-size: 1.8rem;
+color: white;
+  padding: 1.5rem 1rem;
   text-align: center;
-  width: 100%;
+}
+
+.package .box-container .box .modal-text-content  {
+
+
+  text-align: center;
+  max-width: 600px;
+  margin: 140px auto 10px auto;
+}
+
+.package .box-container .box .modal-text-content p span{
+color: gold; 
 }
 
 /* Stars styles */
@@ -1335,21 +1348,20 @@ header .search-bar-container label:hover {
 
 /* მარცხენა ნაწილი */
 .left-side {
-
   flex: 1;
   min-width: 250px;
   position: relative;
   order: 1; /* default რიგი */
 }
 
-.inter { 
+.inter {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
 .chans,
-.vans { 
+.vans {
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -1372,7 +1384,6 @@ header .search-bar-container label:hover {
 
 /* მარჯვენა ნაწილი */
 .right-side {
-
   flex: 1;
   min-width: 300px;
   position: relative;
@@ -1380,8 +1391,7 @@ header .search-bar-container label:hover {
   order: 2; /* default რიგი */
 }
 
-.chanhh { 
-
+.chanhh {
   font-size: 60px;
   position: absolute;
   top: 50px;
@@ -1398,10 +1408,9 @@ header .search-bar-container label:hover {
 }
 
 .mapChan {
-   position: relative;
+  position: relative;
   top: -100px;
   left: 10%;
-
 }
 
 .imageimg {
@@ -1417,12 +1426,11 @@ header .search-bar-container label:hover {
     justify-content: center;
   }
 
-  .inter { 
-  font-size: 1.8rem;
-  font-weight: bold;
-margin-top: 30px;
-}
-
+  .inter {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 30px;
+  }
 
   .left-side,
   .right-side {
@@ -1430,20 +1438,19 @@ margin-top: 30px;
     position: relative;
   }
 
-  .chanhh {  
+  .chanhh {
     position: relative;
     top: -200px;
     left: 200px;
     transform: none;
     font-size: 50px;
-
-}
-.mapChan {
- position: relative;
- bottom: 500px;
- left: 400px;
-  width: 600px;
-}
+  }
+  .mapChan {
+    position: relative;
+    bottom: 500px;
+    left: 400px;
+    width: 600px;
+  }
 }
 
 /* ტაბლეტები */
@@ -1479,7 +1486,7 @@ margin-top: 30px;
     order: 1;
   }
 
-  .inter {  
+  .inter {
     font-size: 1.4rem;
     margin-bottom: 20px;
   }
@@ -1494,19 +1501,20 @@ margin-top: 30px;
     padding: 8px 20px;
   }
 
-  .chanhh {  position: relative;
+  .chanhh {
+    position: relative;
     top: 150px;
     left: 20px;
     transform: none;
- 
+
     font-size: 32px;
   }
   .mapChan {
-position: relative;
+    position: relative;
     top: -100px;
     left: 20px;
     width: 400px;
-}
+  }
 
   .imageimg {
     filter: none;
