@@ -231,6 +231,21 @@ header .language-switcher a:hover {
     right: 2rem; 
 }
 
+.package_promete a{
+display: flex;
+justify-content: center;
+font-size: 2rem;
+cursor: pointer;
+text-decoration: none;
+color: var(--orange);
+font-weight: bold;
+
+}
+.package_promete a:hover{
+    transform: scale(1.1);
+   
+}
+
 /* --- Media Queries (Responsive Design) --- */
 
 @media (max-width: 1200px) {

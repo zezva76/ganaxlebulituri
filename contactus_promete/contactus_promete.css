@@ -1,79 +1,80 @@
 /* Universal Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
-    --orange: #ffa500;
-    --dark-bg: #333;
-    --light-bg: #ecf4fb;
-    --text-color: #fff;
-    --dark-text: #222;
+  --orange: #ffa500;
+  --dark-bg: #333;
+  --light-bg: #ecf4fb;
+  --text-color: #fff;
+  --dark-text: #222;
 }
 
 body {
-    background: var(--light-bg);
-    color: var(--dark-text);
-    min-height: 100vh;
-    padding: 20px;
- 
+  background: var(--light-bg);
+  color: var(--dark-text);
+  min-height: 100vh;
+  padding: 20px;
 }
 
 /* Header Styles */
 header {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    background: var(--dark-bg);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 5%;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
-    color: var(--text-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--dark-bg);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
 }
 
 header .logo {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: var(--text-color);
-    text-transform: uppercase;
-    text-decoration: none;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 header .logo span {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 header .page-title {
-    font-size: 2rem;
-    color: var(--text-color);
-    margin: 0 auto;
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 0 auto;
 }
 
 header #menu-bar {
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
-    border-radius: 6px;
-    font-size: 2rem;
-    padding: 0.5rem 0.8rem;
-    cursor: pointer;
-    display: none;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
+  font-size: 2rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  display: none;
 }
 
 header .navbar a {
-    color: var(--text-color);
-    font-size: 1.6rem;
-    margin-left: 1.2rem;
-    text-decoration: none;
-    text-transform: capitalize;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin-left: 1.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 header .navbar a:hover {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 /* ეს არის შენს ენების გადამრთველისთვის უკვე სწორი სტილი */
@@ -117,12 +118,21 @@ header .language-switcher a:hover {
   background-color: var(--orange);
 }
 
- /* service*/
+/* service*/
 
+.tour-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
 
+.tour-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
-
-.service-list {  
+.service-list {
   list-style: none;
   padding: 0;
 }
@@ -138,127 +148,139 @@ header .language-switcher a:hover {
   margin: 20px 0;
 }
 
-
 /* Contact Section */
-.contact {
+.contact { 
+  padding: 12rem 5% 5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main{
 
-    padding: 12rem 5% 5rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    gap: 3rem;
-    flex-wrap: wrap;
-    justify-content: center;
+position: relative;
+bottom: 150px;
 }
 
-.map-container, .contact-info, .contact-form, .contact-text {
-    background: white;
-    padding: 2.5rem 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
-    flex: 1 1 850px;
-    min-width: 300px;
-  
+.map-container,
+.contact-info,
+.contact-form,
+.tour-content { 
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  flex: 1 1 850px;
+  min-width: 300px; 
+}
+
+.tour-content p{
+  font-size: 1.5rem;
+}
+.service-list li, .tour-info{
+  font-size: 1.3rem;
 }
 
 .map-container h3,
 .contact-info h3,
 .contact-form h3,
-.contact-text h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    color: var(--dark-bg);
-    text-transform: uppercase;
+.tour-content h3
+ { 
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--dark-bg);
+  text-transform: uppercase;
+
 }
 
 .map-container iframe {
-
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
 }
 
-.contact-info .info-item { 
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--dark-bg);
+.contact-info .info-item {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--dark-bg);
 }
 
 .contact-info .info-item i {
-    color: var(--orange);
-    font-size: 2rem;
+  color: var(--orange);
+  font-size: 2rem;
 }
 
 .social-media {
-    margin-top: 2rem;
-    text-align: center;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .social-media a {
-    font-size: 2.5rem;
-    color: var(--dark-bg);
-    margin: 0 1rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
+  font-size: 2.5rem;
+  color: var(--dark-bg);
+  margin: 0 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
 }
 
 .social-media a:hover {
-    color: var(--orange);
-    transform: scale(1.2);
+  color: var(--orange);
+  transform: scale(1.2);
 }
 
 /* Contact Form */
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 1.2rem;
-    border: 1.5px solid #ddd;
-    border-radius: 8px;
-    font-size: 1.4rem;
-    font-family: inherit;
-    resize: vertical;
-    transition: border-color 0.3s ease;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1.2rem;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: var(--orange);
-    outline: none;
+  border-color: var(--orange);
+  outline: none;
 }
 
 .contact-form textarea {
-    min-height: 120px;
+  min-height: 120px;
 }
 
 .send-btn {
-    background-color: var(--orange);
-    color: white;
-    border: none;
-    padding: 1rem 1.5rem;
-    font-size: 1.6rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 .send-btn:hover {
-    background-color: #cc8400;
+  background-color: #cc8400;
 }
 
 #statusMessage {
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
 }
-
 
 /* ძირითადი კონტაქტის სექცია */
 .contact {
@@ -315,29 +337,28 @@ header .language-switcher a:hover {
   margin-right: 8px;
 }
 
-
-.info-item a { 
+.info-item a {
   color: inherit;
   text-decoration: none;
   margin-left: 0.5rem;
   font-weight: 600;
 }
 
-.info-item .whatsup:hover { 
+.info-item .whatsup:hover {
   text-decoration: underline;
-  color: #25D366; /* WhatsApp მწვანე ფერი */
+  color: #25d366; /* WhatsApp მწვანე ფერი */
 }
-.info-item .viber:hover { 
+.info-item .viber:hover {
   text-decoration: underline;
-  color: #665CAC; 
+  color: #665cac;
 }
 /* ვიბერისთვის შეგიძლია ფერი */
-.info-item i.fa-viber { 
-  color: #665CAC; /* Viber ფერი */
+.info-item i.fa-viber {
+  color: #665cac; /* Viber ფერი */
 }
 
 .info-item i.fa-whatsapp {
-  color: #25D366;
+  color: #25d366;
 }
 
 /* სოციალური ღილაკები */
@@ -360,10 +381,6 @@ header .language-switcher a:hover {
   font-size: 26px;
   color: #222;
   margin-bottom: 20px;
-}
-.contact p{
-  font-weight: bold;
-  font-size: 1.5rem;
 }
 
 form#contactForm {
@@ -416,48 +433,46 @@ form textarea:focus {
   text-align: center;
 }
 
-
-
 /* Responsive */
 @media (max-width: 900px) {
-    .contact {
-        flex-direction: column;
-        padding-top: 10rem;
-    }
-    header {
-        padding: 1rem 3%;
-    }
+  .contact {
+    flex-direction: column;
+    padding-top: 10rem;
+  }
+  header {
+    padding: 1rem 3%;
+  }
 }
 
 @media (max-width: 600px) {
-    header #menu-bar {
-        display: block;
-    }
-    header .navbar {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background: var(--dark-bg);
-        padding: 1rem 0;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: clip-path 0.3s ease-in-out;
-        overflow: hidden;
-        z-index: 10000;
-    }
-    header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    header .navbar a {
-        display: block;
-        margin: 0.8rem 1rem;
-        font-size: 1.8rem;
-        background: var(--light-bg);
-        color: var(--dark-bg);
-        border-radius: 6px;
-        padding: 1rem 2rem;
-        text-align: center;
-    }
+  header #menu-bar {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--dark-bg);
+    padding: 1rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 10000;
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    display: block;
+    margin: 0.8rem 1rem;
+    font-size: 1.8rem;
+    background: var(--light-bg);
+    color: var(--dark-bg);
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
 }
 
 .social-media a {
@@ -468,14 +483,12 @@ form textarea:focus {
 }
 
 .social-media a:hover {
-  color: #1877F2; /* Facebook-ის მკვეთრი ლურჯი */
+  color: #1877f2; /* Facebook-ის მკვეთრი ლურჯი */
 }
 
 .social-media a.fab.fa-instagram:hover {
-  color: #C13584; /* Instagram-ის ფერი */
+  color: #c13584; /* Instagram-ის ფერი */
 }
-
-
 
 /* Desktop (მინიმუმ 1200px და ზემოთ) */
 @media (min-width: 1200px) {
